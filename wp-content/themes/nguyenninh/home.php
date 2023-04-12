@@ -230,26 +230,7 @@ get_header(null, ['is_body_main' => true]); ?>
                         <?php } ?>
 
                         <?php if ($the_query->current_post > 0) { ?>
-                            <div class="post_item other">
-                                <div class="img-wrapper">
-                                    <img src="<?php the_post_thumbnail_url() ?>">
-                                </div>
-                                <div class="post_body">
-                                    <div class="flex flex-col">
-                                        <div class="post_title gray-80 mb-3">
-                                            <p><?= the_title(); ?></p>
-                                        </div>
-                                        <div class="post_excerpt gray-60">
-                                            <p><?= wp_trim_words(get_the_content(), 40, '...'); ?></p>
-                                        </div>
-                                    </div>
-                                    <div class="flex justify-content-between post_body_footer">
-                                        <a href="<?php the_permalink() ?>" class="post_seemore gray-80">ĐỌC CÂU CHUYỆN
-                                            <i class="fa-solid fa-arrow-up rotate-45"></i></a>
-                                        <div class="text-center gray-70 post_datetime"><?= get_the_date('d.m.Y') ?></div>
-                                    </div>
-                                </div>
-                            </div>
+                            <?php get_template_part('partials/card', 'post-common'); ?>
                         <?php } ?>
                 <?php
                     }
@@ -261,4 +242,18 @@ get_header(null, ['is_body_main' => true]); ?>
     </div>
 </section>
 <!-- Chương 4 -->
+
+<script>
+    $(document).ready(function() {
+        var glideMulti = new Glide('.hero', {
+            type: 'slider',
+            startAt: 0,
+            rewind: false,
+            perView: 1
+        })
+
+        glideMulti.mount();
+    });
+</script>
+
 <?php get_footer();

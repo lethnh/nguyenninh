@@ -366,7 +366,15 @@ footer .footer-info .footer-info-desc {
 
 .post_item .post_body {
   background-color: #F9F8F1;
+  border: 1px solid #E0DAB8;
   padding: 32px;
+}
+
+.post_item.post_item_main .post_body {
+  width: 436px;
+  max-width: 436px;
+  height: 320px;
+  max-height: 320px;
 }
 
 .post_item .post_body .post_title p {
@@ -455,4 +463,20 @@ footer .footer-info .footer-info-desc {
 
 .section-story {
   background-size: contain;
+}
+
+/*  */
+.section-diary h1.heading-topic {
+  font-family: 'Prata';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -0.02em;
+  color: #000000;
+}
+
+.section-diary .section-diary-line {
+  height: 0.5px;
+  background-color: #B8B9B6;
 }
