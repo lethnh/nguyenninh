@@ -1,6 +1,6 @@
 <?php
 /*
-* Template Name:OUR STORY
+* Template Name: Về Nguyên Ninh - Nguyên Ninh theo dòng lịch sử
 */
 ?>
 <?php

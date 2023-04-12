@@ -480,3 +480,27 @@ footer .footer-info .footer-info-desc {
   height: 0.5px;
   background-color: #B8B9B6;
 }
+
+.line-common {
+  height: 1px;
+  background-color: #B8B9B6;
+}
+
+.form-wrapper p {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-wrapper input {
+  outline: none;
+}
+
+.wpcf7-not-valid-tip {
+  position: absolute;
+  top: 80px
+}
+
+.wpcf7-response-output {
+  display: none
+}

@@ -1,6 +1,6 @@
 <?php
 /*
-* Template Name:OUR STORY ABOUT
+* Template Name: Về Nguyên Ninh - Hiểu thêm về chúng tôi
 */
 ?>
 <?php

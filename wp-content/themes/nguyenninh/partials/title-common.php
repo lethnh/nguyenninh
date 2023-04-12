@@ -19,7 +19,7 @@ $args = wp_parse_args($args, $array_defaults);
     <?php endif; ?>
     <?php if ($args['sub-title-below']) : ?>
         <div class="sub-title-below d-flex align-self-center w-75">
-            <p class="gray-70"><?= $args['sub-title-below'] ?></p>
+            <p class="gray-70 text-style-base"><?= $args['sub-title-below'] ?></p>
         </div>
     <?php endif; ?>
     <?php if ($args['sub-title-below-2']) : ?>
