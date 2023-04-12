@@ -34,7 +34,7 @@ $args = wp_parse_args($args, $array_defaults);
                     'menu_class' => 'navbar-nav ms-auto mb-2 mb-lg-0 menu-header',
                     'menu_id' => 'main-menu',
                     // 'walker'         => new Walker_Nav_Menu_Dropdown(),
-                    'add_a_class'     => 'nav-link',
+                    'add_a_class'     => 'nav-link hover-underline-animation',
                     'container'       => false,
                 ));
                 ?>

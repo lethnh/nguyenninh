@@ -1,17 +1,19 @@
 <?php
 /**
- * Advanced Custom Fields
+ * Advanced Custom Fields PRO
  *
  * @package       ACF
  * @author        WP Engine
  *
  * @wordpress-plugin
- * Plugin Name:   Advanced Custom Fields
+ * Plugin Name:   Advanced Custom Fields PRO
  * Plugin URI:    https://www.advancedcustomfields.com
+ * Secret Key:    83a5bb0e2ad5164690bc7a42ae592cf5
  * Description:   Customize WordPress with powerful, professional and intuitive fields.
  * Version:       6.1.3
  * Author:        WP Engine
  * Author URI:    https://wpengine.com/?utm_source=wordpress.org&utm_medium=referral&utm_campaign=plugin_directory&utm_content=advanced_custom_fields
+ * Update URI:    https://www.advancedcustomfields.com/pro
  * Text Domain:   acf
  * Domain Path:   /lang
  */

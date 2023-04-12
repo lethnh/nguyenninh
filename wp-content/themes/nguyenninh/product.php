@@ -10,15 +10,12 @@ get_header(); ?>
 <section class="section-common">
     <div class="container">
         <div class="d-flex flex-col align-items-center w-4/5 mx-auto">
-            <div class="mb-8">
-                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M24 4C21.4918 13.7869 13.7869 21.4918 4 24C13.7869 26.5082 21.4918 34.2131 24 44C26.5082 34.2131 34.2131 26.5082 44 24C34.2131 21.4918 26.5082 13.7869 24 4Z" fill="#383A36" />
-                </svg>
+            <div class="mb-8 text-center">
+                <img class="me-5" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/star.svg" alt="">
             </div>
             <div class="font-prata font-normal mb-16 leading-[5.25rem] text-7xl text-[#383A36] text-center">Các sản phẩm<br>
                 của nhà Nguyên Ninh
             </div>
-
         </div>
         <div>
             <img src="<?php echo get_template_directory_uri(); ?>//assets/imgs/IMG_1607.jpg" class="max-h-[43.75rem] h-[43.75rem] w-100 max-w-100" alt="">
