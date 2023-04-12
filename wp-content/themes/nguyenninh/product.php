@@ -6,150 +6,161 @@
 <?php
 get_header(); ?>
 
-<div class="px-14 py-24 w-100">
-    <div class="flex flex-col align-items-centerw-4/5 mx-auto">
-        <div class="mb-8">
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M24 4C21.4918 13.7869 13.7869 21.4918 4 24C13.7869 26.5082 21.4918 34.2131 24 44C26.5082 34.2131 34.2131 26.5082 44 24C34.2131 21.4918 26.5082 13.7869 24 4Z" fill="#383A36" />
-            </svg>
-        </div>
-        <div class="font-prata font-normal mb-16 leading-[5.25rem] text-7xl text-[#383A36] text-center">Các sản phẩm<br>
-            của nhà Nguyên Ninh
-        </div>
-
-    </div>
-    <div>
-        <img src="<?php echo get_template_directory_uri(); ?>//assets/imgs/IMG_1607.jpg" class="max-h-[43.75rem] h-[43.75rem] w-100 max-w-100" alt="">
-    </div>
-</div>
-<div class="px-14 py-24 w-100 bg-[#F4F2E6]">
-    <div class="flex flex-col align-items-centerw-4/5 mx-auto">
-        <div class="mb-8">
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M24 4C21.4918 13.7869 13.7869 21.4918 4 24C13.7869 26.5082 21.4918 34.2131 24 44C26.5082 34.2131 34.2131 26.5082 44 24C34.2131 21.4918 26.5082 13.7869 24 4Z" fill="#383A36" />
-            </svg>
-
-        </div>
-        <div class="font-prata font-normal mb-6 leading-8 text-[1.75rem] text-[#52544F] text-center">Dưới đây là những sản
-            phẩm mà hiện tại Nguyên Ninh đang bày bán.
-        </div>
-        <div class="font-prata font-normal mb-16 leading-8 text-[1.75rem] text-[#52544F] text-center">Chúng tôi luôn có ưu
-            đãi với những đơn số lượng lớn
-        </div>
-
-    </div>
+<!--  -->
+<section class="section-common">
     <div class="container">
-        <div class="line-common mx-auto"></div>
+        <div class="d-flex flex-col align-items-center w-4/5 mx-auto">
+            <div class="mb-8">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M24 4C21.4918 13.7869 13.7869 21.4918 4 24C13.7869 26.5082 21.4918 34.2131 24 44C26.5082 34.2131 34.2131 26.5082 44 24C34.2131 21.4918 26.5082 13.7869 24 4Z" fill="#383A36" />
+                </svg>
+            </div>
+            <div class="font-prata font-normal mb-16 leading-[5.25rem] text-7xl text-[#383A36] text-center">Các sản phẩm<br>
+                của nhà Nguyên Ninh
+            </div>
+
+        </div>
+        <div>
+            <img src="<?php echo get_template_directory_uri(); ?>//assets/imgs/IMG_1607.jpg" class="max-h-[43.75rem] h-[43.75rem] w-100 max-w-100" alt="">
+        </div>
     </div>
-    <div class="w-100">
-        <div class="flex gap-16">
-            <div class="flex-col">
-                <div class="py-16 first:border-0 border-t border-[#B8B9B6] even:h-[33rem] odd:h-[48.625rem]">
-                    <img src="<?php echo get_template_directory_uri(); ?>//assets/imgs/HO-GUOM.jpg" class="h-full max-h-full w-100" alt="">
-                    <div class="flex justify-between mt-6">
-                        <p class="font-bold text-[#383A36] text-base">Bánh cốm Nguyên Ninh</p>
-                        <p class="font-medium text-sm text-[#383A36]">6.000 VND</p>
+</section>
+<!--  -->
+
+<!--  -->
+<section class="section-common bg-secondary-07 ">
+    <div class="container">
+        <div class="flex flex-col align-items-center w-4/5 mx-auto">
+            <div class="mb-8 text-center">
+                <img class="me-5" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/star.svg" alt="">
+            </div>
+            <div class="font-prata font-normal mb-6 leading-8 text-[1.75rem] text-[#52544F] text-center">Dưới đây là những sản
+                phẩm mà hiện tại Nguyên Ninh đang bày bán.
+            </div>
+            <div class="font-prata font-normal mb-16 leading-8 text-[1.75rem] text-[#52544F] text-center">Chúng tôi luôn có ưu
+                đãi với những đơn số lượng lớn
+            </div>
+        </div>
+        <div class="container">
+            <div class="line-common mx-auto"></div>
+        </div>
+        <div class="w-100">
+            <div class="flex gap-16">
+                <div class="flex-col">
+                    <div class="py-16 first:border-0 border-t border-[#B8B9B6] even:h-[33rem] odd:h-[48.625rem]">
+                        <img src="<?php echo get_template_directory_uri(); ?>//assets/imgs/HO-GUOM.jpg" class="h-full max-h-full w-100" alt="">
+                        <div class="flex justify-between mt-6">
+                            <p class="font-bold text-[#383A36] text-base">Bánh cốm Nguyên Ninh</p>
+                            <p class="font-medium text-sm text-[#383A36]">6.000 VND</p>
+                        </div>
+                    </div>
+                    <div class="py-16 first:border-0 border-t border-[#B8B9B6] even:h-[33rem] odd:h-[48.625rem]">
+                        <img src="<?php echo get_template_directory_uri(); ?>//assets/imgs/HO-GUOM.jpg" class="h-full max-h-full w-100" alt="">
+                        <div class="flex justify-between mt-6">
+                            <p class="font-bold text-[#383A36] text-base">Bánh cốm Nguyên Ninh</p>
+                            <p class="font-medium text-sm text-[#383A36]">6.000 VND</p>
+                        </div>
+                    </div>
+                    <div class="py-16 first:border-0 border-t border-[#B8B9B6] even:h-[33rem] odd:h-[48.625rem]">
+                        <img src="<?php echo get_template_directory_uri(); ?>//assets/imgs/HO-GUOM.jpg" class="h-full max-h-full w-100" alt="">
+                        <div class="flex justify-between mt-6">
+                            <p class="font-bold text-[#383A36] text-base">Bánh cốm Nguyên Ninh</p>
+                            <p class="font-medium text-sm text-[#383A36]">6.000 VND</p>
+                        </div>
                     </div>
                 </div>
-                <div class="py-16 first:border-0 border-t border-[#B8B9B6] even:h-[33rem] odd:h-[48.625rem]">
-                    <img src="<?php echo get_template_directory_uri(); ?>//assets/imgs/HO-GUOM.jpg" class="h-full max-h-full w-100" alt="">
-                    <div class="flex justify-between mt-6">
-                        <p class="font-bold text-[#383A36] text-base">Bánh cốm Nguyên Ninh</p>
-                        <p class="font-medium text-sm text-[#383A36]">6.000 VND</p>
+
+                <div class="flex-col">
+                    <!-- nho: 576 to: 826 -->
+                    <div class="py-16 first:border-0 border-t border-[#B8B9B6] odd:h-[33rem] even:h-[48.625rem]">
+                        <img src="<?php echo get_template_directory_uri(); ?>//assets/imgs/HO-GUOM.jpg" class="h-full max-h-full w-100" alt="">
+                        <div class="flex justify-between mt-6">
+                            <p class="font-bold text-[#383A36] text-base">Bánh cốm Nguyên Ninh</p>
+                            <p class="font-medium text-sm text-[#383A36]">6.000 VND</p>
+                        </div>
                     </div>
-                </div>
-                <div class="py-16 first:border-0 border-t border-[#B8B9B6] even:h-[33rem] odd:h-[48.625rem]">
-                    <img src="<?php echo get_template_directory_uri(); ?>//assets/imgs/HO-GUOM.jpg" class="h-full max-h-full w-100" alt="">
-                    <div class="flex justify-between mt-6">
-                        <p class="font-bold text-[#383A36] text-base">Bánh cốm Nguyên Ninh</p>
-                        <p class="font-medium text-sm text-[#383A36]">6.000 VND</p>
+                    <div class="py-16 first:border-0 border-t border-[#B8B9B6] odd:h-[33rem] even:h-[48.625rem]">
+                        <img src="<?php echo get_template_directory_uri(); ?>//assets/imgs/HO-GUOM.jpg" class="h-full max-h-full w-100" alt="">
+                        <div class="flex justify-between mt-6">
+                            <p class="font-bold text-[#383A36] text-base">Bánh cốm Nguyên Ninh</p>
+                            <p class="font-medium text-sm text-[#383A36]">6.000 VND</p>
+                        </div>
+                    </div>
+                    <div class="py-16 first:border-0 border-t border-[#B8B9B6] odd:h-[33rem] even:h-[48.625rem]">
+                        <img src="<?php echo get_template_directory_uri(); ?>//assets/imgs/HO-GUOM.jpg" class="h-full max-h-full w-100" alt="">
+                        <div class="flex justify-between mt-6">
+                            <p class="font-bold text-[#383A36] text-base">Bánh cốm Nguyên Ninh</p>
+                            <p class="font-medium text-sm text-[#383A36]">6.000 VND</p>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="flex-col">
-                <!-- nho: 576 to: 826 -->
-                <div class="py-16 first:border-0 border-t border-[#B8B9B6] odd:h-[33rem] even:h-[48.625rem]">
-                    <img src="<?php echo get_template_directory_uri(); ?>//assets/imgs/HO-GUOM.jpg" class="h-full max-h-full w-100" alt="">
-                    <div class="flex justify-between mt-6">
-                        <p class="font-bold text-[#383A36] text-base">Bánh cốm Nguyên Ninh</p>
-                        <p class="font-medium text-sm text-[#383A36]">6.000 VND</p>
+        </div>
+        <div class="bg-[#D6E1CC] border-[#97B380] border w-100 flex-col flex py-16 mt-16">
+            <div class="pb-12 font-prata font-normal text-5xl leading-[3.5rem] text-center text-[#383A36]">
+                Hướng dẫn mua hàng tại Nguyên Ninh
+            </div>
+            <div class="font-medium leading-7 text-[#383A36] text-center px-14 pb-4">
+                Hiện tại, nếu quý khách muốn đặt hàng tại Nguyên Ninh, xin vui lòng vào fanpage Facebook của Nguyên Ninh
+                <br>
+                hoặc liên hệ qua Hotline <b>0902208459.</b>
+            </div>
+            <div class="font-medium leading-7 text-[#383A36] text-center px-14">
+                Trong tương lai gần thôi, tính năng đặt hàng online chắc chắn sẽ xuất hiện. Rất xin lỗi quý khách về sự bất
+                tiện.
+            </div>
+            <div class="flex mt-12 gap-8  justify-center">
+                <div class="rounded-full">
+                    <div class="relative bg-[#306701] rounded-full w-[11.5rem] h-12">
+                        <p class="absolute text-sm font-medium tracking-widest leading-none text-center text-white left-8 top-4">
+                            <i class="fa-light fa-phone text-white"></i>
+                            GỌI HOTLINE
+                        </p>
                     </div>
                 </div>
-                <div class="py-16 first:border-0 border-t border-[#B8B9B6] odd:h-[33rem] even:h-[48.625rem]">
-                    <img src="<?php echo get_template_directory_uri(); ?>//assets/imgs/HO-GUOM.jpg" class="h-full max-h-full w-100" alt="">
-                    <div class="flex justify-between mt-6">
-                        <p class="font-bold text-[#383A36] text-base">Bánh cốm Nguyên Ninh</p>
-                        <p class="font-medium text-sm text-[#383A36]">6.000 VND</p>
-                    </div>
-                </div>
-                <div class="py-16 first:border-0 border-t border-[#B8B9B6] odd:h-[33rem] even:h-[48.625rem]">
-                    <img src="<?php echo get_template_directory_uri(); ?>//assets/imgs/HO-GUOM.jpg" class="h-full max-h-full w-100" alt="">
-                    <div class="flex justify-between mt-6">
-                        <p class="font-bold text-[#383A36] text-base">Bánh cốm Nguyên Ninh</p>
-                        <p class="font-medium text-sm text-[#383A36]">6.000 VND</p>
+                <div class="rounded-full">
+                    <div class="relative bg-black rounded-full w-56 h-12">
+                        <p class="absolute text-sm font-medium tracking-widest leading-none text-center text-white left-8 top-4">
+                            ĐI TỚI FACEBOOK
+                            <i class="fa-light fa-arrow-up rotate-45 text-white"></i>
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+</section>
+<!--  -->
 
-    </div>
-    <div class="bg-[#D6E1CC] border-[#97B380] border w-100 flex-col flex py-16 mt-16">
-        <div class="pb-12 font-prata font-normal text-5xl leading-[3.5rem] text-center text-[#383A36]">
-            Hướng dẫn mua hàng tại Nguyên Ninh
-        </div>
-        <div class="font-medium leading-7 text-[#383A36] text-center px-14 pb-4">
-            Hiện tại, nếu quý khách muốn đặt hàng tại Nguyên Ninh, xin vui lòng vào fanpage Facebook của Nguyên Ninh
-            <br>
-            hoặc liên hệ qua Hotline <b>0902208459.</b>
-        </div>
-        <div class="font-medium leading-7 text-[#383A36] text-center px-14">
-            Trong tương lai gần thôi, tính năng đặt hàng online chắc chắn sẽ xuất hiện. Rất xin lỗi quý khách về sự bất
-            tiện.
-        </div>
-        <div class="flex mt-12 gap-8  justify-center">
-            <div class="rounded-full">
-                <div class="relative bg-[#306701] rounded-full w-[11.5rem] h-12">
-                    <p class="absolute text-sm font-medium tracking-widest leading-none text-center text-white left-8 top-4">
-                        <i class="fa-light fa-phone text-white"></i>
-                        GỌI HOTLINE
-                    </p>
-                </div>
-            </div>
-            <div class="rounded-full">
-                <div class="relative bg-black rounded-full w-56 h-12">
-                    <p class="absolute text-sm font-medium tracking-widest leading-none text-center text-white left-8 top-4">
-                        ĐI TỚI FACEBOOK
-                        <i class="fa-light fa-arrow-up rotate-45 text-white"></i>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="px-14 py-24 w-100">
-    <div class="glide hero">
-        <div class="glide__track" data-glide-el="track">
-            <ul class="glide__slides h-[43.75rem] max-h-[43.75rem]">
-                <li class="glide__slide h-full max-h-full">
-                    <img src="<?php echo get_template_directory_uri(); ?>//assets/imgs/HO-GUOM.jpg" alt="" class="w-100 h-full max-h-full">
-                </li>
-                <li class="glide__slide h-full max-h-full">
-                    <img src="<?php echo get_template_directory_uri(); ?>//assets/imgs/HO-GUOM.jpg" alt="" class="w-100 h-full max-h-full">
+<!--  -->
+<section class="section-common">
+    <div class="container">
+        <div class="glide hero">
+            <div class="glide__track" data-glide-el="track">
+                <ul class="glide__slides h-[43.75rem] max-h-[43.75rem]">
+                    <li class="glide__slide h-full max-h-full">
+                        <img src="<?php echo get_template_directory_uri(); ?>//assets/imgs/HO-GUOM.jpg" alt="" class="w-100 h-full max-h-full">
+                    </li>
+                    <li class="glide__slide h-full max-h-full">
+                        <img src="<?php echo get_template_directory_uri(); ?>//assets/imgs/HO-GUOM.jpg" alt="" class="w-100 h-full max-h-full">
 
-                </li>
-                <li class="glide__slide h-full max-h-full">
-                    <img src="<?php echo get_template_directory_uri(); ?>//assets/imgs/HO-GUOM.jpg" alt="" class="w-100 h-full max-h-full">
-                </li>
-            </ul>
+                    </li>
+                    <li class="glide__slide h-full max-h-full">
+                        <img src="<?php echo get_template_directory_uri(); ?>//assets/imgs/HO-GUOM.jpg" alt="" class="w-100 h-full max-h-full">
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
-</div>
+</section>
+<!--  -->
 
 <div class="container">
     <div class="line-common mx-auto"></div>
 </div>
 
+<!-- Slide -->
 <section class="section-common">
     <div class="container">
         <?php get_template_part('partials/title', 'common', [
@@ -167,6 +178,7 @@ get_header(); ?>
         <?php get_template_part('partials/slide', 'common'); ?>
     </div>
 </section>
+<!-- End Slide -->
 
 <div class="container">
     <div class="line-common mx-auto"></div>
