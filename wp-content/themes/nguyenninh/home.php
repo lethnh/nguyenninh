@@ -70,7 +70,10 @@ get_header(null, ['is_body_main' => true]); ?>
                 của Nguyên Ninh.</p>
         </div>
         <div class="text-center mt-64">
-            <a href="#" class="btn btn-common"> SẢN PHẨM CỦA NGUYÊN NINH<i class="fa-solid fa-arrow-up rotate-45"></i></a>
+            <?php get_template_part('partials/btn', 'common', [
+                'is_icon' => true,
+                'text' => 'SẢN PHẨM CỦA NGUYÊN NINH'
+            ]); ?>
         </div>
     </div>
 </section>
@@ -161,7 +164,12 @@ get_header(null, ['is_body_main' => true]); ?>
                 }
                 ?>
             </div>
-            <a href="<?php echo get_permalink(get_page_by_path('tin-bai')); ?>" class="mx-auto">XEM TẤT CẢ</a>
+            <div class="mx-auto mt-64">
+                <?php get_template_part('partials/btn', 'common', [
+                    'is_icon' => false,
+                    'text' => 'XEM TẤT CẢ'
+                ]); ?>
+            </div>
         </div>
     </div>
 </section>

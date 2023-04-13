@@ -327,8 +327,27 @@ body {
   text-align: center;
 }
 
+.btn-common {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #306701;
+  --bs-btn-border-color: #306701;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #306701;
+  --bs-btn-hover-border-color: #306701;
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #306701;
+  --bs-btn-active-border-color: #306701;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #306701;
+  --bs-btn-disabled-border-color: #306701
+}
+
 .btn-common i {
-  margin-left: 10px;
+  margin-left: 5px;
+  font-size: 17px;
+  vertical-align: middle;
 }
 
 .w-40 {

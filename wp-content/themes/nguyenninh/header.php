@@ -38,7 +38,7 @@ $args = wp_parse_args($args, $array_defaults);
                     'container'       => false,
                 ));
                 ?>
-                <a href="tel:0243 828 3573" class="btn btn-common btn-call d-flex align-align-items-centerjustify-content-center">0243 828 3573</a>
+                <a href="tel:0243 828 3573" class="btn btn-common hover-scale-btn btn-call d-flex align-align-items-center justify-content-center">0243 828 3573</a>
             </div>
         </nav>
     </header>

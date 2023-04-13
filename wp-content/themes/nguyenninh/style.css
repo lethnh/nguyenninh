@@ -528,3 +528,15 @@ footer .footer-info .footer-info-desc {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
+
+.hover-scale-btn {
+  transition: .2s ease-in-out 0s;
+}
+
+.hover-scale-btn:hover {
+  transform: scale(1.2);
+}
+
+.fa-medium {
+  font-weight: 500;
+}
