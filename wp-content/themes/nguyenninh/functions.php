@@ -127,7 +127,7 @@ class Walker_Nav_Menu_Dropdown extends Walker_Nav_Menu
 {
     public function start_lvl(&$output, $depth = 0, $args = null)
     {
-        $output .= "\n<ul class=\"dropdown-menu rounded-sm show overflow-hidden\">\n";
+        $output .= "\n<ul class=\"sub-menu menu-footer-child\">\n";
     }
 
     public function start_el(&$output, $item, $depth = 0, $args = null, $id = 0)
@@ -198,3 +198,33 @@ function add_menu_parent_class($items)
 
     return $items;
 }
+
+/**
+ * Create theme options by Advanced Custom Fields PRO
+ */
+if (function_exists('acf_add_options_page')) {
+    acf_add_options_page(array(
+        'page_title'     => 'Theme option',
+        'menu_title'    => 'Theme option',
+        'menu_slug'     => 'theme-option',
+        'capability'    => 'edit_posts',
+        'redirect'    => false
+    ));
+}
+
+/* * GLOBAL CUSTOM FIELD * */
+function set_theme_option_global()
+{
+    // DEFINE GALLERY
+    global $theme_options;
+    $theme_options = array(
+        'facebook' => get_field('facebook', 'option'),
+        'instagram' => get_field('instagram', 'option'),
+        'logo' => get_field('logo', 'option'),
+        'phone_number' => get_field('phone_number', 'option'),
+        'email' => get_field('email', 'option'),
+        'hotline' => get_field('hotline', 'option'),
+        'address' => get_field('address', 'option'),
+    );
+}
+add_action('init', 'set_theme_option_global');

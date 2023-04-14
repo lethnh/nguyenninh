@@ -67,12 +67,12 @@ $(document).ready(function () {
     remove: false,
   });
 
-  // $(".card-plan-list").matchHeight({
-  //   byRow: true,
-  //   property: "height",
-  //   target: null,
-  //   remove: false,
-  // });
+  $(".equal-height").matchHeight({
+    byRow: false,
+    property: "height",
+    target: null,
+    remove: false,
+  });
 
   // $(".interest-cols .interest-head").matchHeight({
   //   byRow: true,

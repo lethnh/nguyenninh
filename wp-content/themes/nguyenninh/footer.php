@@ -1,4 +1,5 @@
 <?php
+global $theme_options;
 // Setup defaults
 $array_defaults = array(
     'show_product' => true
@@ -29,9 +30,11 @@ $args = wp_parse_args($args, $array_defaults);
 <section class="section-common bg-secondary-04">
     <div class="container">
         <div class="flex-col flex">
-            <div class="font-medium  text-[#183401] uppercase">Newsletter</div>
-            <div class="mt-8 ml-56 mobile:!ml-0 mobile:!text-5xl mobile:!leading-3 font-prata desktop:text-7xl text-[5.25rem] desktop:!leading-[6rem] text-[#183401]">
-                Theo dõi <span class="text-[#53802B]">Nguyên Ninh<span></div>
+            <?php get_template_part('partials/title', 'common', [
+                'sub-title' => 'Newsletter',
+                'title' => 'Theo dõi <span class="text-[#53802B]">Nguyên Ninh<span>',
+                'class' => 'mb-64'
+            ]); ?>
             <div class="ml-56 mobile:ml-0 flex mobile:block mobile:gap-2 gap-16">
                 <div class="font-medium w-1/2 mobile:w-100  leading-[26px] text-[#52544F]">Điền email vào đây
                     để không bỏ
@@ -54,11 +57,9 @@ $args = wp_parse_args($args, $array_defaults);
         </div>
     </div>
 </section>
-   
 <!-- Footer -->
 <footer class="bg-main-80">
     <div class="container">
-
         <div class="row">
             <div class="col-md-4">
                 <div class="title-logo text-white">Bánh cốm<br> Nguyên Ninh</div>
@@ -76,17 +77,18 @@ $args = wp_parse_args($args, $array_defaults);
                         <div class="footer-info-desc text-white">banhcomnguyenninh@gmail.com</div>
                     </div>
                 </div>
-                <div class="d-flex justify-content-end">
+                <div class="d-flex justify-content-end footer-social equal-height">
                     <a href="#" class="text-white  block">FACEBOOK
-                        <i class="fa-light fa-arrow-up rotate-45 text-white"></i>
+                        <i class="fa-regular fa-arrow-up rotate-45 text-white"></i>
                     </a>
                     <div class="transform -rotate-90 w-4 h-0.5 border-white border mx-6 border-solid mt-[8px]"></div>
                     <a href="#" class="text-white  block">INSTAGRAM
-                        <i class="fa-light fa-arrow-up rotate-45 text-white"></i>
+                        <i class="fa-regular fa-arrow-up rotate-45 text-white"></i>
                     </a>
                 </div>
             </div>
-            <div class="col-md-8">
+            <div class="col-md-1"></div>
+            <div class="col-md-7 d-flex flex-col">
                 <?php
                 wp_nav_menu(array(
                     'theme_location' => 'footer',
@@ -97,76 +99,25 @@ $args = wp_parse_args($args, $array_defaults);
                     'container'       => false,
                 ));
                 ?>
-                <div class="d-flex justify-content-end footer-language align-items-center">
+                <div class="d-flex justify-content-end footer-language align-items-center mt-auto mb-3">
                     <p class="text-uppercase text-white footer-language-title">NGÔN NGỮ:</p>
                     <a href="#" class="text-white">VI</a>
                     <div class="footer-language-line">|</div>
                     <a href="#" class="gray-30">ENG</a>
                 </div>
-                <div class="d-flex gap-16 w-100 footer-cookie">
+                <div class="d-flex gap-16 w-100 footer-cookie equal-height">
                     <div class="d-flex">
                         <a href="#" class="text-white me-5">COOKIE</a>
                         <a href="#" class="text-white">QUYỀN RIÊNG TƯ</a>
                     </div>
-                    <p class="text-uppercase footer-copyright ms-auto text-white"><i class="fa-regular fa-copyright text-white"></i>NGUYÊN NINH <?= date("Y"); ?></p>
+                    <p class="text-uppercase footer-copyright ms-auto text-white"><i class="fa-regular fa-copyright text-white me-1"></i>NGUYÊN NINH <?= date("Y"); ?></p>
                 </div>
             </div>
         </div>
     </div>
 </footer>
 <!-- End Footer -->
-<div class="w-100 flex bg-[#183401] mobile:hidden">
-    <div class="flex-col gap-16 pt-24 ml-24 w-2/3 pr-20">
-        <div class="flex">
-            <div class="flex-col gap-8 ml-12">
-                <div class="text-white font-medium  leading-4 uppercase">sản phẩm</div>
-                <div class="flex-col">
-                    <div class="mt-8">
-                        <a href="#" class="text-white text-xs block">Bánh cốm Nguyên Ninh
-                            <i class="fa-light fa-arrow-up rotate-45 text-white"></i>
-                        </a>
-                    </div>
-                    <div class="mt-8">
-                        <a href="#" class="text-white text-xs block">Chè Thái Nguyên
-                            <i class="fa-light fa-arrow-up rotate-45 text-white"></i>
-                        </a>
-                    </div>
-                    <div class="mt-8">
-                        <a href="#" class="text-white text-xs block">Bánh xu xê
-                            <i class="fa-light fa-arrow-up rotate-45 text-white"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="flex-col gap-8 ml-12">
-                <div class="text-white font-medium  leading-4 uppercase">về nguyên ninh</div>
-                <div class="flex-col">
-                    <div class="mt-8">
-                        <a href="#" class="text-white text-xs block">Giá trị cốt lõi
-                            <i class="fa-light fa-arrow-up rotate-45 text-white"></i>
-                        </a>
-                    </div>
-                    <div class="mt-8">
-                        <a href="#" class="text-white text-xs block">Niềm tự hào
-                            <i class="fa-light fa-arrow-up rotate-45 text-white"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="flex-col gap-8 ml-12">
-                <div class="text-white font-medium  leading-4 uppercase">câu chuyện</div>
-                <div class="flex-col">
-                </div>
-            </div>
-            <div class="flex-col gap-8 ml-12">
-                <div class="text-white font-medium  leading-4 uppercase">liên hệ</div>
-                <div class="flex-col">
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-</div>
+
 </main>
 <?php wp_footer(); ?>
 </body>

@@ -180,7 +180,7 @@ footer .footer-language a {
 
 footer .footer-cookie {
   border-top: 0.5px solid rgba(255, 255, 255, 0.32);
-  padding: 32px 0px;
+  padding: 32px 0px 0px 0px;
 }
 
 footer .footer-cookie .footer-copyright {
@@ -209,10 +209,6 @@ footer .footer-copyright {
   line-height: 22px;
 }
 
-footer .menu-footer>li.menu-item {
-  margin-bottom: 32px;
-}
-
 footer .menu-footer>li.menu-item a {
   font-family: 'Raleway';
   font-style: normal;
@@ -222,6 +218,7 @@ footer .menu-footer>li.menu-item a {
   letter-spacing: 0.1em;
   color: #FFFFFF;
   text-transform: uppercase;
+  margin-bottom: 32px;
 }
 
 footer .title-logo {
@@ -235,6 +232,7 @@ footer .title-logo {
 
 footer .footer-info {
   margin-top: 48px;
+  margin-bottom: 32px;
 }
 
 footer .footer-info .footer-info-item {
@@ -258,6 +256,44 @@ footer .footer-info .footer-info-desc {
   font-size: 12px;
   line-height: 22px;
   letter-spacing: 0.06em;
+}
+
+footer .footer-social {
+  padding: 32px 0px 0px 0px;
+}
+
+footer .footer-social a {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+
+footer .menu-footer .menu-footer-child li:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+footer .menu-footer .menu-footer-child li a {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 14px;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+  position: relative;
+}
+
+footer .menu-footer .menu-footer-child li a::after {
+  content: '';
+  background: url(./assets/imgs/arrow-right.svg);
+  position: absolute;
+  top: -3px;
+  height: 17px;
+  width: 17px;
 }
 
 /* 404 */
