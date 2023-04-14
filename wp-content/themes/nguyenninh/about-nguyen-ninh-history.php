@@ -191,27 +191,11 @@ get_header(); ?>
 </section>
 <!--  -->
 
-<section>
-
-</section>
-
-<div class="w-100 flex flex-col align-items-centergap-16" style="background: linear-gradient(0deg, rgba(56, 58, 54, 0.8), rgba(56, 58, 54, 0.8)), url(<?php echo get_template_directory_uri(); ?>//assets/imgs/IMG_9840.jpg); background-size: contain;">
-    <div class="flex flex-col align-items-centermy-48 mx-[3rem]">
-        <div>
-            <p class="text-base font-medium tracking-wider leading-7 text-center text-white">HIỂU THÊM VỀ NGUYÊN NINH
-            </p>
-        </div>
-        <div class="mt-8">
-            <p class="text-7xl desktop:text-6xl font-normal font-prata tracking-wider !leading-[5rem] text-center text-white">
-                Những giá trị về ẩm thực và
-                văn hoá của Nguyên Ninh</p>
-        </div>
-        <button class="text-white border-[1.2px] border-[#FFFFFF] w-48 bg-transparent flex justify-center py-4 px-8 mt-16 gap-2 rounded-[1.625rem] hover:bg-white hover:text-black">
-            <p class="text-inherit tracking-[0.1em] font-medium leading-4 text-center uppercase">Khám phá
-                <i class="ml-[6px] fa-light fa-arrow-up rotate-45 text-inherit"></i>
-            </p>
-        </button>
-    </div>
-</div>
-
+<!--  -->
+<?php get_template_part('partials/section', 'story', [
+    'sub-title' => 'HIỂU THÊM VỀ NGUYÊN NINH',
+    'title' => 'Những giá trị về ẩm thực và văn hoá của Nguyên Ninh',
+    'class' => 'mb-96'
+]); ?>
+<!--  -->
 <?php get_footer();

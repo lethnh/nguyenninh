@@ -8,11 +8,11 @@ $array_defaults = array(
 $args = wp_parse_args($args, $array_defaults);
 ?>
 <?php if ($args['show_product']) : ?>
-    <div class="w-100 flex max-h-[40.75rem]">
+    <div class="w-100 d-flex max-h-[40.75rem] section-product-footer">
         <div class="flex flex-col bg-primary-10 flex-[6] title-block-common px-24 pt-96 pb-96">
-            <p class="sub-title gray-80">Sản phẩm</p>
+            <p class="sub-title primary-80">Sản phẩm</p>
             <div class="title-main d-flex align-self-center">
-                <p class="gray-80">Những gì <br> Nguyên Ninh mang tới cho mọi người</p>
+                <p class="primary-80">Những gì <br> Nguyên Ninh mang tới cho mọi người</p>
             </div>
             <div class="mt-96 mx-auto">
                 <?php get_template_part('partials/btn', 'common', [
@@ -22,7 +22,7 @@ $args = wp_parse_args($args, $array_defaults);
             </div>
         </div>
         <div class="flex-[9]">
-            <img class="h-full w-100" src="<?php echo get_template_directory_uri(); ?>//assets/imgs/IMG_1607.jpg">
+            <img class="h-100 w-100" src="<?php echo get_template_directory_uri(); ?>//assets/imgs/IMG_1607.jpg">
         </div>
     </div>
 <?php endif; ?>

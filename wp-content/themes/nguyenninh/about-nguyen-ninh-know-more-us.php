@@ -133,12 +133,8 @@ get_header(); ?>
                                 </div>
                             </div>
                         </div>
-
-
                     </div>
                 </li>
-
-
             </ul>
             <div class="glide__arrows absolute -top-28 right-14" data-glide-el="controls">
                 <button class="glide__arrow glide__arrow--left mr-4 border border-[#383A36] p-5 gap-5 w-16 h-16 bg-[#D6E1CC] rounded-[2rem]" data-glide-dir="<"><i class="leading-[100%] text-xl fa-light fa-arrow-left"></i></button>
@@ -146,7 +142,6 @@ get_header(); ?>
             </div>
         </div>
     </div>
-
 </div>
 
 <!--  -->
