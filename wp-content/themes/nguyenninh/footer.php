@@ -9,17 +9,17 @@ $args = wp_parse_args($args, $array_defaults);
 ?>
 <?php if ($args['show_product']) : ?>
     <div class="w-100 flex max-h-[40.75rem]">
-        <div class="flex flex-col bg-[#BACCAA] flex-[6]">
-            <div class="pt-24 px-24 flex-col flex">
-                <div class="font-medium text-base text-[#183401] uppercase">Sản phẩm</div>
-                <div class="font-normal text-[3.25rem] text-[#183401] font-prata pt-8">Những gì Nguyên Ninh mang tới cho mọi
-                    người</div>
+        <div class="flex flex-col bg-primary-10 flex-[6] title-block-common px-24 pt-96 pb-96">
+            <p class="sub-title gray-80">Sản phẩm</p>
+            <div class="title-main d-flex align-self-center">
+                <p class="gray-80">Những gì <br> Nguyên Ninh mang tới cho mọi người</p>
             </div>
-            <button class="rounded-full w-64 my-24 px-24">
-                <div class="relative bg-[#306701] rounded-full w-64 h-12">
-                    <a href="" class="btn btn-common">KHÁM PHÁ SẢN PHẨM<i class="fa-light fa-arrow-up rotate-45 text-white"></i></a>
-                </div>
-            </button>
+            <div class="mt-96 mx-auto">
+                <?php get_template_part('partials/btn', 'common', [
+                    'is_icon' => true,
+                    'text' => 'KHÁM PHÁ SẢN PHẨM'
+                ]); ?>
+            </div>
         </div>
         <div class="flex-[9]">
             <img class="h-full w-100" src="<?php echo get_template_directory_uri(); ?>//assets/imgs/IMG_1607.jpg">
