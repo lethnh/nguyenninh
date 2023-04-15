@@ -6,8 +6,8 @@
 <?php
 get_header(); ?>
 
-<section class="px-14 mobile:px-4 w-100 mobile:mt-4 max-h-[27.75rem] h-[27.75rem]" style="background:linear-gradient(0deg, rgba(56, 58, 54, 0.72), rgba(56, 58, 54, 0.72)),url(<?= get_field('banner'); ?>);background-size:cover;background-repeat: no-repeat; ">>
-    <div class=" container">
+<section class="px-14 mobile:px-4 w-100 mobile:mt-4 max-h-[27.75rem] h-[27.75rem] position-relative" style="background:linear-gradient(0deg, rgba(56, 58, 54, 0.72), rgba(56, 58, 54, 0.72)),url(<?= get_field('banner'); ?>);background-size:cover;background-repeat: no-repeat; ">>
+    <div class=" container absolute-center">
         <div class="d-flex flex-col w-100 title-block-common pt-96 pb-96">
             <p class="sub-title text-white">NHẬT KÝ CỦA NGUYÊN NINH</p>
             <div class="d-flex align-items-end">
@@ -29,7 +29,7 @@ get_header(); ?>
                 <img class="me-5" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/star.svg" alt="">
                 <h1 class="heading-topic">Câu chuyện của tuần</h1>
             </div>
-            <div class="mt-16 max-h-[34.375rem]">
+            <div class="mt-64 max-h-[34.375rem]">
                 <?php
                 global $wpdb;
                 $week = date("W", time());
@@ -87,10 +87,11 @@ get_header(); ?>
                 <img class="me-5" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/star.svg" alt="">
                 <h1 class="heading-topic">Khám phá nhật ký Nguyên Ninh</h1>
             </div>
-            <div class="grid grid-cols-3 justify-center gap-10 w-100 mt-16">
+            <div class="grid grid-cols-3 justify-center gap-10 w-100 mt-64">
                 <?php
                 $args_my_query = array(
                     'post_type' => 'post',
+                    'order' => 'asc',
                     'posts_per_page' => 7
                 );
                 $my_query = new WP_Query($args_my_query);
