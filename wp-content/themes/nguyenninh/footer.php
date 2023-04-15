@@ -81,7 +81,7 @@ $args = wp_parse_args($args, $array_defaults);
                     <a href="#" class="text-white  block">FACEBOOK
                         <i class="fa-regular fa-arrow-up rotate-45 text-white"></i>
                     </a>
-                    <div class="transform -rotate-90 w-4 h-0.5 border-white border mx-6 border-solid mt-[8px]"></div>
+                    <div class="line"></div>
                     <a href="#" class="text-white  block">INSTAGRAM
                         <i class="fa-regular fa-arrow-up rotate-45 text-white"></i>
                     </a>
