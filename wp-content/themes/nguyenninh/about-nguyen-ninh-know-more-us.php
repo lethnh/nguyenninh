@@ -35,12 +35,11 @@ get_header(); ?>
                 </div>
             </div>
             <div class="text-center mt-96">
-                <button class="rounded-circle w-64 relative bg-[#306701] rounded-circle w-64 h-12">
-                    <p class="absolute text-sm font-medium tracking-widest leading-none text-center text-white left-8 top-4">
-                        KHÁM PHÁ SẢN PHẨM
-                        <i class="fa-light fa-arrow-up rotate-45 text-white"></i>
-                    </p>
-                </button>
+                <?php get_template_part('partials/btn', 'common', [
+                    'is_icon' => true,
+                    'text' => 'KHÁM PHÁ SẢN PHẨM',
+                    'class' => 'mt-64',
+                ]); ?>
             </div>
         </div>
     </div>

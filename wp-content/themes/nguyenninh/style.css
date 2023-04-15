@@ -577,4 +577,9 @@ footer .menu-footer .menu-footer-child li a::after {
   font-weight: 500;
 }
 
-.section-product-footer 
+.section-product-footer {}
+
+#header-main .navbar-custom .menu-header>li.nav-item.current-menu-item>a,
+#header-main .navbar-custom .menu-header>li.nav-item.current-menu-parent>a {
+  color: #9EA09C;
+}
