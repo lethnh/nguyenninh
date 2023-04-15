@@ -11,7 +11,7 @@ get_header(); ?>
     <div class="container">
         <div class="d-flex flex-col align-items-center w-4/5 mx-auto">
             <div class="mb-8 text-center">
-                <img class="me-5" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/star.svg" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/imgs/star.svg" alt="">
             </div>
             <div class="font-prata font-normal mb-16 leading-[5.25rem] text-7xl text-[#383A36] text-center">Các sản phẩm<br>
                 của nhà Nguyên Ninh
@@ -29,7 +29,7 @@ get_header(); ?>
     <div class="container">
         <div class="flex flex-col align-items-center w-4/5 mx-auto">
             <div class="mb-8 text-center">
-                <img class="me-5" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/star.svg" alt="">
+                <img class="" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/star.svg" alt="">
             </div>
             <div class="font-prata font-normal mb-6 leading-8 text-[1.75rem] text-[#52544F] text-center">Dưới đây là những sản
                 phẩm mà hiện tại Nguyên Ninh đang bày bán.

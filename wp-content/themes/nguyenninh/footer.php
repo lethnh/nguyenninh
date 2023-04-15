@@ -22,7 +22,7 @@ $args = wp_parse_args($args, $array_defaults);
             </div>
         </div>
         <div class="flex-[9]">
-            <img class="h-100 w-100" src="<?php echo get_template_directory_uri(); ?>//assets/imgs/IMG_1607.jpg">
+            <img class="h-100 w-100 object-cover" src="<?php echo get_template_directory_uri(); ?>//assets/imgs/IMG_1607.jpg">
         </div>
     </div>
 <?php endif; ?>

@@ -6,7 +6,7 @@
 <?php
 get_header(); ?>
 
-<section class="px-14 mobile:px-4 w-100 mobile:mt-4 max-h-[27.75rem] h-[27.75rem]" style="background:linear-gradient(0deg, rgba(56, 58, 54, 0.72), rgba(56, 58, 54, 0.72)),url(<?php echo get_template_directory_uri(); ?>//assets/imgs/HO-GUOM.jpg);background-size:cover;background-repeat: no-repeat; ">>
+<section class="px-14 mobile:px-4 w-100 mobile:mt-4 max-h-[27.75rem] h-[27.75rem]" style="background:linear-gradient(0deg, rgba(56, 58, 54, 0.72), rgba(56, 58, 54, 0.72)),url(<?= get_field('banner'); ?>);background-size:cover;background-repeat: no-repeat; ">>
     <div class=" container">
         <div class="d-flex flex-col w-100 title-block-common pt-96 pb-96">
             <p class="sub-title text-white">NHẬT KÝ CỦA NGUYÊN NINH</p>
@@ -30,28 +30,12 @@ get_header(); ?>
                 <h1 class="heading-topic">Câu chuyện của tuần</h1>
             </div>
             <div class="mt-16 max-h-[34.375rem]">
-                <?php
-                $args_my_query = array(
-                    'post_type'    =>    'post',
-                    'posts_per_page'       => 1,
-                    'meta_key'      => 'highlight',
-                    'meta_value'    => 1,
-                    'orderby' => 'publish_date',
-                    'order' => 'DESC',
-                );
-                $highlight_query = new WP_Query($args_my_query);
-                ?>
-                <?php
-                if ($highlight_query->have_posts()) {
-                    while ($highlight_query->have_posts()) {
-                        $highlight_query->the_post();
-                ?>
-                        <?php get_template_part('partials/card', 'post-main', [
-                            'style_image' => 'padding-bottom: 41%;',
-                            'position_body' => 'right-0 bottom-0'
-                        ]); ?>
-                <?php }
-                } ?>
+                <?php $story_of_week_id = get_field('story_of_week'); ?>
+                <?php get_template_part('partials/card', 'post-main', [
+                    'style_image' => 'padding-bottom: 41%;',
+                    'position_body' => 'right-0 bottom-0',
+                    'post_id' => $story_of_week_id
+                ]); ?>
             </div>
         </div>
 
