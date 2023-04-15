@@ -415,6 +415,16 @@ footer .menu-footer .menu-footer-child li a::after {
   max-height: 320px;
 }
 
+.post_item.post_item_main .post_story_of_week {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 19px;
+  letter-spacing: 0.06em;
+  padding: 17px 34px;
+}
+
 .post_item .post_body .post_title h2 {
   font-family: 'Raleway';
   font-style: normal;

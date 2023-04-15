@@ -34,7 +34,8 @@ get_header(); ?>
                 <?php get_template_part('partials/card', 'post-main', [
                     'style_image' => 'padding-bottom: 41%;',
                     'position_body' => 'right-0 bottom-0',
-                    'post_id' => $story_of_week_id
+                    'post_id' => $story_of_week_id,
+                    'is_flag_story_of_week' => true,
                 ]); ?>
             </div>
         </div>

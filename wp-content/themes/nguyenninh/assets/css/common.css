@@ -161,6 +161,10 @@ body {
   background-color: #BACCAA;
 }
 
+.bg-red-60 {
+  background-color: #D53128;
+}
+
 .gap-16 {
   gap: 4rem
 }
