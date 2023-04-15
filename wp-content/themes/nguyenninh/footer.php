@@ -36,7 +36,7 @@ $args = wp_parse_args($args, $array_defaults);
                 'class' => 'mb-64'
             ]); ?>
             <div class="ml-56 mobile:ml-0 flex mobile:block mobile:gap-2 gap-16">
-                <div class="font-medium w-1/2 mobile:w-100  leading-[26px] text-[#52544F]">Điền email vào đây
+                <div class="font-medium w-1/2 mobile:w-100  leading-[26px] gray-70">Điền email vào đây
                     để không bỏ
                     lỡ những câu chuyện ấm ám, những tin tức, hay khuyến mãi của Nguyên Ninh gửi tới hộp thư của bạn.
                 </div>

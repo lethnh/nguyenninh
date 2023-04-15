@@ -41,15 +41,15 @@ get_header(); ?>
             <div class="mt-24">
                 <div class="flex justify-between border-b-[0.5px] border-[#B8B9B6] pb-4">
                     <p class="font-medium text-sm leading-7 text-[#383A36]">Thành phần chính</p>
-                    <p class="font-medium text-sm leading-7 text-[#52544F]">cốm, dừa, đậu xanh,đường</p>
+                    <p class="font-medium text-sm leading-7 gray-70">cốm, dừa, đậu xanh,đường</p>
                 </div>
                 <div class="flex justify-between border-b-[0.5px] border-[#B8B9B6] py-4">
                     <p class="font-medium text-sm leading-7 text-[#383A36]">Khối lượng</p>
-                    <p class="font-medium text-sm leading-7 text-[#52544F]">100g</p>
+                    <p class="font-medium text-sm leading-7 gray-70">100g</p>
                 </div>
                 <div class="flex justify-between border-b-[0.5px] border-[#B8B9B6] py-4">
                     <p class="font-medium text-sm leading-7 text-[#383A36]">Bảo quản</p>
-                    <p class="font-medium text-sm leading-7 text-[#52544F]">3 ngày sau khi mua</p>
+                    <p class="font-medium text-sm leading-7 gray-70">3 ngày sau khi mua</p>
                 </div>
             </div>
         </div>
@@ -101,7 +101,7 @@ get_header(); ?>
         </div>
     </div>
 </div>
-<div class="px-14 bg-[#F4F2E6] py-24">
+<div class="px-14 bg-secondary-07 py-24">
     <div>
         <p class="font-prata font-normal text-[64px] leading-[74px] text-[#383A36]">Những sản phẩm khác</p>
     </div>

@@ -599,3 +599,8 @@ footer .menu-footer .menu-footer-child li a::after {
 #header-main .navbar-custom .menu-header>li.nav-item.current-menu-parent>a {
   color: #9EA09C;
 }
+
+.single_post_line {
+  width: 75%;
+  border: 0.5px solid #383A36;
+}

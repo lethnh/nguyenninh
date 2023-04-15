@@ -31,10 +31,10 @@ get_header(); ?>
             <div class="mb-8 text-center">
                 <img class="" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/star.svg" alt="">
             </div>
-            <div class="font-prata font-normal mb-6 leading-8 text-[1.75rem] text-[#52544F] text-center">Dưới đây là những sản
+            <div class="font-prata font-normal mb-6 leading-8 text-[1.75rem] gray-70 text-center">Dưới đây là những sản
                 phẩm mà hiện tại Nguyên Ninh đang bày bán.
             </div>
-            <div class="font-prata font-normal mb-16 leading-8 text-[1.75rem] text-[#52544F] text-center">Chúng tôi luôn có ưu
+            <div class="font-prata font-normal mb-16 leading-8 text-[1.75rem] gray-70 text-center">Chúng tôi luôn có ưu
                 đãi với những đơn số lượng lớn
             </div>
         </div>
