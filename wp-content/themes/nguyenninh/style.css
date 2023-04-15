@@ -51,6 +51,8 @@ main {
   font-weight: 500;
   font-size: 14px;
   line-height: 18px;
+  padding-left: 0px;
+  padding-right: 0px;
   text-align: center;
   letter-spacing: 0.1em;
   color: #383A36;
