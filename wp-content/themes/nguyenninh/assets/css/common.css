@@ -329,6 +329,7 @@ body {
   font-family: 'Raleway';
   letter-spacing: 0.1em;
   text-align: center;
+  position: relative;
 }
 
 .btn-common {
@@ -346,6 +347,29 @@ body {
   --bs-btn-disabled-color: #fff;
   --bs-btn-disabled-bg: #306701;
   --bs-btn-disabled-border-color: #306701
+}
+
+.btn-common span {
+  z-index: 1;
+  position: relative;
+}
+
+.btn-common::before {
+  content: ' ';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: #306701;
+  border-radius: 50px;
+  z-index: 0;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.btn-common:hover::before {
+  transform: scale(1.1);
 }
 
 .btn-common i {

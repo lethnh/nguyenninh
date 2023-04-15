@@ -38,7 +38,11 @@ $args = wp_parse_args($args, $array_defaults);
                     'container'       => false,
                 ));
                 ?>
-                <a href="tel:0243 828 3573" class="btn btn-common hover-scale-btn btn-call d-flex align-align-items-center justify-content-center">0243 828 3573</a>
+                <?php get_template_part('partials/btn', 'common', [
+                    'text' => '0243 828 3573',
+                    'link' => 'tel:0243 828 3573',
+                    'class' => 'btn-call'
+                ]); ?>
             </div>
         </nav>
     </header>
