@@ -15,30 +15,83 @@ get_header(); ?>
             'sub-title-below-2' => [
                 'first' => 'Từ thuở ban đầu, cụ Trần Thị Luân đã sáng tạo ra chiếc bánh cốm đầu tiên với phương châm mang những điều tuyệt vời của hương vị cốm nhất đến với thực khách bốn phương,',
                 'second' => 'Và chính vì vậy, ngoài công thức bí truyền được truyền lại cho con cháu gia tộc Nguyên Ninh, cụ còn để lại một giá trị đáng tự hào nữa là cấm không được theo đuổi danh vọng, lợi lộc từ chiếc bánh cốm.'
-            ]
+            ],
+            'class' => 'mb-96'
         ]); ?>
-        <div class="px-14 w-100">
-            <div class="inline-flex flex-col space-y-16 items-content-start justify-content-start my-24 pt-32">
-                <div class="inline-flex flex-col space-y-16 items-content-start justify-content-start mt-8 mb-[24]">
-                    <div class="inline-flex space-x-10 items-start justify-center mobile:h-[300px]">
-                        <div class="h-full w-[54%]">
-                            <img class="max-h-[30.625rem] h-[30.625rem] w-100" src="<?php echo get_template_directory_uri(); ?>//assets/imgs/IMG_9840.jpg" />
-                            <div class="d-flex justify-content-between mt-3">
-                                <p class="gray-80 text-uppercase fs-14 fw-bold">NƠI CHIẾC BÁNH CỐM
-                                    ĐẦU TIÊN RA ĐỜI</p>
-                                <p class="gray-80 text-uppercase fs-14 fw-bold">NGÔI NHÀ CỔ KÍNH SỐ
-                                    11 HÀNG THAN</p>
-                            </div>
-                        </div>
-                        <div class="inline-flex flex-col self-start space-y-8 items-start justify-between max-w-[45%] h-full">
-                            <div class="d-flex flex-col space-y-4 items-content-start justify-content-start h-100">
-                                <img class="max-h-[66%] max-w-[100%] w-100" src="<?php echo get_template_directory_uri(); ?>//assets/imgs/IMG_9825.jpg" />
-                                <p class="text-style-base w-[78%] mt-3">Ngôi nhà gia tộc
-                                    Nguyên Ninh số 11 Hàng Than vẫn vậy, vẫn giữ nguyên kiến túc, cách bài trí và nội thất
-                                    từ xưa, mang đậm giá trị văn hoá và truyền thống. </p>
-                            </div>
-                        </div>
-                    </div>
+        <div>
+            <div class="glide hero">
+                <div class="glide__track" data-glide-el="track">
+                    <ul class="glide__slides">
+                        <li class="glide__slide max-h-[39.5rem] h-[39.5rem] mr-28">
+                            <img src="<?php echo get_template_directory_uri(); ?>//assets/imgs/BCNN9666.jpg" alt="" class="w-100 h-full max-h-full object-cover">
+                        </li>
+                        <li class="glide__slide max-h-[39.5rem] h-[39.5rem] mr-28">
+                            <img src="<?php echo get_template_directory_uri(); ?>//assets/imgs/BCNN9678.jpg" alt="" class="w-100 h-full max-h-full object-cover">
+                        </li>
+                        <li class="glide__slide max-h-[39.5rem] h-[39.5rem] mr-28">
+                            <img src="<?php echo get_template_directory_uri(); ?>//assets/imgs/DSC07977.jpg" alt="" class="w-100 h-full max-h-full object-cover">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center mt-96">
+                <button class="rounded-circle w-64 relative bg-[#306701] rounded-circle w-64 h-12">
+                    <p class="absolute text-sm font-medium tracking-widest leading-none text-center text-white left-8 top-4">
+                        KHÁM PHÁ SẢN PHẨM
+                        <i class="fa-light fa-arrow-up rotate-45 text-white"></i>
+                    </p>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+<!--  -->
+
+<!--  -->
+<section class="section-gia-tri-su-menh section-common bg-secondary-07">
+    <div class="container">
+        <?php get_template_part('partials/title', 'common', [
+            'sub-title' => 'GIÁ TRỊ VÀ SỨ MỆNH',
+            'title' => 'Nguyên Ninh và những giá trị truyền thống',
+            'class' => 'mb-96'
+        ]); ?>
+        <div class="d-flex flex-col items-start justify-content-start section-value-block">
+            <div class="inline-flex align-items-center justify-center section-value-item">
+                <div class="position-relative w-[60%] max-w-[60%] max-h-[31.25rem] ml-10">
+                    <img class=" w-100 max-h-[31.25rem] max-w-100 z-2" src="<?php echo get_template_directory_uri(); ?>//assets/imgs/IMG_9893.jpg" style="position:inherit" />
+                    <div class="position-absolute bg-primary-05 w-100 h-full max-w-100 max-h-full top-10 right-10 z-1"></div>
+                </div>
+                <div class="d-flex aligns-self-start align-items-center w-[40%] max-w-[40%] flex-col section-value-item-right">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.0013 2.66602C14.3291 9.19064 9.19259 14.3272 2.66797 15.9993C9.19259 17.6715 14.3291 22.8081 16.0013 29.3327C17.6735 22.8081 22.81 17.6715 29.3346 15.9993C22.81 14.3272 17.6735 9.19064 16.0013 2.66602Z" fill="#383A36" />
+                    </svg>
+                    <h2 class="fw-bold text-center gray-80 font-raleway-bold">Gìn giữ hương vị</h2>
+                    <p class="text-center text-style-base gray-70">
+                        Hương vị thơm ngon của Nguyên Ninh ấy đã đi cùng lịch sử Hà Nội hơn 1 thế kỉ, trải qua bao
+                        thăng trầm với những biến đổi trong khẩu vị ăn uống của người Thủ đô vẫn chưa khi nào khác đi.
+                        Nguyên Ninh nguyện lưu giữ mãi hương vị truyền thống ấy như lưu giữ một nét đẹp văn hóa Thủ đô.
+                    </p>
+                </div>
+            </div>
+            <div class="inline-flex align-items-center justify-center mt-96 section-value-item">
+                <div class="d-flex aligns-self-start align-items-center w-[40%] max-w-[40%] flex-col section-value-item-right">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.0013 2.66602C14.3291 9.19064 9.19259 14.3272 2.66797 15.9993C9.19259 17.6715 14.3291 22.8081 16.0013 29.3327C17.6735 22.8081 22.81 17.6715 29.3346 15.9993C22.81 14.3272 17.6735 9.19064 16.0013 2.66602Z" fill="#383A36" />
+                    </svg>
+                    <h2 class="fw-bold text-center gray-80 font-raleway-bold">Bảo tồn giá trị</h2>
+                    <p class="text-center text-style-base gray-70">
+                        Vốn xuất thân là một thứ quà sang trọng ở tầng lớp thượng lưu nhưng theo thời gian, bánh cốm dần trở
+                        nên quen thuộc hơn với tất cả mọi người. Tuy nhiên, bánh cốm vẫn là một món ăn vô cùng quan trọng
+                        không chỉ là thường nhật mà còn trong những ngày Tết, ngày cưới.
+                        <br>
+                    <p class="text-center text-style-base gray-70">
+                        Và Nguyên Ninh, tự hào với điều đó, muốn lưu giữ và bảo tồn những điều tuyệt vời ấy.
+                    </p>
+                    </p>
+                </div>
+                <div class="position-relative w-[60%] max-w-[60%] max-h-[31.25rem] mr-10">
+                    <img class=" w-100 max-h-[31.25rem] max-w-100 z-2" src="<?php echo get_template_directory_uri(); ?>//assets/imgs/IMG_3697-1.jpg" style="position:inherit" />
+                    <div class="position-absolute bg-primary-05 w-100 h-full max-w-100 max-h-full top-10 left-10 z-1"></div>
                 </div>
             </div>
         </div>
@@ -46,163 +99,126 @@ get_header(); ?>
 </section>
 <!--  -->
 
-<section class="section-common bg-secondary-07">
-    <div class="container">
-        <?php get_template_part('partials/title', 'common', [
-            'sub-title' => 'GIÁ TRỊ & SỨ MỆNH',
-            'title' => 'Nguyên Ninh và những giá trị truyền thống',
-        ]); ?>
-    </div>
-</section>
-
-<div class="pl-14 pb-32 w-100 bg-[#D6E1CC] relative">
-    <div class="flex justify-between pt-24 mb-16 relative">
-        <p class="leading-7 text-base text-[#383A36] font-medium uppercase">Những cột mốc quan trọng</p>
-    </div>
-    <div class="glide hero">
-        <div class="glide__track" data-glide-el="track">
-            <ul class="glide__slides">
-                <li class="glide__slide max-h-[31.25rem]">
-                    <div class="inline-flex align-items-centerjustify-content-start max-h-[31.25rem]">
-                        <div class="flex align-items-centerjustify-content-start bg-black w-1/2 h-[31.25rem] max-h-[31.25rem]">
-                            <img class="rounded-lg w-100 h-full" src="<?php echo get_template_directory_uri(); ?>//assets/imgs/IMG_2621.jpg" />
-
-                        </div>
-                        <div class="flex align-items-centerjustify-content-start bg-[#BACCAA] w-[40%] h-[31.25rem]">
-                            <div class="inline-flex flex-col space-y-12 items-start p-12 h-full bg-[#BACCAA]">
-                                <div class="flex flex-col space-y-8 items-start justify-content-start w-100 flex-[2] mt-8">
-                                    <p class="w-100 text-[5.25rem] leading-[3.5rem] text-[#306701] font-prata">1865</p>
-                                </div>
-                                <div class="w-100 !mt-[7rem]">
-                                    <p class="w-100 text-2xl font-bold tracking-wider text-justify leading-[1.625rem] text-gray-700">
-                                        Chiếc bánh cốm đầu tiên ra đời
-                                    </p>
-                                    <p class="w-100 text-sm tracking-wider mt-6 text-gray-700 leading-[1.625rem]">
-                                        Bánh cốm được sáng tạo vào năm 1865 bởi cụ trưởng ái gia tộc Nguyên Ninh – cụ
-                                        Trần Thị Luân. </p>
-                                </div>
-                            </div>
-                        </div>
-
-
-                    </div>
-                </li>
-                <li class="glide__slide max-h-[31.25rem]">
-                    <div class="inline-flex align-items-centerjustify-content-start max-h-[31.25rem]">
-                        <div class="flex align-items-centerjustify-content-start bg-black w-1/2 h-[31.25rem] max-h-[31.25rem]">
-                            <img class="rounded-lg w-100 h-full" src="<?php echo get_template_directory_uri(); ?>//assets/imgs/IMG_1695.jpg" />
-
-                        </div>
-                        <div class="flex align-items-centerjustify-content-start bg-[#BACCAA] w-[40%] h-[31.25rem]">
-                            <div class="inline-flex flex-col space-y-12 items-start p-12 h-full bg-[#BACCAA]">
-                                <div class="flex flex-col space-y-8 items-start justify-content-start w-100 flex-[2] mt-8">
-                                    <p class="w-100 text-[5.25rem] leading-[3.5rem] text-[#306701] font-prata">1865</p>
-                                </div>
-                                <div class="w-100 !mt-[7rem]">
-                                    <p class="w-100 text-2xl font-bold tracking-wider text-justify leading-[1.625rem] text-gray-700">
-                                        Chiếc bánh cốm đầu tiên ra đời
-                                    </p>
-                                    <p class="w-100 text-sm tracking-wider mt-6 text-gray-700 leading-[1.625rem]">
-                                        Bánh cốm được sáng tạo vào năm 1865 bởi cụ trưởng ái gia tộc Nguyên Ninh – cụ
-                                        Trần Thị Luân. </p>
-                                </div>
-                            </div>
-                        </div>
-
-
-                    </div>
-                </li>
-                <li class="glide__slide max-h-[31.25rem]">
-                    <div class="inline-flex align-items-centerjustify-content-start max-h-[31.25rem]">
-                        <div class="flex align-items-centerjustify-content-start bg-black w-1/2 h-[31.25rem] max-h-[31.25rem]">
-                            <img class="rounded-lg w-100 h-full" src="<?php echo get_template_directory_uri(); ?>//assets/imgs/IMG_2621.jpg" />
-
-                        </div>
-                        <div class="flex align-items-centerjustify-content-start bg-[#BACCAA] w-[40%] h-[31.25rem]">
-                            <div class="inline-flex flex-col space-y-12 items-start p-12 h-full bg-[#BACCAA]">
-                                <div class="flex flex-col space-y-8 items-start justify-content-start w-100 flex-[2] mt-8">
-                                    <p class="w-100 text-[5.25rem] leading-[3.5rem] text-[#306701] font-prata">1865</p>
-                                </div>
-                                <div class="w-100 !mt-[7rem]">
-                                    <p class="w-100 text-2xl font-bold tracking-wider text-justify leading-[1.625rem] text-gray-700">
-                                        Chiếc bánh cốm đầu tiên ra đời
-                                    </p>
-                                    <p class="w-100 text-sm tracking-wider mt-6 text-gray-700 leading-[1.625rem]">
-                                        Bánh cốm được sáng tạo vào năm 1865 bởi cụ trưởng ái gia tộc Nguyên Ninh – cụ
-                                        Trần Thị Luân. </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-            <div class="glide__arrows absolute -top-28 right-14" data-glide-el="controls">
-                <button class="glide__arrow glide__arrow--left mr-4 border border-[#383A36] p-5 gap-5 w-16 h-16 bg-[#D6E1CC] rounded-[2rem]" data-glide-dir="<"><i class="leading-[100%] text-xl fa-light fa-arrow-left"></i></button>
-                <button class="glide__arrow glide__arrow--right border border-[#383A36] p-5 gap-5 w-16 h-16 bg-[#D6E1CC] rounded-[2rem]" data-glide-dir=">"><i class="text-xl leading-[100%] fa-light fa-arrow-right"></i></button>
-            </div>
-        </div>
-    </div>
-</div>
-
 <!--  -->
-<section class="bg-secondary-10 section-common">
+<section class="section-common bg-secondary-20">
     <div class="container">
         <?php get_template_part('partials/title', 'common', [
-            'sub-title' => 'THÀNH TỰU VÀ GIÁ TRỊ THƯƠNG HIỆU',
-            'title' => 'Những điều Nguyên Ninh luôn tự hào'
+            'sub-title' => 'SỰ KHÁC BIỆT CỦA NGUYÊN NINH',
+            'title' => 'Hương vị tuyệt hảo,<br>nguyên vẹn và an toàn',
+            'class' => 'mb-96'
         ]); ?>
         <div class="w-100 inline-flex flex-col items-start justify-content-start">
-            <div class="flex-col mx-auto flex w-1/3 mt-16">
-                <div class="w-100">
-                    <p class="font-medium text-base leading-7 text-[#383A36]">Nguyên Ninh sở hữu bản quyền thương hiệu
-                        quốc gia số 14-308 cho chiếc bánh cốm đặc trưng của mình cũng đã hơn 100 năm rồi.</p>
+            <div class="w-100 inline-flex flex-col items-start justify-content-start">
+                <div class="w-100 flex gap-16">
+                    <div class="flex-[1]">
+                        <div class="inline-flex flex-col space-y-4 items-start justify-content-start w-96">
+                            <p class="text-base font-bold tracking-wider leading-7 gray-80">01</p>
+                            <div class="opacity-50 w-100 h-0.5 border-gray-700 bg-[rgb(55,65,81)]"></div>
+                            <p class="w-100 text-5xl font-bold leading-[4.5rem] gray-80">Không pha bột,<br />không
+                                tạp
+                                chất,<br />chỉ nguyên liệu tự nhiên</p>
+                        </div>
+                    </div>
+                    <div class="flex-[2] flex-col pt-[1.75rem]">
+                        <div class="pr-14 flex gap-8">
+                            <p class="w-1/2 text-style-base gray-80">
+                                Bánh cốm Nguyên Ninh chỉ dùng duy nhất 4 nguyên liệu: Cốm nếp quýt loại I, phần nhân có
+                                đậu
+                                xanh, dừa nạo và đường kính trắng.
+                            </p>
+                            <p class="w-1/2 text-style-base gray-80">
+                                Vỏ bánh được làm từ cốm xào nhuyễn, không xay, không pha bột và đặc biệt luôn xào bằng
+                                tay
+                                chứ không xào máy nên bánh dẻo thơm, dậy mùi cốm và không bị bở, vỡ khi ăn.
+                            </p>
+                        </div>
+                        <div class="flex gap-4 max-h-[16.25rem] h-[16.25rem] mt-8">
+                            <div class="flex-[3] max-h-[16.25rem] h-[16.25rem]">
+                                <img class="h-100 w-100 object-cover" src="<?php echo get_template_directory_uri(); ?>//assets/imgs/IMG_2552.jpg">
+                            </div>
+                            <div class="flex-[2] max-h-[16.25rem] h-[16.25rem]">
+                                <img class="h-100 w-100 object-cover" src="<?php echo get_template_directory_uri(); ?>//assets/imgs/IMG_2634.jpg">
+                            </div>
+                            <div class="flex-[3] max-h-[16.25rem] h-[16.25rem]">
+                                <img class="h-100 w-100 object-cover" src="<?php echo get_template_directory_uri(); ?>//assets/imgs/IMG_2621.jpg">
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="w-100 mt-4">
-                    <p class="font-medium text-base leading-7 text-[#383A36]">Xuyên suốt quá trình phục vụ khách hàng,
-                        Nguyên Ninh đã đạt được nhiều giải thưởng và thành tựu đáng tự hào.</p>
+                <div class="w-100 flex gap-16 mt-12">
+                    <div class="flex-[1]">
+                        <div class="inline-flex flex-col space-y-4 items-content-0start justify-content-start w-96">
+                            <p class="text-base fw-bold  gray-80">02</p>
+                            <div class="opacity-50 w-100 h-0.5 border-gray-700 bg-[rgb(55,65,81)]"></div>
+                            <p class="w-100 fw-bold gray-80">Chúng tôi luôn luôn
+                                nói không với chất bảo quản
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex-[2] flex-col pt-[1.75rem]">
+                        <div class="pr-14 flex gap-8">
+                            <p class="w-1/2 text-style-base gray-80">
+                                Bánh cốm Nguyên Ninh chính gốc số 11 Hàng Than từ lâu đã nổi tiếng với việc không sử dụng chất bảo quản.
+                            </p>
+                            <p class="w-1/2 text-style-base gray-80">
+                                Dù rằng nếu sử dụng chất bảo quản theo sự cho phép của bộ Y tế thì bánh sẽ để được lâu hơn nhưng Nguyên Ninh
+                                vẫn luôn trung thành với tôn chỉ này từ xưa đến nay để gìn giữ tính nguyên bản của sản phẩm.
+                            </p>
+                        </div>
+                        <div class="flex gap-4 max-h-[16.25rem] h-[16.25rem] mt-8">
+                            <div class="flex-[3] max-h-[16.25rem] h-[16.25rem]">
+                                <img class="h-100 w-100 object-cover" src="<?php echo get_template_directory_uri(); ?>//assets/imgs/DSCF1895.jpg">
+                            </div>
+                            <div class="flex-[2] max-h-[16.25rem] h-[16.25rem]">
+                                <img class="h-100 w-100 object-cover" src="<?php echo get_template_directory_uri(); ?>//assets/imgs/DSCF1776.jpg">
+                            </div>
+                            <div class="flex-[3] max-h-[16.25rem] h-[16.25rem]">
+                                <img class="h-100 w-100 object-cover" src="<?php echo get_template_directory_uri(); ?>//assets/imgs/DSC07932.jpg">
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="flex max-h-[39.375rem] h-[39.375rem] mt-24 w-100">
-                <div class="h-1/2 max-h-1/2 w-[24%] mr-4">
-                    <img class="h-full w-100" src="<?php echo get_template_directory_uri(); ?>//assets/imgs/IMG_9809.jpg" alt="">
-                </div>
-                <div class="h-4/5 max-h-4/5 w-1/2 self-center mr-4">
-                    <img class="h-full w-100" src="<?php echo get_template_directory_uri(); ?>//assets/imgs/IMG_9827.jpg" alt="">
-                </div>
-                <div class="h-1/2 max-h-1/2 w-[24%] self-end">
-                    <img class="h-full w-100" src="<?php echo get_template_directory_uri(); ?>//assets/imgs/IMG_9829.jpg" alt="">
-                </div>
-            </div>
-            <div class="flex-col mx-auto flex w-1/3 mt-16">
-                <p class="font-medium text-base leading-7 text-[#383A36]">
-                    Có lẽ câu chuyện đặc biệt nhất về thành tựu của Nguyên Ninh là giải thưởng thương hiệu Việt hội nhập
-                    WTO. Đây không chỉ là một thành tựu đáng nhớ và có ý nghĩa to lớn với Nguyên Ninh mà còn với cả nền
-                    văn hoá và du lịch của Việt Nam ta.
-                </p>
-            </div>
-            <div class="flex-col mx-auto flex w-4/5 mt-16 my-24">
-                <img src="<?php echo get_template_directory_uri(); ?>//assets/imgs/IMG_9825.jpg" class="w-100 max-h-[36.125rem] max-w-100" alt="">
-            </div>
-            <div class="flex-col mx-auto flex w-1/3">
-                <div class="w-100">
-                    <p class="font-medium text-base leading-7 text-[#383A36]">Nhưng điều tuyệt vời nhất mà Nguyên Ninh
-                        luôn tự hào đó là sự yêu mến của các quý khách hàng với những chiếc
-                        bánh cốm thơm ngon và với Nguyên Ninh.</p>
-                </div>
-                <div class="w-100 mt-4">
-                    <p class="font-medium text-base leading-7 text-[#383A36]">Đó là điều Nguyên Ninh luôn luôn mong
-                        muốn. Và chúng tôi
-                        sẽ luôn cố gắng mang hương vị chiếc bánh cốm Nguyên Ninh tới trái tim tất cả mọi người.</p>
+                <div class="w-100 flex gap-16 mt-12">
+                    <div class="flex-[1]">
+                        <div class="inline-flex flex-col space-y-= items-start justify-content-start w-96">
+                            <p class="text-base font-bold tracking-wider leading-7 gray-80">03</p>
+                            <div class="opacity-50 w-100 h-0.5 border-gray-700 bg-[rgb(55,65,81)]"></div>
+                            <p class="w-100 text-5xl font-bold leading-[4.5rem] gray-80">Chỉ một địa chỉ duy nhất:
+                                Số 11 Hàng Than</p>
+                        </div>
+                    </div>
+                    <div class="flex-[2] flex-col pt-[1.75rem]">
+                        <div class="pr-14 flex gap-8">
+                            <p class="w-1/2 text-style-base gray-80">
+                                Bánh cốm Nguyên Ninh chỉ dùng duy nhất 4 nguyên liệu: Cốm nếp quýt loại I, phần nhân có
+                                đậu
+                                xanh, dừa nạo và đường kính trắng.
+                            </p>
+                            <p class="w-1/2 text-style-base gray-80">
+                                Vỏ bánh được làm từ cốm xào nhuyễn, không xay, không pha bột và đặc biệt luôn xào bằng
+                                tay
+                                chứ không xào máy nên bánh dẻo thơm, dậy mùi cốm và không bị bở, vỡ khi ăn.
+                            </p>
+
+                        </div>
+                        <div class="flex gap-4 max-h-[16.25rem] h-[16.25rem] mt-8">
+                            <div class="flex-[3] max-h-[16.25rem] h-[16.25rem]">
+                                <img class="h-full w-100" src="<?php echo get_template_directory_uri(); ?>//assets/imgs/IMG_3697-1.jpg">
+                            </div>
+                            <div class="flex-[2] max-h-[16.25rem] h-[16.25rem]">
+                                <img class="h-full w-100" src="<?php echo get_template_directory_uri(); ?>//assets/imgs/IMG_9826.jpg">
+                            </div>
+                            <div class="flex-[3] max-h-[16.25rem] h-[16.25rem]">
+                                <img class="h-full w-100" src="<?php echo get_template_directory_uri(); ?>//assets/imgs/IMG_0506.jpg">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
 <!--  -->
-
-<section>
-
-</section>
 
 <!--  -->
 <?php get_template_part('partials/section', 'story', [
@@ -212,4 +228,28 @@ get_header(); ?>
 ]); ?>
 <!--  -->
 
+<script>
+    setTimeout(() => {
+        const api = new Glide('.hero', {
+            type: 'carousel',
+            animationDuration: 1000,
+            focusAt: '1',
+            startAt: 1,
+            perView: 1,
+            // 130px
+            peek: {
+                before: 0,
+                after: 130
+            },
+            breakpoints: {
+                767: {
+                    peek: {
+                        before: 0,
+                        after: 0
+                    }
+                }
+            }
+        }).mount();
+    }, 1000)
+</script>
 <?php get_footer();
