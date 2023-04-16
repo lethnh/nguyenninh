@@ -22,13 +22,13 @@ get_header(); ?>
             <div class="glide__track" data-glide-el="track">
                 <ul class="glide__slides">
                     <li class="glide__slide">
-                        <img src="<?php echo get_template_directory_uri(); ?>//assets/imgs/BCNN9666.png" alt="" class="w-100 h-full max-h-full object-cover">
+                        <img src="<?php echo get_template_directory_uri(); ?>//assets/imgs/about-slide-1.png" alt="" class="w-100 h-full max-h-full object-cover">
                     </li>
                     <li class="glide__slide">
-                        <img src="<?php echo get_template_directory_uri(); ?>//assets/imgs/BCNN9678.png" alt="" class="w-100 h-full max-h-full object-cover">
+                        <img src="<?php echo get_template_directory_uri(); ?>//assets/imgs/about-slide-2.png" alt="" class="w-100 h-full max-h-full object-cover">
                     </li>
                     <li class="glide__slide">
-                        <img src="<?php echo get_template_directory_uri(); ?>//assets/imgs/DSC07977.png" alt="" class="w-100 h-full max-h-full object-cover">
+                        <img src="<?php echo get_template_directory_uri(); ?>//assets/imgs/about-slide-3.png" alt="" class="w-100 h-full max-h-full object-cover">
                     </li>
                 </ul>
             </div>
