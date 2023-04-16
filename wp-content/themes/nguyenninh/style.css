@@ -72,10 +72,13 @@ main {
 }
 
 /* Banner */
+.admin-bar .banner-home img {
+  max-height: calc(100vh - 114px);
+}
+
 .banner-home img {
   max-height: calc(100vh - 82px);
 }
-
 
 /*  */
 .chapter-begin {}
@@ -774,4 +777,26 @@ footer .menu-footer .menu-footer-child li a::after {
 
 .btn-story-all::before {
   background: #1F201E;
+}
+
+.btn-scroll {
+  width: 64px;
+  height: 64px;
+  right: 32px;
+  bottom: 32px;
+  border: 1.6px solid #FFFFFF;
+  border-radius: 32px;
+  transform: translate(-50%, -50%);
+}
+
+.btn-scroll i {
+  font-size: 24px;
+}
+
+.btn-scroll:hover {
+  background-color: #FFFFFF;
+}
+
+.btn-scroll:hover i {
+  color: #383A36 !important;
 }

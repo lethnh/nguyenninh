@@ -39,6 +39,16 @@ $(document).ready(function () {
     return false;
   });
 
+  // Scroll to products section
+  $(".btn-scroll").on("click", function () {
+    $("html, body").animate(
+      {
+        scrollTop: $(".banner-home").height(),
+      },
+      500
+    );
+  });
+
   // $(".our-passion .our-passion-item-info").matchHeight({
   //   byRow: true,
   //   property: "height",
