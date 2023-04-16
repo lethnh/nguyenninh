@@ -13,12 +13,8 @@ get_header(); ?>
             'sub-title' => 'NGUYÊN NINH THEO DÒNG LỊCH SỬ',
             'title' => 'Câu chuyện của Nguyên Ninh bắt đầu vào năm 1865',
             'sub-title-below-2' => [
-                'first' => 'Vẫn trong cùng ngôi nhà cổ kính
-            số 11 Hàng Than ấy, vào năm 1865, chiếc bánh cốm đầu tiên ra đời với tinh thần mong muốn ai ai cũng
-            được thưởng thức hương vị cốm thơm ngon quanh năm.',
-                'second' => 'Trải qua hơn 150 năm, công thức
-            bí truyền của cụ không có thay đổi nhiều nhưng có một điều khác xưa là bây giờ ai ai cũng yêu quý
-            hương vị của chiếc bánh cốm Nguyên Ninh.',
+                'first' => 'Vẫn trong cùng ngôi nhà cổ kính số 11 Hàng Than ấy, vào năm 1865, chiếc bánh cốm đầu tiên ra đời với tinh thần mong muốn ai ai cũng được thưởng thức hương vị cốm thơm ngon quanh năm.',
+                'second' => 'Và chính vì vậy, ngoài công thức bí truyền được truyền lại cho con cháu gia tộc Nguyên Ninh, cụ còn để lại một giá trị đáng tự hào nữa là cấm không được theo đuổi danh vọng, lợi lộc từ chiếc bánh cốm.',
             ],
             'class' => 'mb-96'
         ]); ?>
@@ -26,7 +22,7 @@ get_header(); ?>
             <div class="inline-flex flex-col space-y-16 items-content-start justify-content-start mb-[24]">
                 <div class="inline-flex space-x-10 items-start justify-center mobile:h-[300px]">
                     <div class="h-full w-[54%]">
-                        <img class="max-h-[30.625rem] h-[30.625rem] w-100" src="<?php echo get_template_directory_uri(); ?>//assets/imgs/IMG_9840.jpg" />
+                        <img class="max-h-[30.625rem] h-[30.625rem] w-100" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/cau-chuyen-1.png" />
                         <div class="d-flex justify-content-between mt-3">
                             <p class="gray-80 text-uppercase fs-14 fw-bold">NƠI CHIẾC BÁNH CỐM
                                 ĐẦU TIÊN RA ĐỜI</p>
@@ -36,7 +32,7 @@ get_header(); ?>
                     </div>
                     <div class="inline-flex flex-col self-start space-y-8 items-start justify-between max-w-[45%] h-full">
                         <div class="d-flex flex-col space-y-4 items-content-start justify-content-start h-100">
-                            <img class="max-h-[66%] max-w-[100%] w-100" src="<?php echo get_template_directory_uri(); ?>//assets/imgs/IMG_9825.jpg" />
+                            <img class="max-h-[66%] max-w-[100%] w-100" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/cau-chuyen-2.png" />
                             <p class="text-style-base w-[78%] mt-3">Ngôi nhà gia tộc
                                 Nguyên Ninh số 11 Hàng Than vẫn vậy, vẫn giữ nguyên kiến túc, cách bài trí và nội thất
                                 từ xưa, mang đậm giá trị văn hoá và truyền thống. </p>
@@ -145,45 +141,35 @@ get_header(); ?>
         <div class="w-100 inline-flex flex-col items-start justify-content-start">
             <div class="flex-col mx-auto flex w-1/3 mt-16">
                 <div class="w-100">
-                    <p class="font-medium text-base leading-7 text-[#383A36]">Nguyên Ninh sở hữu bản quyền thương hiệu
-                        quốc gia số 14-308 cho chiếc bánh cốm đặc trưng của mình cũng đã hơn 100 năm rồi.</p>
+                    <p class="text-style-base gray-80">Nguyên Ninh sở hữu bản quyền thương hiệu quốc gia số 14-308 cho chiếc bánh cốm đặc trưng của mình cũng đã hơn 100 năm rồi.</p>
                 </div>
                 <div class="w-100 mt-4">
-                    <p class="font-medium text-base leading-7 text-[#383A36]">Xuyên suốt quá trình phục vụ khách hàng,
-                        Nguyên Ninh đã đạt được nhiều giải thưởng và thành tựu đáng tự hào.</p>
+                    <p class="text-style-base gray-80">Xuyên suốt quá trình phục vụ khách hàng, Nguyên Ninh đã đạt được nhiều giải thưởng và thành tựu đáng tự hào.</p>
                 </div>
             </div>
             <div class="flex max-h-[39.375rem] h-[39.375rem] mt-24 w-100">
                 <div class="h-1/2 max-h-1/2 w-[24%] mr-4">
-                    <img class="h-full w-100" src="<?php echo get_template_directory_uri(); ?>//assets/imgs/IMG_9809.jpg" alt="">
+                    <img class="h-100 object-cover w-100" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/danh-hieu-1.png" alt="">
                 </div>
                 <div class="h-4/5 max-h-4/5 w-1/2 self-center mr-4">
-                    <img class="h-full w-100" src="<?php echo get_template_directory_uri(); ?>//assets/imgs/IMG_9827.jpg" alt="">
+                    <img class="h-100 object-cover w-100" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/danh-hieu-2.png" alt="">
                 </div>
                 <div class="h-1/2 max-h-1/2 w-[24%] self-end">
-                    <img class="h-full w-100" src="<?php echo get_template_directory_uri(); ?>//assets/imgs/IMG_9829.jpg" alt="">
+                    <img class="h-100 object-cover w-100" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/danh-hieu-3.png" alt="">
                 </div>
             </div>
             <div class="flex-col mx-auto flex w-1/3 mt-16">
-                <p class="font-medium text-base leading-7 text-[#383A36]">
-                    Có lẽ câu chuyện đặc biệt nhất về thành tựu của Nguyên Ninh là giải thưởng thương hiệu Việt hội nhập
-                    WTO. Đây không chỉ là một thành tựu đáng nhớ và có ý nghĩa to lớn với Nguyên Ninh mà còn với cả nền
-                    văn hoá và du lịch của Việt Nam ta.
-                </p>
+                <p class="text-style-base gray-80">Có lẽ câu chuyện đặc biệt nhất về thành tựu của Nguyên Ninh là giải thưởng thương hiệu Việt hội nhập WTO. Đây không chỉ là một thành tựu đáng nhớ và có ý nghĩa to lớn với Nguyên Ninh mà còn với cả nền văn hoá và du lịch của Việt Nam ta.</p>
             </div>
             <div class="flex-col mx-auto flex w-4/5 mt-16 my-24">
-                <img src="<?php echo get_template_directory_uri(); ?>//assets/imgs/IMG_9825.jpg" class="w-100 max-h-[36.125rem] max-w-100" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/imgs/danh-hieu-4.png" class="w-100 max-h-[36.125rem] max-w-100" alt="">
             </div>
             <div class="flex-col mx-auto flex w-1/3">
                 <div class="w-100">
-                    <p class="font-medium text-base leading-7 text-[#383A36]">Nhưng điều tuyệt vời nhất mà Nguyên Ninh
-                        luôn tự hào đó là sự yêu mến của các quý khách hàng với những chiếc
-                        bánh cốm thơm ngon và với Nguyên Ninh.</p>
+                    <p class="text-style-base gray-80">Nhưng điều tuyệt vời nhất mà Nguyên Ninh luôn tự hào đó là sự yêu mến của các quý khách hàng với những chiếc bánh cốm thơm ngon và với Nguyên Ninh.</p>
                 </div>
                 <div class="w-100 mt-4">
-                    <p class="font-medium text-base leading-7 text-[#383A36]">Đó là điều Nguyên Ninh luôn luôn mong
-                        muốn. Và chúng tôi
-                        sẽ luôn cố gắng mang hương vị chiếc bánh cốm Nguyên Ninh tới trái tim tất cả mọi người.</p>
+                    <p class="text-style-base gray-80">Đó là điều Nguyên Ninh luôn luôn mong muốn. Và chúng tôi sẽ luôn cố gắng mang hương vị chiếc bánh cốm Nguyên Ninh tới trái tim tất cả mọi người.</p>
                 </div>
             </div>
         </div>
@@ -195,7 +181,8 @@ get_header(); ?>
 <?php get_template_part('partials/section', 'story', [
     'sub-title' => 'HIỂU THÊM VỀ NGUYÊN NINH',
     'title' => 'Những giá trị về ẩm thực và văn hoá của Nguyên Ninh',
-    'class' => 'mb-96'
+    'class' => 'mb-96',
+    'background_image' => get_template_directory_uri() . '/assets/imgs/section-story-1.png',
 ]); ?>
 <!--  -->
 <?php get_footer();

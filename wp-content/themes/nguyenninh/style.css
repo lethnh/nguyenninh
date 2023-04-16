@@ -533,7 +533,7 @@ footer .menu-footer .menu-footer-child li a::after {
 }
 
 .section-story {
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   height: 728px;

@@ -218,7 +218,8 @@ get_header(); ?>
 <?php get_template_part('partials/section', 'story', [
     'sub-title' => 'HIỂU THÊM VỀ NGUYÊN NINH',
     'title' => 'Những giá trị về ẩm thực và văn hoá của Nguyên Ninh',
-    'class' => 'mb-96'
+    'class' => 'mb-96',
+    'is_black_and_white' => true
 ]); ?>
 <!--  -->
 
