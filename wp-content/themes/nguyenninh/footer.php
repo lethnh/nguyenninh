@@ -17,6 +17,7 @@ $args = wp_parse_args($args, $array_defaults);
             <div class="mt-96 mx-auto">
                 <?php get_template_part('partials/btn', 'common', [
                     'is_icon' => true,
+                    'link' => '/san-pham',
                     'text' => 'KHÁM PHÁ SẢN PHẨM'
                 ]); ?>
             </div>

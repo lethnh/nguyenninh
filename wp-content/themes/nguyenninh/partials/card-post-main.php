@@ -18,8 +18,8 @@ $args = wp_parse_args($args, $array_defaults);
     <?php if ($args['is_flag_story_of_week']) : ?>
         <div class="position-absolute post_story_of_week bg-red-60 px-8 py-4 left-0 top-0 mt-0 text-white">Nổi bật tuần này</div>
     <?php endif; ?>
-    <div class="position-absolute <?= $args['position_body']; ?> post_body">
-        <div class="flex flex-col">
+    <div class="position-absolute <?= $args['position_body']; ?> post_body d-flex flex-col justify-content-between">
+        <div class="d-flex flex-col">
             <div class="post_title gray-80 mb-3">
                 <h2><?= wp_trim_words(get_the_title($args['post_id']), 18, '...'); ?></h2>
             </div>

@@ -439,6 +439,10 @@ body {
   width: 33%
 }
 
+.w-59 {
+  width: 59%
+}
+
 .flex-20 {
   flex: 0 0 auto;
   width: 20%;

@@ -36,6 +36,7 @@ get_header(); ?>
         <div class="text-center mt-96">
             <?php get_template_part('partials/btn', 'common', [
                 'is_icon' => true,
+                'link' => '/san-pham',
                 'text' => 'KHÁM PHÁ SẢN PHẨM',
             ]); ?>
         </div>
@@ -229,7 +230,7 @@ get_header(); ?>
             type: 'slider',
             animationDuration: 1000,
             focusAt: 'center',
-            startAt: 1,
+            startAt: 0,
             perView: 1,
             // 130px
             peek: {

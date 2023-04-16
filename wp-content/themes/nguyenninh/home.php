@@ -59,6 +59,7 @@ get_header(null, ['is_body_main' => true]); ?>
         <div class="text-center mt-64">
             <?php get_template_part('partials/btn', 'common', [
                 'is_icon' => true,
+                'link' => '/san-pham',
                 'text' => 'SẢN PHẨM CỦA NGUYÊN NINH'
             ]); ?>
         </div>

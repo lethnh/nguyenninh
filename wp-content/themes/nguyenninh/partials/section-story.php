@@ -24,6 +24,7 @@ $args = wp_parse_args($args, $array_defaults);
                 'is_icon' => true,
                 'text' => 'KHÁM PHÁ',
                 'class' => 'mt-64',
+                'link' => '/san-pham',
                 'is_outline' => true
             ]); ?>
         </div>

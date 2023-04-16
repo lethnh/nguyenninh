@@ -411,8 +411,8 @@ footer .menu-footer .menu-footer-child li a::after {
 .post_item.post_item_main .post_body {
   width: 436px;
   max-width: 436px;
-  height: 320px;
-  max-height: 320px;
+  height: 350px;
+  max-height: 350px;
 }
 
 .post_item.post_item_main .post_story_of_week {
@@ -468,6 +468,15 @@ footer .menu-footer .menu-footer-child li a::after {
 .post_item .img-wrapper {
   position: relative;
   padding-bottom: 69%;
+}
+
+.post_item.other {
+  display: flex;
+  flex-direction: column;
+}
+
+.post_item.other .post_body {
+  height: 100%;
 }
 
 .post_item.other .img-wrapper {
