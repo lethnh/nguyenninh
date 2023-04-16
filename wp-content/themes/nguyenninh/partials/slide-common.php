@@ -23,10 +23,8 @@ $args = wp_parse_args($args, $array_defaults);
                             <p class="w-100 gray-80 glide__slide_title">Không pha bột, không tạp chất</p>
                         </div>
                         <div class="glide__slide_content">
-                            <p class="text-justify font-bold gray-80">
-                                Bánh cốm Nguyên Ninh chỉ dùng duy nhất 4 nguyên liệu: Cốm nếp quýt loại I, phần nhân có đậu xanh, dừa nạo và đường kính trắng.</p>
-                            <p class="text-justify gray-80 mt-3">
-                                Vỏ bánh được làm từ cốm xào nhuyễn, không xay, không pha bột và đặc biệt luôn xào bằng tay chứ không xào máy nên bánh dẻo thơm, dậy mùi cốm và không bị bở, vỡ khi ăn. </p>
+                            <p class="text-justify font-bold gray-80">Bánh cốm Nguyên Ninh chỉ dùng duy nhất 4 nguyên liệu: Cốm nếp quýt loại I, phần nhân có đậu xanh, dừa nạo và đường kính trắng.</p>
+                            <p class="text-justify gray-80 mt-3">Vỏ bánh được làm từ cốm xào nhuyễn, không xay, không pha bột và đặc biệt luôn xào bằng tay chứ không xào máy nên bánh dẻo thơm, dậy mùi cốm và không bị bở, vỡ khi ăn. </p>
                         </div>
                     </div>
                     <div class="d-flex align-items-center justify-content-start glide__slide_right bg-black w-60">
@@ -46,10 +44,8 @@ $args = wp_parse_args($args, $array_defaults);
                             <p class="w-100 gray-80 glide__slide_title">Luôn nói không với chất bảo quản</p>
                         </div>
                         <div class="glide__slide_content">
-                            <p class="text-justify font-bold gray-80">
-                                Bánh cốm Nguyên Ninh chỉ dùng duy nhất 4 nguyên liệu: Cốm nếp quýt loại I, phần nhân có đậu xanh, dừa nạo và đường kính trắng.</p>
-                            <p class="text-justify gray-80 mt-3">
-                                Vỏ bánh được làm từ cốm xào nhuyễn, không xay, không pha bột và đặc biệt luôn xào bằng tay chứ không xào máy nên bánh dẻo thơm, dậy mùi cốm và không bị bở, vỡ khi ăn. </p>
+                            <p class="text-justify font-bold gray-80">Bánh cốm Nguyên Ninh chính gốc số 11 Hàng Than từ lâu đã nổi tiếng với việc không sử dụng chất bảo quản.</p>
+                            <p class="text-justify gray-80 mt-3">Dù rằng nếu sử dụng chất bảo quản theo sự cho phép của bộ Y tế thì bánh sẽ để được lâu hơn nhưng Nguyên Ninh vẫn luôn trung thành với tôn chỉ này từ xưa đến nay để gìn giữ tính nguyên bản của sản phẩm.</p>
                         </div>
                     </div>
                     <div class="d-flex align-items-center justify-content-start glide__slide_right bg-black w-60">
@@ -69,8 +65,7 @@ $args = wp_parse_args($args, $array_defaults);
                             <p class="w-100 text-white glide__slide_title">Không có địa chỉ thứ hai</p>
                         </div>
                         <div class="glide__slide_content">
-                            <p class="text-justify text-white mt-3">
-                                Bánh cốm Nguyên Ninh chỉ có duy nhất một địa chỉ tại số 11 phố Hàng Than, Hà Nội. Đây là cửa hiệu gia truyền của gia đình, vốn là 1 ngôi nhà cổ vẫn giữ nguyên lối kiến trúc từ thế kỷ XX. Đặc điểm nhận diện của cửa hiệu là sự khiêm tốn, giản dị, không bày bánh ra vỉa hè và trưng biển bảng sáng rực như các cửa hiệu khác.</p>
+                            <p class="text-justify text-white mt-3">Bánh cốm Nguyên Ninh chỉ có duy nhất một địa chỉ tại số 11 phố Hàng Than, Hà Nội. Đây là cửa hiệu gia truyền của gia đình, vốn là 1 ngôi nhà cổ vẫn giữ nguyên lối kiến trúc từ thế kỷ XX. Đặc điểm nhận diện của cửa hiệu là sự khiêm tốn, giản dị, không bày bánh ra vỉa hè và trưng biển bảng sáng rực như các cửa hiệu khác.</p>
                         </div>
                     </div>
                     <div class="d-flex align-items-center justify-content-start glide__slide_right bg-black w-60">

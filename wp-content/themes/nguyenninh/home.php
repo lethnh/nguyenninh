@@ -75,13 +75,7 @@ get_header(null, ['is_body_main' => true]); ?>
         <?php get_template_part('partials/title', 'common', [
             'sub-title' => 'CHƯƠNG 3 - NGUYÊN NINH CÓ GÌ ĐẶC BIỆT?',
             'title' => '“Món quà ngọt ngào mang tên Nguyên Ninh”',
-            'sub-title-below' => 'Bánh cốm của Nguyên Ninh
-            không phải là một món ăn, mà là một trải nghiệm. Cuộc hành trình của hương vị bắt đầu khi cắn
-            lớp vỏ cốm
-            xay nhuyễn bên ngoài mát thơm dịu dàng. Rồi sau đó là một sự bùng nổ của vị ngọt và hương vị
-            quen thuộc của
-            đậu xanh và đường, được tô điểm thêm nét thanh tao của dừa nạo. Sự hoà quyện hoàn hảo của vị
-            giác chỉ có được ở bánh cốm Nguyên Ninh.',
+            'sub-title-below' => 'Bánh cốm của Nguyên Ninh không phải là một món ăn, mà là một trải nghiệm. Cuộc hành trình của hương vị bắt đầu khi cắn lớp vỏ cốm xay nhuyễn bên ngoài mát thơm dịu dàng. Rồi sau đó là một sự bùng nổ của vị ngọt và hương vị quen thuộc của đậu xanh và đường, được tô điểm thêm nét thanh tao của dừa nạo. Sự hoà quyện hoàn hảo của vị giác chỉ có được ở bánh cốm Nguyên Ninh.',
             'class' => 'mb-64'
         ]); ?>
         <?php get_template_part('partials/slide', 'common'); ?>
