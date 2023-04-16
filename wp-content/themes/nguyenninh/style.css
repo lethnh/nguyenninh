@@ -625,7 +625,8 @@ footer .menu-footer .menu-footer-child li a::after {
 
 .single_post_line {
   width: 75%;
-  border: 0.5px solid #383A36;
+  height: 0.5px;
+  background-color: #383A36;
 }
 
 .footer-social .line {
@@ -721,4 +722,43 @@ footer .menu-footer .menu-footer-child li a::after {
 
 .tnp-subscription input[type=submit] {
   background: #D1D2D0 !important;
+}
+
+.section-post-relate h2 {
+  font-family: 'Prata';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 74px;
+  letter-spacing: -0.02em;
+}
+
+.section-post-content {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.post-body h1.post-title {
+  font-family: 'Prata';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 84px;
+  letter-spacing: -0.02em;
+  margin-bottom: 64px;
+}
+
+.post-body p.post-date {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 26px;
+  letter-spacing: 0.06em;
+  margin-bottom: 32px;
+}
+
+.post-body .post-thumbnail {
+  height: 584px;
+  max-height: 584px;
 }
