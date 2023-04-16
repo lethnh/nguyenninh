@@ -34,11 +34,26 @@ get_header(); ?>
     <div class="container">
         <h2 class="mb-64 gray-80">Những bài viết khác</h2>
         <div class="row">
-            <?php for ($x = 0; $x < 3; $x += 1) : ?>
-                <div class="col-md-4">
-                    <?php get_template_part('partials/card', 'post-common'); ?>
-                </div>
-            <?php endfor; ?>
+            <?php $related_args = array(
+                'post_type' => 'post',
+                'posts_per_page' => 3,
+                'post_status' => 'publish',
+                'post__not_in' => array(get_the_ID()),
+                'orderby' => 'rand',
+            );
+            $related_post = new WP_Query($related_args); ?>
+            <?php
+            if ($related_post->have_posts()) {
+                while ($related_post->have_posts()) {
+                    $related_post->the_post();
+            ?>
+                    <div class="col-md-4">
+                        <?php get_template_part('partials/card', 'post-common'); ?>
+                    </div>
+            <?php
+                }
+            }
+            ?>
         </div>
     </div>
 </section>

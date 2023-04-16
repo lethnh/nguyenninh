@@ -101,7 +101,7 @@ get_header(null, ['is_body_main' => true]); ?>
 
         <div class="d-flex flex-col align-items-start justify-content-start">
             <!-- php loop here -->
-            <div class="grid grid-cols-3 justify-content-center gap-10 w-100">
+            <div class="grid grid-cols-3 justify-content-center gap-8 w-100">
                 <?php
                 $args = array(
                     'post_type' => 'post',
