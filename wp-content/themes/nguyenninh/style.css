@@ -481,8 +481,13 @@ footer .menu-footer .menu-footer-child li a::after {
   object-fit: cover;
 }
 
-.section-value-block .section-value-item .section-value-item-right {
-  padding: 68px;
+.section-value-block .section-value-item .section-value-item-content {
+  padding: 32px;
+}
+
+.section-value-block .section-value-item .section-value-item-content .svg-star {
+  height: 27px;
+  width: 27px;
 }
 
 .section-value-block .section-value-item h2 {
@@ -507,6 +512,24 @@ footer .menu-footer .menu-footer-child li a::after {
   bottom: -24px;
   left: 50%;
   transform: translate(-50%, 0%);
+}
+
+.section-value-block .section-value-item .section-value-item-image {
+  height: 504px;
+}
+
+.section-value-block .section-value-item .section-value-item-image img {
+  height: 504px;
+}
+
+.section-value-block .section-value-item .section-value-item-image.left .section-value-item-image-overlay {
+  right: 40px;
+  top: 40px;
+}
+
+.section-value-block .section-value-item .section-value-item-image.right .section-value-item-image-overlay {
+  left: 40px;
+  top: 40px;
 }
 
 .section-story {
@@ -611,4 +634,40 @@ footer .menu-footer .menu-footer-child li a::after {
   border: 0.5px solid #FFFFFF;
   margin-left: 24px;
   margin-right: 24px;
+}
+
+.glide_know_me .glide__slide {
+  height: 631px;
+  max-height: 631px;
+}
+
+.section-su-khac-biet .section-su-khac-biet-list .section-su-khac-biet-item .section-su-khac-biet-item-right {
+  padding-top: 32px;
+}
+
+.section-su-khac-biet .section-su-khac-biet-list .section-su-khac-biet-item .section-su-khac-biet-item-left .number {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.06em;
+}
+
+.section-su-khac-biet .section-su-khac-biet-list .section-su-khac-biet-item .section-su-khac-biet-item-left h3 {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -0.02em;
+}
+
+.section-su-khac-biet .section-su-khac-biet-list .section-su-khac-biet-item .section-su-khac-biet-item-left .line {
+  height: 0.5px;
+  width: 100%;
+  background-color: #383A36;
+  opacity: 0.48;
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
