@@ -762,3 +762,7 @@ footer .menu-footer .menu-footer-child li a::after {
   height: 584px;
   max-height: 584px;
 }
+
+.btn-story-all::before {
+  background: #1F201E;
+}

@@ -21,7 +21,7 @@ get_header(null, ['is_body_main' => true]); ?>
         ]); ?>
         <div class="chapter-content d-flex align-items-end">
             <div class="h-100 w-50">
-                <img class="h-100 object-cover" src="<?php echo get_template_directory_uri(); ?>//assets/imgs/IMG_3697-1.jpg" />
+                <img class="h-100 object-cover" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/su-khac-biet-7.png" />
             </div>
             <div class="chapter-content-right w-50">
                 <p class="chapter-content-title gray-70">Bánh cốm được sáng tạo vào năm
@@ -30,7 +30,7 @@ get_header(null, ['is_body_main' => true]); ?>
                     thức sản xuất bánh không hề có thay đổi lớn, chỉ điều chỉnh tỷ lệ sao cho hương vị ngày càng hài
                     hòa, hợp khẩu vị thực khách thời hiện đại. Bánh cốm Nguyên Ninh cam kết không sử dụng chất bảo
                     quản, không thêm phụ gia, tạp chất, giữ nguyên cách làm và nguyên liệu như những ngày đầu.</p>
-                <img class="img-fluid object-cover" src="<?php echo get_template_directory_uri(); ?>//assets/imgs/IMG_9812.jpg" />
+                <img class="img-fluid object-cover" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/su-khac-biet-9.png" />
             </div>
         </div>
     </div>
@@ -47,7 +47,7 @@ get_header(null, ['is_body_main' => true]); ?>
             'class' => 'mb-64'
         ]); ?>
         <div class="chapter-content d-flex align-align-items-centermt-64">
-            <img class="w-50" src="<?php echo get_template_directory_uri(); ?>//assets/imgs/IMG_0214.jpg" />
+            <img class="w-50" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/dac-biet-1.png" />
             <div class="w-50 chapter-content-right">
                 <p class="chapter-content-right-title-main gray-80">Hãy thử một
                     lần ghé qua 11 Hàng Than mua chiếc bánh cốm Nguyên Ninh.</p>
@@ -59,7 +59,7 @@ get_header(null, ['is_body_main' => true]); ?>
             </div>
         </div>
         <div class="mt-64 img-chapter-second">
-            <img class="w-100" src="<?php echo get_template_directory_uri(); ?>//assets/imgs/LK306742.jpg">
+            <img class="w-100" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/dac-biet-2.png">
         </div>
         <div class="d-flex flex-col align-self-center w-75 mx-auto mt-32">
             <p class="text-style-base">Dù trong các lễ cưới hỏi truyền
@@ -124,7 +124,7 @@ get_header(null, ['is_body_main' => true]); ?>
                 $args = array(
                     'post_type' => 'post',
                     'posts_per_page' => 5,
-                    // 'order' => 'ASC'
+                    'order' => 'ASC'
                 );
                 $the_query = new WP_Query($args);
                 ?>
@@ -134,26 +134,7 @@ get_header(null, ['is_body_main' => true]); ?>
                         $the_query->the_post();
                 ?>
                         <?php if ($the_query->current_post == 0) { ?>
-                            <div class="position-relative col-span-2 post_item">
-                                <div class="img-wrapper">
-                                    <img src="<?php the_post_thumbnail_url() ?>">
-                                </div>
-                                <div class="absolute w-50 left-0 bottom-0 post_body">
-                                    <div class="flex flex-col">
-                                        <div class="post_title gray-80 mb-3">
-                                            <p><?= the_title(); ?></p>
-                                        </div>
-                                        <div class="post_excerpt gray-60">
-                                            <p><?= wp_trim_words(get_the_content(), 40, '...'); ?></p>
-                                        </div>
-                                    </div>
-                                    <div class="flex justify-content-between post_body_footer">
-                                        <a href="<?php the_permalink() ?>" class="post_seemore gray-80">ĐỌC CÂU CHUYỆN
-                                            <i class="fa-solid fa-arrow-up rotate-45"></i></a>
-                                        <div class="text-center gray-70 post_datetime"><?= get_the_date('d.m.Y') ?></div>
-                                    </div>
-                                </div>
-                            </div>
+                            <?php get_template_part('partials/card', 'post-main'); ?>
                         <?php } ?>
 
                         <?php if ($the_query->current_post > 0) { ?>
@@ -167,7 +148,9 @@ get_header(null, ['is_body_main' => true]); ?>
             <div class="mx-auto mt-64">
                 <?php get_template_part('partials/btn', 'common', [
                     'is_icon' => false,
-                    'text' => 'XEM TẤT CẢ'
+                    'link' => '/cau-chuyen',
+                    'text' => 'XEM TẤT CẢ',
+                    'class' => 'btn-story-all'
                 ]); ?>
             </div>
         </div>
