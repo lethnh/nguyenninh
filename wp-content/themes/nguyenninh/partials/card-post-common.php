@@ -13,7 +13,7 @@ $args = wp_parse_args($args, $array_defaults);
     <div class="post_body">
         <div class="flex flex-col">
             <div class="post_title gray-80 mb-3">
-                <h2><?= the_title(); ?></h2>
+                <h2><?= wp_trim_words(the_title(), 18, '...'); ?></h2>
             </div>
             <div class="post_excerpt gray-60">
                 <p><?= wp_trim_words(get_the_content(), 40, '...'); ?></p>

@@ -145,7 +145,8 @@ get_header(null, ['is_body_main' => true]); ?>
             type: 'slider',
             startAt: 0,
             rewind: false,
-            perView: 1
+            perView: 1,
+            gap: 0
         })
 
         glideMulti.mount();

@@ -21,7 +21,7 @@ $args = wp_parse_args($args, $array_defaults);
     <div class="position-absolute <?= $args['position_body']; ?> post_body">
         <div class="flex flex-col">
             <div class="post_title gray-80 mb-3">
-                <h2><?= get_the_title($args['post_id']); ?></h2>
+                <h2><?= wp_trim_words(get_the_title($args['post_id']), 18, '...'); ?></h2>
             </div>
             <div class="post_excerpt gray-60">
                 <p><?= wp_trim_words(get_the_content(null, false, $args['post_id']), 40, '...'); ?></p>
