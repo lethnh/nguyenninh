@@ -316,6 +316,10 @@ body {
   margin-top: 64px;
 }
 
+.mt-48 {
+  margin-top: 48px;
+}
+
 .section-common {
   padding-top: 96px;
   padding-bottom: 96px;
@@ -470,4 +474,8 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.focus-none:focus {
+  outline: none;
 }

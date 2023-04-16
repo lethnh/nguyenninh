@@ -22,7 +22,7 @@ $args = wp_parse_args($args, $array_defaults);
             </div>
         </div>
         <div class="flex-[9]">
-            <img class="h-100 w-100 object-cover" src="<?php echo get_template_directory_uri(); ?>//assets/imgs/IMG_1607.jpg">
+            <img class="h-100 w-100 object-cover" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/IMG_1607.jpg">
         </div>
     </div>
 <?php endif; ?>
@@ -35,23 +35,10 @@ $args = wp_parse_args($args, $array_defaults);
                 'title' => 'Theo dõi <span class="text-[#53802B]">Nguyên Ninh<span>',
                 'class' => 'mb-64'
             ]); ?>
-            <div class="ml-56 mobile:ml-0 flex mobile:block mobile:gap-2 gap-16">
-                <div class="font-medium w-1/2 mobile:w-100  leading-[26px] gray-70">Điền email vào đây
-                    để không bỏ
-                    lỡ những câu chuyện ấm ám, những tin tức, hay khuyến mãi của Nguyên Ninh gửi tới hộp thư của bạn.
-                </div>
-                <div class="flex flex-col w-1/2 mobile:w-100 gap-12 mobile:mt-8">
-                    <div class="flex justify-between border-b-[0.5px] border-[#9EA09C]">
-                        <input type="text" name="" id="" placeholder="Họ & tên" class="py-3 bg-[#F9F8F1] focus:outline-none flex-grow" />
-                        <i class="fa-light fa-user self-center"></i>
-                    </div>
-                    <div class="flex justify-between border-b-[0.5px] border-[#9EA09C]">
-                        <input type="text" name="" id="" placeholder="Địa chỉ email" class="py-3 bg-[#F9F8F1] focus:outline-none flex-grow" />
-                        <i class="fa-light fa-envelope self-center"></i>
-                    </div>
-                    <button class="px-6 py-4 w-1/3 mobile:self-center rounded-[26px] bg-[#D6E1CC] text-[#306701]
-                            focus:border-[#98B380] focus:border-[4.8px] mobile:focus:border-[1px] disabled:bg-[#D1D2D0] disabled:text-white uppercase">Đăng
-                        ký</button>
+            <div class="row w-75 align-self-center">
+                <div class="text-style-base gray-70 col-md-6">Điền email vào đây để không bỏ lỡ những câu chuyện ấm ám, những tin tức, hay khuyến mãi của Nguyên Ninh gửi tới hộp thư của bạn.</div>
+                <div class="col-md-6">
+                    <?= do_shortcode('[newsletter_form form="1"]'); ?>
                 </div>
             </div>
         </div>

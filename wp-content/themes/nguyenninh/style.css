@@ -671,3 +671,54 @@ footer .menu-footer .menu-footer-child li a::after {
   margin-top: 16px;
   margin-bottom: 16px;
 }
+
+.tnp-submit {}
+
+.tnp-field-button {
+  border-radius: 50px;
+}
+
+.tnp-field-button input[type=submit] {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px !important;
+  line-height: 18px !important;
+  letter-spacing: 0.1em;
+  padding: 17px 34px !important;
+}
+
+.tnp-subscription .tnp-field:not(:last-child) {
+  border-bottom: 0.5px solid #9EA09C !important;
+}
+
+.tnp-subscription input[type=text],
+.tnp-subscription input[type=email],
+.tnp-subscription select {
+  background-color: transparent !important;
+}
+
+.tnp-subscription input[type=text]::placeholder,
+.tnp-subscription input[type=email]::placeholder,
+.tnp-subscription select::placeholder {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.06em;
+  color: #9EA09C;
+}
+
+.tnp-field-button {
+  background: #D1D2D0 !important;
+  border: 0.5px solid #D1D2D0 !important;
+}
+
+.tnp-field-button.btn-common:before {
+  background: #D1D2D0 !important;
+  border: 0.5px solid #D1D2D0 !important;
+}
+
+.tnp-subscription input[type=submit] {
+  background: #D1D2D0 !important;
+}
