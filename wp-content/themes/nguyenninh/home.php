@@ -117,7 +117,7 @@ get_header(null, ['is_body_main' => true]); ?>
             'class' => 'mb-64'
         ]); ?>
 
-        <div class="d-flex flex-col space-y-16 align-items-start justify-content-start">
+        <div class="d-flex flex-col align-items-start justify-content-start">
             <!-- php loop here -->
             <div class="grid grid-cols-3 justify-content-center gap-10 w-100">
                 <?php
