@@ -12,82 +12,54 @@ get_header(); ?>
         <div class="container">
             <div class="d-flex flex-col align-items-center w-4/5 mx-auto">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/imgs/star.svg" alt="">
-                <h1 class="">Các sản phẩm<br> của nhà Nguyên Ninh</h1>
+                <h1 class="mb-64">Các sản phẩm<br> của nhà Nguyên Ninh</h1>
             </div>
-            <div>
-                <img src="<?php echo get_template_directory_uri(); ?>//assets/imgs/IMG_1607.jpg" class="max-h-[43.75rem] h-[43.75rem] w-100 max-w-100" alt="">
-            </div>
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/imgs/IMG_1607.jpg" class="max-h-[43.75rem] h-[43.75rem] w-100 max-w-100 object-cover" alt="">
         </div>
     </section>
     <!--  -->
 
     <!--  -->
-    <section class="section-common bg-secondary-07 ">
+    <section class="section-common bg-secondary-07 section-products">
         <div class="container">
             <div class="flex flex-col align-items-center w-4/5 mx-auto">
                 <div class="mb-8 text-center">
                     <img class="" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/star.svg" alt="">
                 </div>
-                <div class="font-prata font-normal mb-6 leading-8 text-[1.75rem] gray-70 text-center">Dưới đây là những sản
-                    phẩm mà hiện tại Nguyên Ninh đang bày bán.
-                </div>
+                <h2 class="gray-70 text-center">Dưới đây là những sản phẩm mà hiện tại Nguyên Ninh đang bày bán.</h2>
             </div>
-            <div class="container">
-                <div class="line-common mx-auto"></div>
-            </div>
+            <div class="line-common mx-auto mt-64 mb-64"></div>
+
             <div class="w-100">
                 <div class="flex gap-16">
-                    <div class="flex-col">
-                        <div class="py-16 first:border-0 border-t border-[#B8B9B6] even:h-[33rem] odd:h-[48.625rem]">
-                            <img src="<?php echo get_template_directory_uri(); ?>//assets/imgs/HO-GUOM.jpg" class="h-full max-h-full w-100" alt="">
-                            <div class="flex justify-between mt-6">
-                                <p class="font-bold gray-80 text-base">Bánh cốm Nguyên Ninh</p>
-                                <p class="font-medium text-sm gray-80">6.000 VND</p>
+                    <?php foreach (get_field('list_product', 'option') as $key => $product) : ?>
+                        <?php if ($key == 1) : ?>
+                            <div class="flex-col">
+                                <div class="py-16 first:border-0 border-t border-[#B8B9B6] odd:h-[33rem] even:h-[48.625rem]">
+                                    <img src="<?= $product['image']; ?>" class="h-full max-h-full object-cover w-100" alt="">
+                                    <div class="flex justify-between mt-6">
+                                        <p class="product-title gray-80"><?= $product['name']; ?></p>
+                                        <p class="text-style-base gray-80"><?= $product['price']; ?> VND</p>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="py-16 first:border-0 border-t border-[#B8B9B6] even:h-[33rem] odd:h-[48.625rem]">
-                            <img src="<?php echo get_template_directory_uri(); ?>//assets/imgs/HO-GUOM.jpg" class="h-full max-h-full w-100" alt="">
-                            <div class="flex justify-between mt-6">
-                                <p class="font-bold gray-80 text-base">Bánh cốm Nguyên Ninh</p>
-                                <p class="font-medium text-sm gray-80">6.000 VND</p>
-                            </div>
-                        </div>
-                        <div class="py-16 first:border-0 border-t border-[#B8B9B6] even:h-[33rem] odd:h-[48.625rem]">
-                            <img src="<?php echo get_template_directory_uri(); ?>//assets/imgs/HO-GUOM.jpg" class="h-full max-h-full w-100" alt="">
-                            <div class="flex justify-between mt-6">
-                                <p class="font-bold gray-80 text-base">Bánh cốm Nguyên Ninh</p>
-                                <p class="font-medium text-sm gray-80">6.000 VND</p>
-                            </div>
-                        </div>
-                    </div>
+                        <?php endif; ?>
 
-                    <div class="flex-col">
-                        <!-- nho: 576 to: 826 -->
-                        <div class="py-16 first:border-0 border-t border-[#B8B9B6] odd:h-[33rem] even:h-[48.625rem]">
-                            <img src="<?php echo get_template_directory_uri(); ?>//assets/imgs/HO-GUOM.jpg" class="h-full max-h-full w-100" alt="">
-                            <div class="flex justify-between mt-6">
-                                <p class="font-bold gray-80 text-base">Bánh cốm Nguyên Ninh</p>
-                                <p class="font-medium text-sm gray-80">6.000 VND</p>
+                        <?php if ($key == 0) : ?>
+                            <div class="flex-col">
+                                <div class="py-16 first:border-0 border-t border-[#B8B9B6] even:h-[33rem] odd:h-[48.625rem]">
+                                    <img src="<?= $product['image']; ?>" class="h-full max-h-full object-cover w-100" alt="">
+                                    <div class="flex justify-between mt-6">
+                                        <p class="product-title gray-80"><?= $product['name']; ?></p>
+                                        <p class="text-style-base gray-80"><?= $product['price']; ?> VND</p>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="py-16 first:border-0 border-t border-[#B8B9B6] odd:h-[33rem] even:h-[48.625rem]">
-                            <img src="<?php echo get_template_directory_uri(); ?>//assets/imgs/HO-GUOM.jpg" class="h-full max-h-full w-100" alt="">
-                            <div class="flex justify-between mt-6">
-                                <p class="font-bold gray-80 text-base">Bánh cốm Nguyên Ninh</p>
-                                <p class="font-medium text-sm gray-80">6.000 VND</p>
-                            </div>
-                        </div>
-                        <div class="py-16 first:border-0 border-t border-[#B8B9B6] odd:h-[33rem] even:h-[48.625rem]">
-                            <img src="<?php echo get_template_directory_uri(); ?>//assets/imgs/HO-GUOM.jpg" class="h-full max-h-full w-100" alt="">
-                            <div class="flex justify-between mt-6">
-                                <p class="font-bold gray-80 text-base">Bánh cốm Nguyên Ninh</p>
-                                <p class="font-medium text-sm gray-80">6.000 VND</p>
-                            </div>
-                        </div>
-                    </div>
+                        <?php endif; ?>
+                    <?php endforeach; ?>
                 </div>
-
             </div>
+
             <div class="bg-primary-05 border-[#97B380] border w-100 flex-col d-flex py-16 mt-16">
                 <div class="pb-12 font-prata font-normal text-5xl leading-[3.5rem] text-center gray-80">Hướng dẫn mua hàng tại Nguyên Ninh</div>
                 <div class="text-style-base leading-7 gray-80 text-center px-14 pb-4">
