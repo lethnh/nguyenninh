@@ -800,3 +800,14 @@ footer .menu-footer .menu-footer-child li a::after {
 .btn-scroll:hover i {
   color: #383A36 !important;
 }
+
+.page-product-list h1 {
+  font-family: 'Prata';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 84px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  margin-top: 36px;
+}

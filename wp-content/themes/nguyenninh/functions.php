@@ -210,6 +210,14 @@ if (function_exists('acf_add_options_page')) {
         'capability'    => 'edit_posts',
         'redirect'    => false
     ));
+
+    acf_add_options_page(array(
+        'page_title'     => 'Sản phẩm',
+        'menu_title'    => 'Sản phẩm',
+        'menu_slug'     => 'san-pham-list',
+        'capability'    => 'edit_posts',
+        'redirect'    => false
+    ));
 }
 
 /* * GLOBAL CUSTOM FIELD * */
