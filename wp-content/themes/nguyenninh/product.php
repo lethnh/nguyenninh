@@ -34,9 +34,6 @@ get_header(); ?>
             <div class="font-prata font-normal mb-6 leading-8 text-[1.75rem] gray-70 text-center">Dưới đây là những sản
                 phẩm mà hiện tại Nguyên Ninh đang bày bán.
             </div>
-            <div class="font-prata font-normal mb-16 leading-8 text-[1.75rem] gray-70 text-center">Chúng tôi luôn có ưu
-                đãi với những đơn số lượng lớn
-            </div>
         </div>
         <div class="container">
             <div class="line-common mx-auto"></div>

@@ -54,15 +54,15 @@ $args = wp_parse_args($args, $array_defaults);
                 <div class="footer-info">
                     <div class="d-flex justify-content-between footer-info-item">
                         <div class="footer-info-title text-white">Địa chỉ</div>
-                        <div class="footer-info-desc text-white">Số 11 Hàng Than, Ba Đình, Hà Nội</div>
+                        <div class="footer-info-desc text-white"><?= $theme_options['address'] ?></div>
                     </div>
                     <div class="d-flex justify-content-between footer-info-item">
                         <div class="footer-info-title text-white">Hotline</div>
-                        <div class="footer-info-desc text-white">(0243) 828 3573 - 090 220 8459</div>
+                        <div class="footer-info-desc text-white"><?= $theme_options['hotline'] ?></div>
                     </div>
                     <div class="d-flex justify-content-between footer-info-item">
                         <div class="footer-info-title text-white">Email</div>
-                        <div class="footer-info-desc text-white">banhcomnguyenninh@gmail.com</div>
+                        <div class="footer-info-desc text-white"><?= $theme_options['email'] ?></div>
                     </div>
                 </div>
                 <div class="d-flex justify-content-end footer-social equal-height">

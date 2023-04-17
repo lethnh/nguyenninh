@@ -1,4 +1,5 @@
 <?php
+global $theme_options;
 // Setup defaults
 $array_defaults = array(
     'is_body_main' => false
@@ -39,8 +40,8 @@ $args = wp_parse_args($args, $array_defaults);
                 ));
                 ?>
                 <?php get_template_part('partials/btn', 'common', [
-                    'text' => '0243 828 3573',
-                    'link' => 'tel:0243 828 3573',
+                    'text' => $theme_options['phone_number'],
+                    'link' => 'tel:' . $theme_options['phone_number'],
                     'class' => 'btn-call'
                 ]); ?>
             </div>
