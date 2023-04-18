@@ -30,32 +30,45 @@ get_header(); ?>
             </div>
             <div class="line-common mx-auto mt-64 mb-64"></div>
 
-            <div class="row">
-                <?php foreach (get_field('list_product', 'option') as $key => $product) : ?>
-                    <?php if ($key == 1) : ?>
-                        <div class="col-md-6">
-                            <div class="py-16 first:border-0 border-t border-[#B8B9B6] odd:h-[33rem] even:h-[48.625rem]">
-                                <img src="<?= $product['image']; ?>" class="h-full max-h-full object-cover w-100" alt="">
-                                <div class="flex justify-between mt-6">
-                                    <p class="product-title gray-80"><?= $product['name']; ?></p>
-                                    <p class="text-style-base gray-80"><?= $product['price']; ?> VND</p>
+            <div class="row mb-96">
+                <?php
+                $args_products = array(
+                    'post_type' => 'san_pham',
+                    'order' => 'asc',
+                );
+                $products = new WP_Query($args_products);
+                ?>
+                <?php
+                if ($products->have_posts()) {
+                    while ($products->have_posts()) {
+                        $products->the_post();
+                ?>
+                        <?php $productInfo = get_field('product_info', get_the_ID()); ?>
+                        <?php if ($products->current_post == 1) : ?>
+                            <div class="col-md-6">
+                                <div class="first:border-0 border-t border-[#B8B9B6] odd:h-[33rem] even:h-[48.625rem]">
+                                    <img src="<?= the_post_thumbnail_url(); ?>" class="h-full max-h-full object-cover w-100" alt="">
+                                    <div class="flex justify-between mt-6">
+                                        <p class="product-title gray-80"><?= the_title(); ?></p>
+                                        <p class="text-style-base gray-80"><?= $productInfo['price']; ?> VND</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    <?php endif; ?>
+                        <?php endif; ?>
 
-                    <?php if ($key == 0) : ?>
-                        <div class="col-md-6">
-                            <div class="py-16 first:border-0 border-t border-[#B8B9B6] even:h-[33rem] odd:h-[48.625rem]">
-                                <img src="<?= $product['image']; ?>" class="h-full max-h-full object-cover w-100" alt="">
-                                <div class="flex justify-between mt-6">
-                                    <p class="product-title gray-80"><?= $product['name']; ?></p>
-                                    <p class="text-style-base gray-80"><?= $product['price']; ?> VND</p>
+                        <?php if ($products->current_post == 0) : ?>
+                            <div class="col-md-6">
+                                <div class="first:border-0 border-t border-[#B8B9B6] even:h-[33rem] odd:h-[48.625rem]">
+                                    <img src="<?= the_post_thumbnail_url(); ?>" class="h-full max-h-full object-cover w-100" alt="">
+                                    <div class="flex justify-between mt-6">
+                                        <p class="product-title gray-80"><?= the_title(); ?></p>
+                                        <p class="text-style-base gray-80"><?= $productInfo['price']; ?> VND</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    <?php endif; ?>
-                <?php endforeach; ?>
+                        <?php endif; ?>
+                <?php }
+                } ?>
             </div>
 
             <div class="bg-primary-05 flex-col d-flex section-product-contact">
