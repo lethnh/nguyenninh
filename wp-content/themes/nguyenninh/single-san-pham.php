@@ -1,4 +1,5 @@
 <?php
+$productInfo = get_field('product_info');
 get_header(); ?>
 <div class="relative z-[-1] mobile:px-4 w-100 mobile:mt-4 max-h-[600px] h-[600px] bg-[#F9F8F1] -mt-[88px]">
     <div class="flex gap-4 items-end justify-between h-full">
@@ -13,10 +14,10 @@ get_header(); ?>
 <section class="section-common">
     <div class="container">
         <div class="pt-16">
-            <p class="text-5xl font-bold text-[#383A36]">Bánh cốm Nguyên Ninh</p>
+            <p class="text-5xl font-bold gray-80"><?= the_title(); ?></p>
         </div>
         <div class="pt-4 flex justify-between">
-            <div class="font-medium text-base text-[#383A36]">6.000 VND / 1 chiếc</div>
+            <div class="font-medium text-base gray-80"><?= $productInfo['price'] ?> VND / 1 chiếc</div>
             <div class="flex w-1/4">
                 <button class="w-100 p-4 bg-[#383A36]">
                     <p class="uppercase text-white font-medium text-sm leading-4">ĐẶT HÀNG</p>
@@ -24,28 +25,24 @@ get_header(); ?>
             </div>
 
         </div>
-        <div class="pt-28 flex justify-between">
-            <div class="text-[28px] font-bold">Chi tiết</div>
+        <div class="description-block pt-28 d-flex justify-between">
+            <div class="">Chi tiết</div>
             <div class="w-2/5 text-[28px] font-bold flex-col">
                 <div>
-                    <p class="font-medium text-base text-[#383A36]">Một chiếc bánh giản dị, dân dã với các nguyên liệu sạch
-                        hoàn toàn.
-                        Chỉ có cốm, đậu xanh, dừa nạo và đường,
-                        tất cả đều là loại I và hoàn toàn không có chất bảo quản. Hơn nữa, cốm còn chứa rất nhiều dưỡng chất
-                        tốt cho sức khỏe.</p>
+                    <p class="text-style-base gray-80"><?= get_the_excerpt(); ?></p>
                 </div>
                 <div class="mt-24">
-                    <div class="flex justify-between border-b-[0.5px] border-[#B8B9B6] pb-4">
-                        <p class="font-medium text-sm leading-7 text-[#383A36]">Thành phần chính</p>
-                        <p class="font-medium text-sm leading-7 gray-70">cốm, dừa, đậu xanh,đường</p>
+                    <div class="d-flex justify-between border-b-[0.5px] border-[#B8B9B6] pb-4">
+                        <p class="gray-80">Thành phần chính</p>
+                        <p class=" gray-70"><?= $productInfo['main'] ?></p>
                     </div>
-                    <div class="flex justify-between border-b-[0.5px] border-[#B8B9B6] py-4">
-                        <p class="font-medium text-sm leading-7 text-[#383A36]">Khối lượng</p>
-                        <p class="font-medium text-sm leading-7 gray-70">100g</p>
+                    <div class="d-flex justify-between border-b-[0.5px] border-[#B8B9B6] py-4">
+                        <p class="gray-80">Khối lượng</p>
+                        <p class="gray-70"><?= $productInfo['weight'] ?></p>
                     </div>
-                    <div class="flex justify-between border-b-[0.5px] border-[#B8B9B6] py-4">
-                        <p class="font-medium text-sm leading-7 text-[#383A36]">Bảo quản</p>
-                        <p class="font-medium text-sm leading-7 gray-70">3 ngày sau khi mua</p>
+                    <div class="d-flex justify-between border-b-[0.5px] border-[#B8B9B6] py-4">
+                        <p class="gray-80">Bảo quản</p>
+                        <p class="gray-70"><?= $productInfo['maintain'] ?></p>
                     </div>
                 </div>
             </div>
@@ -57,7 +54,7 @@ get_header(); ?>
                         <path d="M7.99609 10.666H8.00208" stroke="#383A36" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
                 </div>
-                <div class="ml-4 font-medium text-sm leading-7 text-[#383A36]">
+                <div class="ml-4 font-medium text-sm leading-7 gray-80">
                     Chúng tôi nhận đơn hàng online với số lượng 5 chiếc là tối thiểu. Nếu quý khách hàng muốn mua lẻ, vui
                     lòng
                     đến <b>cửa hiệu Bánh cốm Nguyên Ninh số 11 Hàng Than, Ba Đình, Hà Nội.</b>
@@ -88,29 +85,38 @@ get_header(); ?>
             </div>
         </div>
     </div>
-
 </section>
-<div class="px-14 bg-secondary-07 py-24">
-    <div>
-        <p class="font-prata font-normal text-[64px] leading-[74px] text-[#383A36]">Những sản phẩm khác</p>
-    </div>
-    <div class="flex mt-16 gap-16">
-        <div class="h-[450px] max-h-[450px] w-1/2">
-            <img src="<?php echo get_template_directory_uri(); ?>//assets/imgs/HO-GUOM.jpg" class="h-[88%] max-h-[88%] w-100" alt="">
-            <div class="flex justify-between mt-[25px]">
-                <div class="font-bold text-base text-[#383A36] uppercase">Bánh xu xê</div>
-                <div class="font-medium text-sm text-[#383A36] uppercase">10.000 VND</div>
-            </div>
+<section class="section-common section-post-relate bg-secondary-07">
+    <div class="container">
+        <h2 class="mb-64 gray-80">Những sản phẩm khác</h2>
+        <div class="row">
+            <?php $related_args = array(
+                'post_type' => 'san-pham',
+                'posts_per_page' => 2,
+                'post_status' => 'publish',
+                'post__not_in' => array(get_the_ID()),
+                'orderby' => 'rand',
+            );
+            $related_post = new WP_Query($related_args); ?>
+            <?php
+            if ($related_post->have_posts()) {
+                while ($related_post->have_posts()) {
+                    $related_post->the_post();
+            ?>
+                    <div class="col-md-6">
+                        <img src="<?= get_the_post_thumbnail_url(); ?>" class="h-[88%] max-h-[88%] w-100" alt="">
+                        <div class="flex justify-between mt-[25px]">
+                            <div class="font-bold text-base gray-80 uppercase"><?= get_the_title(); ?></div>
+                            <div class="font-medium text-sm gray-80 uppercase"><?= get_field('product_info', get_the_ID())['price'] ?> VND</div>
+                        </div>
+                    </div>
+            <?php
+                }
+            }
+            ?>
         </div>
-        <div class="h-[450px] max-h-[450px] w-1/2">
-            <img src="<?php echo get_template_directory_uri(); ?>//assets/imgs/HO-GUOM.jpg" class="h-[88%] max-h-[88%] w-100" alt="">
-            <div class="flex justify-between mt-[25px]">
-                <div class="font-bold text-base text-[#383A36] uppercase">Bánh xu xê</div>
-                <div class="font-medium text-sm text-[#383A36] uppercase">10.000 VND</div>
-            </div>
-        </div>
     </div>
-</div>
+</section>
 <style>
     #home,
     #product,
