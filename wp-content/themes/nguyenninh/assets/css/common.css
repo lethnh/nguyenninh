@@ -387,7 +387,7 @@ body {
   transform: scale(1.1);
 }
 
-.btn-common i {
+.btn-common i, .btn-common img {
   margin-left: 5px;
   font-size: 17px;
   vertical-align: middle;
