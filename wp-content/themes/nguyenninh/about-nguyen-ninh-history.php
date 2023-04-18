@@ -57,7 +57,7 @@ get_header(); ?>
                     <li class="glide__slide max-h-[31.25rem]">
                         <div class="inline-flex align-items-centerjustify-content-start max-h-[31.25rem]">
                             <div class="flex align-items-centerjustify-content-start bg-black w-1/2 h-[31.25rem] max-h-[31.25rem]">
-                                <img class=" w-100 h-full" src="<?php echo get_template_directory_uri(); ?>//assets/imgs/IMG_2621.jpg" />
+                                <img class=" w-100 h-full" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/IMG_2621.jpg" />
                             </div>
                             <div class="flex align-items-centerjustify-content-start bg-[#BACCAA] w-[40%] h-[31.25rem]">
                                 <div class="inline-flex flex-col space-y-12 items-start p-12 h-full bg-[#BACCAA]">
@@ -79,7 +79,7 @@ get_header(); ?>
                     <li class="glide__slide max-h-[31.25rem]">
                         <div class="inline-flex align-items-centerjustify-content-start max-h-[31.25rem]">
                             <div class="flex align-items-centerjustify-content-start bg-black w-1/2 h-[31.25rem] max-h-[31.25rem]">
-                                <img class=" w-100 h-full" src="<?php echo get_template_directory_uri(); ?>//assets/imgs/IMG_1695.jpg" />
+                                <img class=" w-100 h-full" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/IMG_1695.jpg" />
                             </div>
                             <div class="flex align-items-centerjustify-content-start bg-[#BACCAA] w-[40%] h-[31.25rem]">
                                 <div class="inline-flex flex-col space-y-12 items-start p-12 h-full bg-[#BACCAA]">
@@ -101,7 +101,7 @@ get_header(); ?>
                     <li class="glide__slide max-h-[31.25rem]">
                         <div class="inline-flex align-items-centerjustify-content-start max-h-[31.25rem]">
                             <div class="flex align-items-centerjustify-content-start bg-black w-1/2 h-[31.25rem] max-h-[31.25rem]">
-                                <img class=" w-100 h-full" src="<?php echo get_template_directory_uri(); ?>//assets/imgs/IMG_2621.jpg" />
+                                <img class=" w-100 h-full" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/IMG_2621.jpg" />
                             </div>
                             <div class="flex align-items-centerjustify-content-start bg-[#BACCAA] w-[40%] h-[31.25rem]">
                                 <div class="inline-flex flex-col space-y-12 items-start p-12 h-full bg-[#BACCAA]">

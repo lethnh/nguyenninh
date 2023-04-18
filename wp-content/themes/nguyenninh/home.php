@@ -9,7 +9,7 @@ get_header(null, ['is_body_main' => true]); ?>
 <section class="banner-home">
     <div class="container">
         <div class="position-relative">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/imgs/DSCF2003.jpg" class="object-cover h-100 w-100">
+            <img src="<?= get_field('image_main') ?>" class="object-cover h-100 w-100">
             <button class="position-absolute btn-scroll"><i class="fa-light fa-arrow-down text-white"></i></button>
         </div>
     </div>
