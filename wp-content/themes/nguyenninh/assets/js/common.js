@@ -177,8 +177,8 @@ $(document).ready(function () {
     }
   })
 
-  $('.btn-begin').on('click', function () {
-    $("#modal-send-info").modal("show");
+  $('.btn-order').on('click', function () {
+    $("#modal-send-info-order").modal("show");
   })
 
 });

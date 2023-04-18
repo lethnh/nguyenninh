@@ -19,7 +19,7 @@ get_header(); ?>
         <div class="pt-4 flex justify-between">
             <div class="font-medium text-base gray-80"><?= $productInfo['price'] ?> VND / 1 chiếc</div>
             <div class="flex w-1/4">
-                <button class="w-100 p-4 bg-[#383A36]">
+                <button class="w-100 p-4 bg-gray-80 btn-order">
                     <p class="uppercase text-white font-medium text-sm leading-4">ĐẶT HÀNG</p>
                 </button>
             </div>

@@ -95,7 +95,7 @@ $args = wp_parse_args($args, $array_defaults);
                 </div>
                 <div class="d-flex gap-16 w-100 footer-cookie equal-height">
                     <div class="d-flex">
-                        <a href="#" class="text-white me-5">COOKIE</a>
+                        <a href="/chinh-sach-cookie" class="text-white me-5">COOKIE</a>
                         <a href="#" class="text-white">QUYỀN RIÊNG TƯ</a>
                     </div>
                     <p class="text-uppercase footer-copyright ms-auto text-white"><i class="fa-regular fa-copyright text-white me-1"></i>NGUYÊN NINH <?= date("Y"); ?></p>
@@ -105,6 +105,22 @@ $args = wp_parse_args($args, $array_defaults);
     </div>
 </footer>
 <!-- End Footer -->
+
+<div class="modal fade" id="modal-send-info-order" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="journey-header-indicator"></div>
+                <h2 class="modal-title" id="exampleModalLabel">Bắt đầu hành trình du học</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" style="z-index: 9999;">
+                <h3 class="personal-info">Thông tin cá nhân</h3>
+                <?= do_shortcode('[gravityform id="1" title="false" ajax="true"]'); ?>
+            </div>
+        </div>
+    </div>
+</div>
 
 </main>
 <?php wp_footer(); ?>
