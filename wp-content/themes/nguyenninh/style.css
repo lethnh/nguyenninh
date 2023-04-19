@@ -972,3 +972,42 @@ color: #9EA09C;
   letter-spacing: -0.02em;
   color: #000000;
 }
+
+.btn-order {
+  padding: 17px;
+}
+
+.product-block-input-number {
+  margin-right: 60px;
+}
+
+.product-block-input-number span {
+  cursor: pointer;
+}
+
+.product-block-input-number .minus,
+.product-block-input-number .plus {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.product-block-input-number input {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 26px;
+  border: 0.5px solid #B8B9B6;
+  border-radius: 1px;
+  display: inline-block;
+  vertical-align: middle;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 26px;
+  color: #383A36;
+  margin: 0px 20px;
+}

@@ -16,12 +16,15 @@ get_header(); ?>
         <div class="pt-16">
             <p class="text-5xl font-bold gray-80"><?= the_title(); ?></p>
         </div>
-        <div class="pt-4 flex justify-between">
+        <div class="pt-4 d-flex align-items-center">
             <div class="font-medium text-base gray-80"><?= $productInfo['price'] ?> VND / 1 chiếc</div>
+            <div class="product-block-input-number ms-auto">
+                <span class="minus"><i class="fa-light fa-minus"></i></span>
+                <input type="text" value="1" />
+                <span class="plus"><i class="fa-light fa-plus"></i></span>
+            </div>
             <div class="flex w-1/4">
-                <button class="w-100 p-4 bg-gray-80 btn-order">
-                    <p class="uppercase text-white font-medium text-sm leading-4">ĐẶT HÀNG</p>
-                </button>
+                <button class="w-100 bg-gray-80 btn-order text-white">ĐẶT HÀNG</button>
             </div>
 
         </div>
