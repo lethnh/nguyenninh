@@ -14,18 +14,13 @@ get_header(); ?>
             'title' => '“Bạn có điều gì muốn nói với Nguyên Ninh?”',
             'class' => 'mb-64'
         ]); ?>
-        <div class="w-100 h-[585px] max-h-[585px] flex">
+        <div class="w-100 flex">
             <div class="w-[30%]"></div>
             <div class="w-[70%] h-full">
-                <img src="<?php echo get_template_directory_uri(); ?>//assets/imgs/HO-GUOM.jpg" class="w-100 max-h-full" alt="">
-                <?php echo do_shortcode('[contact-form-7 id="123" title="Contact form 1"]') ?>
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/imgs/su-khac-biet-7.png" class="w-100 object-cover max-h-full" alt="">
+                <?php echo do_shortcode('[gravityform id="1" title="false" ajax="true"]') ?>
             </div>
         </div>
     </div>
 </section>
-
-<script>
-    var submit = document.getElementById("submit");
-    submit.classList.add("px-6", "mt-24", "py-4", "w-1/5", "mobile:self-center", "rounded-[26px]", "bg-[#D6E1CC]", "text-[#306701]", "focus:border-[#98B380]", "focus:border-[4.8px]", "mobile:focus:border-[1px]", "disabled:bg-[#D1D2D0]", "disabled:text-white", "uppercase")
-</script>
 <?php get_footer(); ?>
