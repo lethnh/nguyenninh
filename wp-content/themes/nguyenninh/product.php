@@ -44,22 +44,20 @@ get_header(); ?>
                         $products->the_post();
                 ?>
                         <?php $productInfo = get_field('product_info', get_the_ID()); ?>
-                        <?php if ($products->current_post == 1) : ?>
+                        <?php if ($products->current_post / 2 == 0) : ?>
                             <div class="col-md-6">
                                 <a href="<?= get_permalink(); ?>">
-                                    <img src="<?= the_post_thumbnail_url(); ?>" class="odd:h-[33rem] even:h-[48.625rem] object-cover" alt="">
+                                    <img src="<?= the_post_thumbnail_url(); ?>" class="even:h-[33rem] odd:h-[48.625rem] object-cover" alt="">
                                     <div class="d-flex justify-between mt-6">
                                         <p class="product-title gray-80"><?= the_title(); ?></p>
                                         <p class="text-style-base gray-80"><?= $productInfo['price']; ?> VND</p>
                                     </div>
                                 </a>
                             </div>
-                        <?php endif; ?>
-
-                        <?php if ($products->current_post == 0) : ?>
+                        <?php else: ?>
                             <div class="col-md-6">
                                 <a href="<?= get_permalink(); ?>">
-                                    <img src="<?= the_post_thumbnail_url(); ?>" class="even:h-[33rem] odd:h-[48.625rem] object-cover" alt="">
+                                    <img src="<?= the_post_thumbnail_url(); ?>" class="odd:h-[33rem] even:h-[48.625rem] object-cover" alt="">
                                     <div class="d-flex justify-between mt-6">
                                         <p class="product-title gray-80"><?= the_title(); ?></p>
                                         <p class="text-style-base gray-80"><?= $productInfo['price']; ?> VND</p>
