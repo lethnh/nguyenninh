@@ -101,7 +101,7 @@ get_header(); ?>
     <!--  -->
     <section class="section-common">
         <div class="container">
-            <div class="glide hero">
+            <div class="glide hero2">
                 <div class="glide__track" data-glide-el="track">
                     <ul class="glide__slides h-[43.75rem] max-h-[43.75rem]">
                         <li class="glide__slide h-full max-h-full">
@@ -149,17 +149,8 @@ get_header(); ?>
     </div>
 </div>
 
-
 <script>
     setTimeout(() => {
-        const glideHero = new Glide('.hero', {
-            type: 'carousel',
-            animationDuration: 2000,
-            autoplay: 3000,
-            focusAt: '1',
-            startAt: 1,
-            perView: 1,
-        }).mount();
         const glideHero2 = new Glide('.hero2', {
             type: 'carousel',
             animationDuration: 1000,

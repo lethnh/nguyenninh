@@ -80,3 +80,14 @@ $args = wp_parse_args($args, $array_defaults);
         <button class="glide__arrow glide__arrow--right bg-white" data-glide-dir=">"><i class="fa-light fa-arrow-right"></i></button>
     </div>
 </div>
+<script>
+    $(document).ready(function() {
+        new Glide('.hero', {
+            type: 'slider',
+            startAt: 0,
+            rewind: false,
+            perView: 1,
+            gap: 0
+        }).mount()
+    });
+</script>
