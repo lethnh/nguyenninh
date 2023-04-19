@@ -775,6 +775,23 @@ footer .menu-footer .menu-footer-child li a::after {
   max-height: 584px;
 }
 
+.post-body .post-thumbnail .post-social {
+  top: 0px;
+  right: 0px;
+}
+
+.post-body .post-thumbnail .post-social a {
+  padding: 26px;
+}
+
+.post-body .post-thumbnail .post-social a:not(:last-child) {
+  border-bottom: 0.5px solid #FFFFFF;
+}
+
+.post-body .post-thumbnail .post-social a:hover {
+  cursor: pointer;
+}
+
 .btn-story-all::before {
   background: #1F201E;
 }
@@ -968,6 +985,10 @@ color: #9EA09C;
 
 #gform_1_validation_container {
   display: none;
+}
+
+#gform_wrapper_1 #field_1_4 {
+  margin-top: 40px ;
 }
 
 .btn-submit-contact::before {
