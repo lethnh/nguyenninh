@@ -25,43 +25,37 @@ get_header(); ?>
             </div>
 
         </div>
-        <div class="description-block pt-28 d-flex justify-between">
-            <div class="">Chi tiết</div>
-            <div class="w-2/5 text-[28px] font-bold flex-col">
+        <div class="description-block pt-28 d-flex justify-content-between">
+            <div class="description-block-title">Chi tiết</div>
+            <div class="w-2/5 d-flex flex-col product-info-left">
                 <div>
                     <p class="text-style-base gray-80"><?= get_the_excerpt(); ?></p>
                 </div>
                 <div class="mt-24">
-                    <div class="d-flex justify-between border-b-[0.5px] border-[#B8B9B6] pb-4">
+                    <div class="d-flex justify-content-between product-info-left-item pb-4">
                         <p class="gray-80">Thành phần chính</p>
-                        <p class=" gray-70"><?= $productInfo['main'] ?></p>
+                        <p class="gray-70"><?= $productInfo['main'] ?></p>
                     </div>
-                    <div class="d-flex justify-between border-b-[0.5px] border-[#B8B9B6] py-4">
+                    <div class="d-flex justify-between product-info-left-item py-4">
                         <p class="gray-80">Khối lượng</p>
                         <p class="gray-70"><?= $productInfo['weight'] ?></p>
                     </div>
-                    <div class="d-flex justify-between border-b-[0.5px] border-[#B8B9B6] py-4">
+                    <div class="d-flex justify-between product-info-left-item py-4">
                         <p class="gray-80">Bảo quản</p>
                         <p class="gray-70"><?= $productInfo['maintain'] ?></p>
                     </div>
                 </div>
             </div>
-            <div class="w-[25%] flex bg-[#F0ECDB] border border-[#D1C794] p-8  h-fit">
-                <div class="mt-[2px]">
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M7.9987 14.6673C11.6654 14.6673 14.6654 11.6673 14.6654 8.00065C14.6654 4.33398 11.6654 1.33398 7.9987 1.33398C4.33203 1.33398 1.33203 4.33398 1.33203 8.00065C1.33203 11.6673 4.33203 14.6673 7.9987 14.6673Z" stroke="#383A36" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M8 5.33398V8.66732" stroke="#383A36" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M7.99609 10.666H8.00208" stroke="#383A36" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                </div>
-                <div class="ml-4 font-medium text-sm leading-7 gray-80">
+            <div class="w-[25%] d-flex bg-secondary-10 h-fit align-items-start product-info-right">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/imgs/dot.svg)" alt="">
+                <div class="text-style-base ml-4 gray-80">
                     Chúng tôi nhận đơn hàng online với số lượng 5 chiếc là tối thiểu. Nếu quý khách hàng muốn mua lẻ, vui
                     lòng
                     đến <b>cửa hiệu Bánh cốm Nguyên Ninh số 11 Hàng Than, Ba Đình, Hà Nội.</b>
                 </div>
             </div>
         </div>
-        <div class="bg-primary-05 flex-col d-flex section-product-contact">
+        <div class="bg-primary-05 flex-col d-flex section-product-contact mt-96">
             <h2 class="text-center gray-80">Hướng dẫn mua hàng tại Nguyên Ninh</h2>
             <div class="text-style-base gray-80 text-center px-14 pb-4">
                 Hiện tại, nếu quý khách muốn đặt hàng tại Nguyên Ninh, xin vui lòng vào fanpage Facebook của Nguyên Ninh
