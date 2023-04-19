@@ -1,7 +1,7 @@
 <?php
 $productInfo = get_field('product_info');
 get_header(); ?>
-<div class="relative z-[-1] mobile:px-4 w-100 mobile:mt-4 max-h-[600px] h-[600px] bg-[#F9F8F1] -mt-[88px]">
+<!-- <div class="relative z-[-1] mobile:px-4 w-100 mobile:mt-4 max-h-[600px] h-[600px] bg-[#F9F8F1] -mt-[88px]">
     <div class="flex gap-4 items-end justify-between h-full">
         <div class="w-1/2 h-full">
             <img class="h-full" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/HO-GUOM.jpg)" alt="">
@@ -10,12 +10,31 @@ get_header(); ?>
             <img class="h-full" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/IMG_9840.jpg)" alt="">
         </div>
     </div>
-</div>
+</div> -->
+
+<!--  -->
+<section>
+    <div class="glide product-single-slide">
+        <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+                <li class="glide__slide">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/imgs/IMG_1607.jpg" alt="" class="w-100 object-cover">
+                </li>
+                <li class="glide__slide">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/imgs/IMG_1607.jpg" alt="" class="w-100 object-cover">
+                </li>
+                <li class="glide__slide">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/imgs/IMG_1607.jpg" alt="" class="w-100 object-cover">
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!--  -->
+
 <section class="section-common">
     <div class="container">
-        <div class="pt-16">
-            <p class="text-5xl font-bold gray-80"><?= the_title(); ?></p>
-        </div>
+        <h1 class="product-title-main gray-80"><?= the_title(); ?></h1>
         <div class="pt-4 d-flex align-items-center">
             <div class="font-medium text-base gray-80"><?= $productInfo['price'] ?> VND / 1 chiếc</div>
             <div class="product-block-input-number ms-auto">
@@ -114,4 +133,15 @@ get_header(); ?>
         </div>
     </div>
 </section>
+<script>
+    $(document).ready(function() {
+        new Glide('.product-single-slide', {
+            type: 'carousel',
+            autoplay: 1,
+            animationDuration: 5000,
+            animationTimingFunc: 'linear',
+            perView: 3
+        }).mount()
+    });
+</script>
 <?php get_footer(); ?>

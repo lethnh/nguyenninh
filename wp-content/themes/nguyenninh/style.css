@@ -1011,3 +1011,16 @@ color: #9EA09C;
   color: #383A36;
   margin: 0px 20px;
 }
+
+.product-single-slide .glide__slide {
+  width: 100px;
+}
+
+.product-title-main {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -0.02em;
+}
