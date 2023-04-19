@@ -86,7 +86,7 @@ get_header(); ?>
         </div>
     </div>
 </section>
-<section class="section-common section-post-relate bg-secondary-07">
+<section class="section-common section-product-relate bg-secondary-07">
     <div class="container">
         <h2 class="mb-64 gray-80">Những sản phẩm khác</h2>
         <div class="row">
@@ -104,10 +104,10 @@ get_header(); ?>
                     $related_post->the_post();
             ?>
                     <div class="col-md-6">
-                        <img src="<?= get_the_post_thumbnail_url(); ?>" class="h-[88%] max-h-[88%] w-100" alt="">
-                        <div class="flex justify-between mt-[25px]">
-                            <div class="font-bold text-base gray-80 uppercase"><?= get_the_title(); ?></div>
-                            <div class="font-medium text-sm gray-80 uppercase"><?= get_field('product_info', get_the_ID())['price'] ?> VND</div>
+                        <img src="<?= get_the_post_thumbnail_url(); ?>" class="img-fluid object-cover" alt="<?= get_the_title(); ?>">
+                        <div class="d-flex justify-content-between mt-4">
+                            <div class="product-name gray-80"><?= get_the_title(); ?></div>
+                            <div class="product-price gray-80"><?= get_field('product_info', get_the_ID())['price'] ?> VND</div>
                         </div>
                     </div>
             <?php
@@ -117,20 +117,4 @@ get_header(); ?>
         </div>
     </div>
 </section>
-<style>
-    #home,
-    #product,
-    #about,
-    #story {
-        color: white;
-    }
-
-    #phone p {
-        color: black
-    }
-
-    #phone {
-        background-color: white;
-    }
-</style>
 <?php get_footer(); ?>

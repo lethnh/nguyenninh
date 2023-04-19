@@ -917,3 +917,31 @@ color: #9EA09C;
   background: #D1D2D0 !important;
   border: 0.5px solid #D1D2D0 !important;
 }
+
+.section-product-relate h2 {
+  font-family: 'Prata';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 74px;
+  letter-spacing: -0.02em;
+}
+
+.section-product-relate .product-name {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.section-product-relate .product-price {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 26px;
+  letter-spacing: 0.06em;
+}
