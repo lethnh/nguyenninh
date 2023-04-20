@@ -74,8 +74,8 @@ get_header(); ?>
                     <?php endforeach; ?>
                 </ul>
                 <div class="glide__arrows" data-glide-el="controls">
-                    <button class="glide__arrow glide__arrow--left mr-4 bg-white" data-glide-dir="<"><i class="fa-light fa-arrow-left"></i></button>
-                    <button class="glide__arrow glide__arrow--right bg-white" data-glide-dir=">"><i class="fa-light fa-arrow-right"></i></button>
+                    <button class="glide__arrow glide__arrow--left mr-4" data-glide-dir="<"><i class="fa-light fa-arrow-left"></i></button>
+                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fa-light fa-arrow-right"></i></button>
                 </div>
             </div>
         </div>
