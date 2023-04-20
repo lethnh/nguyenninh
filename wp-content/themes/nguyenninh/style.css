@@ -1181,13 +1181,14 @@ color: #9EA09C;
 .section-history-slider .glide__arrows {
   position: absolute;
   right: 32px;
-  bottom: 32px;
+  top: -90px;
 }
 
 .section-history-slider .glide__arrows .glide__arrow {
   width: 64px;
   height: 64px;
   padding: 20px;
+  border: 1.6px solid #383A36;
   border-radius: 32px;
 }
 
