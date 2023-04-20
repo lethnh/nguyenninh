@@ -988,7 +988,7 @@ color: #9EA09C;
 }
 
 #gform_wrapper_1 #field_1_4 {
-  margin-top: 40px ;
+  margin-top: 40px;
 }
 
 .btn-submit-contact::before {
@@ -1101,4 +1101,59 @@ color: #9EA09C;
   font-size: 48px;
   line-height: 56px;
   letter-spacing: -0.02em;
+}
+
+.section-history-slider .glide.hero .slider-wrapper {
+  height: 500px;
+}
+
+.section-history-slider .glide.hero .slide-history-right {
+  height: 500px;
+  padding: 48px;
+}
+
+.section-history-slider .glide.hero .slide-history-right .slide-history-right-number {
+  font-family: 'Prata';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 84px;
+  line-height: 96px;
+  letter-spacing: -0.02em;
+  color: #306701;
+}
+
+.section-history-slider .glide.hero .slide-history-right .slide-history-right-title {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: -0.02em;
+}
+
+.section-history-slider .slider-years p {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: -0.02em;
+  color: #383A36;
+  opacity: 0.32;
+}
+
+.section-history-slider .slider-years .dot1 {
+  background: #383A36;
+  opacity: 0.24;
+  height: 1px;
+  width: 100%;
+  transform: translate(0%, 30px);
+}
+
+.section-history-slider .slider-years .dot {
+  border-radius: 50px;
+  background: #383A36;
+  opacity: 0.24;
+  height: 8px;
+  width: 8px;
 }

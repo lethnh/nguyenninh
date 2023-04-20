@@ -46,78 +46,212 @@ get_header(); ?>
 <!--  -->
 
 <!--  -->
-<section class="section-common bg-primary-05">
+<section class="section-common bg-primary-05 section-history-slider">
     <div class="container">
         <?php get_template_part('partials/title', 'common', [
+            'title' => null,
             'sub-title' => 'NHỮNG CỘT MỐC QUAN TRỌNG',
         ]); ?>
-        <div class="glide hero">
+        <div class="glide hero mt-96">
             <div class="glide__track" data-glide-el="track">
                 <ul class="glide__slides">
-                    <li class="glide__slide max-h-[31.25rem]">
-                        <div class="inline-flex align-items-centerjustify-content-start max-h-[31.25rem]">
-                            <div class="flex align-items-centerjustify-content-start bg-black w-1/2 h-[31.25rem] max-h-[31.25rem]">
-                                <img class=" w-100 h-full" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/IMG_2621.jpg" />
+                    <li class="glide__slide">
+                        <div class="d-flex align-items-start">
+                            <div class="w-50 slider-wrapper">
+                                <img class="w-100 h-100 object-cover" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/IMG_2621.jpg" />
                             </div>
-                            <div class="flex align-items-centerjustify-content-start bg-[#BACCAA] w-[40%] h-[31.25rem]">
-                                <div class="inline-flex flex-col space-y-12 items-start p-12 h-full bg-[#BACCAA]">
-                                    <div class="flex flex-col space-y-8 items-start justify-content-start w-100 flex-[2] mt-8">
-                                        <p class="w-100 text-[5.25rem] leading-[3.5rem] text-[#306701] font-prata">1865</p>
-                                    </div>
-                                    <div class="w-100 !mt-[7rem]">
-                                        <p class="w-100 text-2xl font-bold tracking-wider text-justify leading-[1.625rem] text-gray-700">
-                                            Chiếc bánh cốm đầu tiên ra đời
-                                        </p>
-                                        <p class="w-100 text-sm tracking-wider mt-6 text-gray-700 leading-[1.625rem]">
-                                            Bánh cốm được sáng tạo vào năm 1865 bởi cụ trưởng ái gia tộc Nguyên Ninh – cụ
-                                            Trần Thị Luân. </p>
-                                    </div>
+                            <div class="d-flex flex-col bg-primary-10 w-50 slide-history-right">
+                                <p class="slide-history-right-number">1865</p>
+                                <div class="w-100 mt-auto">
+                                    <p class="slide-history-right-title gray-80">Chiếc bánh cốm đầu tiên ra đời</p>
+                                    <p class="gray-80 text-style-base mt-3">Bánh cốm được sáng tạo vào năm 1865 bởi cụ trưởng ái gia tộc Nguyên Ninh – cụ Trần Thị Luân. </p>
                                 </div>
                             </div>
                         </div>
                     </li>
-                    <li class="glide__slide max-h-[31.25rem]">
-                        <div class="inline-flex align-items-centerjustify-content-start max-h-[31.25rem]">
-                            <div class="flex align-items-centerjustify-content-start bg-black w-1/2 h-[31.25rem] max-h-[31.25rem]">
-                                <img class=" w-100 h-full" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/IMG_1695.jpg" />
+                    <li class="glide__slide">
+                        <div class="d-flex align-items-start">
+                            <div class="w-50 slider-wrapper">
+                                <img class="w-100 h-100 object-cover" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/IMG_2621.jpg" />
                             </div>
-                            <div class="flex align-items-centerjustify-content-start bg-[#BACCAA] w-[40%] h-[31.25rem]">
-                                <div class="inline-flex flex-col space-y-12 items-start p-12 h-full bg-[#BACCAA]">
-                                    <div class="flex flex-col space-y-8 items-start justify-content-start w-100 flex-[2] mt-8">
-                                        <p class="w-100 text-[5.25rem] leading-[3.5rem] text-[#306701] font-prata">1865</p>
-                                    </div>
-                                    <div class="w-100 !mt-[7rem]">
-                                        <p class="w-100 text-2xl font-bold tracking-wider text-justify leading-[1.625rem] text-gray-700">
-                                            Chiếc bánh cốm đầu tiên ra đời
-                                        </p>
-                                        <p class="w-100 text-sm tracking-wider mt-6 text-gray-700 leading-[1.625rem]">
-                                            Bánh cốm được sáng tạo vào năm 1865 bởi cụ trưởng ái gia tộc Nguyên Ninh – cụ
-                                            Trần Thị Luân. </p>
-                                    </div>
+                            <div class="d-flex flex-col bg-primary-10 w-50 slide-history-right">
+                                <p class="slide-history-right-number">1865</p>
+                                <div class="w-100 mt-auto">
+                                    <p class="slide-history-right-title gray-80">Chiếc bánh cốm đầu tiên ra đời</p>
+                                    <p class="gray-80 text-style-base mt-3">Bánh cốm được sáng tạo vào năm 1865 bởi cụ trưởng ái gia tộc Nguyên Ninh – cụ Trần Thị Luân. </p>
                                 </div>
                             </div>
                         </div>
                     </li>
-                    <li class="glide__slide max-h-[31.25rem]">
-                        <div class="inline-flex align-items-centerjustify-content-start max-h-[31.25rem]">
-                            <div class="flex align-items-centerjustify-content-start bg-black w-1/2 h-[31.25rem] max-h-[31.25rem]">
-                                <img class=" w-100 h-full" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/IMG_2621.jpg" />
+                    <li class="glide__slide">
+                        <div class="d-flex align-items-start">
+                            <div class="w-50 slider-wrapper">
+                                <img class="w-100 h-100 object-cover" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/IMG_2621.jpg" />
                             </div>
-                            <div class="flex align-items-centerjustify-content-start bg-[#BACCAA] w-[40%] h-[31.25rem]">
-                                <div class="inline-flex flex-col space-y-12 items-start p-12 h-full bg-[#BACCAA]">
-                                    <div class="flex flex-col space-y-8 items-start justify-content-start w-100 flex-[2] mt-8">
-                                        <p class="w-100 text-[5.25rem] leading-[3.5rem] text-[#306701] font-prata">1865</p>
-                                    </div>
-                                    <div class="w-100 !mt-[7rem]">
-                                        <p class="w-100 text-2xl font-bold tracking-wider text-justify leading-[1.625rem] text-gray-700">
-                                            Chiếc bánh cốm đầu tiên ra đời
-                                        </p>
-                                        <p class="w-100 text-sm tracking-wider mt-6 text-gray-700 leading-[1.625rem]">
-                                            Bánh cốm được sáng tạo vào năm 1865 bởi cụ trưởng ái gia tộc Nguyên Ninh – cụ
-                                            Trần Thị Luân. </p>
-                                    </div>
+                            <div class="d-flex flex-col bg-primary-10 w-50 slide-history-right">
+                                <p class="slide-history-right-number">1865</p>
+                                <div class="w-100 mt-auto">
+                                    <p class="slide-history-right-title gray-80">Chiếc bánh cốm đầu tiên ra đời</p>
+                                    <p class="gray-80 text-style-base mt-3">Bánh cốm được sáng tạo vào năm 1865 bởi cụ trưởng ái gia tộc Nguyên Ninh – cụ Trần Thị Luân. </p>
                                 </div>
                             </div>
+                        </div>
+                    </li>
+                    <li class="glide__slide">
+                        <div class="d-flex align-items-start">
+                            <div class="w-50 slider-wrapper">
+                                <img class="w-100 h-100 object-cover" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/IMG_2621.jpg" />
+                            </div>
+                            <div class="d-flex flex-col bg-primary-10 w-50 slide-history-right">
+                                <p class="slide-history-right-number">1865</p>
+                                <div class="w-100 mt-auto">
+                                    <p class="slide-history-right-title gray-80">Chiếc bánh cốm đầu tiên ra đời</p>
+                                    <p class="gray-80 text-style-base mt-3">Bánh cốm được sáng tạo vào năm 1865 bởi cụ trưởng ái gia tộc Nguyên Ninh – cụ Trần Thị Luân. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="glide__slide">
+                        <div class="d-flex align-items-start">
+                            <div class="w-50 slider-wrapper">
+                                <img class="w-100 h-100 object-cover" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/IMG_2621.jpg" />
+                            </div>
+                            <div class="d-flex flex-col bg-primary-10 w-50 slide-history-right">
+                                <p class="slide-history-right-number">1865</p>
+                                <div class="w-100 mt-auto">
+                                    <p class="slide-history-right-title gray-80">Chiếc bánh cốm đầu tiên ra đời</p>
+                                    <p class="gray-80 text-style-base mt-3">Bánh cốm được sáng tạo vào năm 1865 bởi cụ trưởng ái gia tộc Nguyên Ninh – cụ Trần Thị Luân. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="glide__slide">
+                        <div class="d-flex align-items-start">
+                            <div class="w-50 slider-wrapper">
+                                <img class="w-100 h-100 object-cover" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/IMG_2621.jpg" />
+                            </div>
+                            <div class="d-flex flex-col bg-primary-10 w-50 slide-history-right">
+                                <p class="slide-history-right-number">1865</p>
+                                <div class="w-100 mt-auto">
+                                    <p class="slide-history-right-title gray-80">Chiếc bánh cốm đầu tiên ra đời</p>
+                                    <p class="gray-80 text-style-base mt-3">Bánh cốm được sáng tạo vào năm 1865 bởi cụ trưởng ái gia tộc Nguyên Ninh – cụ Trần Thị Luân. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="glide__slide">
+                        <div class="d-flex align-items-start">
+                            <div class="w-50 slider-wrapper">
+                                <img class="w-100 h-100 object-cover" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/IMG_2621.jpg" />
+                            </div>
+                            <div class="d-flex flex-col bg-primary-10 w-50 slide-history-right">
+                                <p class="slide-history-right-number">1865</p>
+                                <div class="w-100 mt-auto">
+                                    <p class="slide-history-right-title gray-80">Chiếc bánh cốm đầu tiên ra đời</p>
+                                    <p class="gray-80 text-style-base mt-3">Bánh cốm được sáng tạo vào năm 1865 bởi cụ trưởng ái gia tộc Nguyên Ninh – cụ Trần Thị Luân. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="glide__slide">
+                        <div class="d-flex align-items-start">
+                            <div class="w-50 slider-wrapper">
+                                <img class="w-100 h-100 object-cover" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/IMG_2621.jpg" />
+                            </div>
+                            <div class="d-flex flex-col bg-primary-10 w-50 slide-history-right">
+                                <p class="slide-history-right-number">1865</p>
+                                <div class="w-100 mt-auto">
+                                    <p class="slide-history-right-title gray-80">Chiếc bánh cốm đầu tiên ra đời</p>
+                                    <p class="gray-80 text-style-base mt-3">Bánh cốm được sáng tạo vào năm 1865 bởi cụ trưởng ái gia tộc Nguyên Ninh – cụ Trần Thị Luân. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="glide__slide">
+                        <div class="d-flex align-items-start">
+                            <div class="w-50 slider-wrapper">
+                                <img class="w-100 h-100 object-cover" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/IMG_2621.jpg" />
+                            </div>
+                            <div class="d-flex flex-col bg-primary-10 w-50 slide-history-right">
+                                <p class="slide-history-right-number">1865</p>
+                                <div class="w-100 mt-auto">
+                                    <p class="slide-history-right-title gray-80">Chiếc bánh cốm đầu tiên ra đời</p>
+                                    <p class="gray-80 text-style-base mt-3">Bánh cốm được sáng tạo vào năm 1865 bởi cụ trưởng ái gia tộc Nguyên Ninh – cụ Trần Thị Luân. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="glide__arrows absolute -top-28 right-14" data-glide-el="controls">
+                    <button class="glide__arrow glide__arrow--left mr-4 border border-[#383A36] p-5 gap-5 w-16 h-16 bg-[#D6E1CC] rounded-[2rem]" data-glide-dir="<"><i class="leading-[100%] text-xl fa-light fa-arrow-left"></i></button>
+                    <button class="glide__arrow glide__arrow--right border border-[#383A36] p-5 gap-5 w-16 h-16 bg-[#D6E1CC] rounded-[2rem]" data-glide-dir=">"><i class="text-xl leading-[100%] fa-light fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="glide hero slider-years mt-96">
+            <div class="glide__track" data-glide-el="track">
+                <ul class="glide__slides">
+                    <li class="glide__slide">
+                        <div class="d-flex flex-col position-relative">
+                            <p>1865</p>
+                            <div class="position-absolute dot1"></div>
+                            <div class="bg-gray-80 dot"></div>
+                        </div>
+                    </li>
+                    <li class="glide__slide">
+                        <div class="d-flex flex-col position-relative">
+                            <p>1865</p>
+                            <div class="position-absolute dot1"></div>
+                            <div class="bg-gray-80 dot"></div>
+                        </div>
+                    </li>
+                    <li class="glide__slide">
+                        <div class="d-flex flex-col position-relative">
+                            <p>1865</p>
+                            <div class="position-absolute dot1"></div>
+                            <div class="bg-gray-80 dot"></div>
+                        </div>
+                    </li>
+                    <li class="glide__slide"></li>
+                    <div class="d-flex flex-col position-relative">
+                        <p>1865</p>
+                        <div class="position-absolute dot1"></div>
+                        <div class="bg-gray-80 dot"></div>
+                    </div>
+                    </li>
+                    <li class="glide__slide">
+                        <div class="d-flex flex-col position-relative">
+                            <p>1865</p>
+                            <div class="position-absolute dot1"></div>
+                            <div class="bg-gray-80 dot"></div>
+                        </div>
+                    </li>
+                    <li class="glide__slide">
+                        <div class="d-flex flex-col position-relative">
+                            <p>1865</p>
+                            <div class="position-absolute dot1"></div>
+                            <div class="bg-gray-80 dot"></div>
+                        </div>
+                    </li>
+                    <li class="glide__slide">
+                        <div class="d-flex flex-col position-relative">
+                            <p>1865</p>
+                            <div class="position-absolute dot1"></div>
+                            <div class="bg-gray-80 dot"></div>
+                        </div>
+                    </li>
+                    <li class="glide__slide">
+                        <div class="d-flex flex-col position-relative">
+                            <p>1865</p>
+                            <div class="position-absolute dot1"></div>
+                            <div class="bg-gray-80 dot"></div>
+                        </div>
+                    </li>
+                    <li class="glide__slide">
+                        <div class="d-flex flex-col position-relative">
+                            <p>1865</p>
+                            <div class="position-absolute dot1"></div>
+                            <div class="bg-gray-80 dot"></div>
                         </div>
                     </li>
                 </ul>
@@ -185,4 +319,35 @@ get_header(); ?>
     'background_image' => get_template_directory_uri() . '/assets/imgs/section-story-1.png',
 ]); ?>
 <!--  -->
+
+<script>
+    $(document).ready(function() {
+        const slider1 = new Glide('.hero', {
+            type: 'slider',
+            startAt: 0,
+            rewind: false,
+            perView: 1.6,
+            gap: 48
+        })
+        slider1.mount();
+        const slider = new Glide('.slider-years', {
+            type: 'slider',
+            startAt: 0,
+            rewind: false,
+            perView: 3.5,
+            gap: 0
+        });
+        slider.mount();
+
+        slider1.on('run.after', function() {
+            slider.update({
+                type: 'slider',
+                startAt: slider1.index,
+                rewind: false,
+                perView: 3.5,
+                gap: 0
+            })
+        })
+    });
+</script>
 <?php get_footer();
