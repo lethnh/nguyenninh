@@ -8,7 +8,7 @@ $array_defaults = array(
 
 $args = wp_parse_args($args, $array_defaults);
 ?>
-<div class="glide hero">
+<div class="glide hero slide-common">
     <div class="glide__track" data-glide-el="track">
         <ul class="glide__slides">
             <li class="glide__slide">
