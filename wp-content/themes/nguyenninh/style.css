@@ -1207,3 +1207,27 @@ color: #9EA09C;
 .section-404 .btn-common::before {
   background-color: #1F201E;
 }
+
+/* Policy */
+
+.main-policy h1 {
+  font-family: 'Prata';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 74px;
+  letter-spacing: -0.02em;
+}
+
+.main-policy h2 {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 42px;
+  letter-spacing: -0.02em;
+  padding-bottom: 20px;
+  border-bottom: 0.5px solid #B8B9B6;
+  margin-top: 96px;
+  margin-bottom: 40px;
+}

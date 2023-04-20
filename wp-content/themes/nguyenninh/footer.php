@@ -45,6 +45,7 @@ $args = wp_parse_args($args, $array_defaults);
         </div>
     </div>
 </section>
+
 <!-- Footer -->
 <footer class="bg-main-80">
     <div class="container">
@@ -122,7 +123,6 @@ $args = wp_parse_args($args, $array_defaults);
     </div>
 </div>
 
-</main>
 <?php wp_footer(); ?>
 </body>
 <script>

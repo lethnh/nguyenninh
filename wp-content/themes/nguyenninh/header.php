@@ -47,5 +47,4 @@ $args = wp_parse_args($args, $array_defaults);
             </div>
         </nav>
     </header>
-    <main>
-        <!-- End Header -->
+    <!-- End Header -->
