@@ -1199,3 +1199,11 @@ color: #9EA09C;
 .section-history-slider .glide__arrows .glide__arrow.glide__arrow--disabled {
   opacity: 0.32;
 }
+
+.section-404 .btn-common {
+  background-color: #1F201E;
+}
+
+.section-404 .btn-common::before {
+  background-color: #1F201E;
+}

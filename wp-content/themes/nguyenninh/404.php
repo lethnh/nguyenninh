@@ -6,8 +6,13 @@ get_header(); ?>
         <div class="badge-404 text-center">Error 404</div>
         <div class="d-flex align-items-end">
             <h1>Không tìm thấy trang <br>
-            bạn yêu cầu</h1>
-            <a href="<?= get_home_url(); ?>" class="btn btn-common ms-auto">Về Trang Chủ<i class="fa-solid fa-arrow-up rotate-45"></i></a>
+                bạn yêu cầu</h1>
+            <?php get_template_part('partials/btn', 'common', [
+                'is_icon' => true,
+                'link' => get_home_url(),
+                'text' => 'Về Trang Chủ',
+                'class' => 'ms-auto'
+            ]); ?>
         </div>
     </div>
 </section>
