@@ -228,3 +228,22 @@ function set_theme_option_global()
     );
 }
 add_action('init', 'set_theme_option_global');
+
+// add_filter('gform_validation_message', function ($message, $form) {
+//     if (gf_upgrade()->get_submissions_block()) {
+//         return $message;
+//     }
+
+//     $message = "<div class='validation_error'><p>There was a problem with your submission. Errors have been highlighted below.</p>";
+//     $message .= '<ul>';
+
+//     foreach ($form['fields'] as $field) {
+//         if ($field->failed_validation) {
+//             $message .= sprintf('<li>%s - %s</li>', GFCommon::get_label($field), $field->validation_message);
+//         }
+//     }
+
+//     $message .= '</ul></div>';
+
+//     return $message;
+// }, 10, 2);
