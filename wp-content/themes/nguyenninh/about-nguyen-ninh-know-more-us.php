@@ -54,11 +54,11 @@ get_header(); ?>
         ]); ?>
         <div class="d-flex flex-col items-content-start justify-content-start section-value-block">
             <div class="d-inline-flex align-items-center justify-content-center section-value-item">
-                <div class="position-relative w-[60%] max-w-[60%] ml-10 section-value-item-image left">
+                <div class="position-relative w-[60%]  ml-10 section-value-item-image left">
                     <img class="w-100 object-cover z-2" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/about-gia-tri-su-menh-1.png" style="position:inherit" />
                     <div class="position-absolute bg-primary-05 w-100 h-full max-w-100 max-h-full section-value-item-image-overlay z-1"></div>
                 </div>
-                <div class="d-flex aligns-self-start align-items-center w-[40%] max-w-[40%] flex-col section-value-item-content">
+                <div class="d-flex aligns-self-start align-items-center w-[40%]  flex-col section-value-item-content">
                     <img class="svg-star" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/star.svg" alt="">
                     <h2 class="fw-bold text-center gray-80 font-raleway-bold">Gìn giữ hương vị</h2>
                     <p class="text-center text-style-base gray-70">
@@ -69,7 +69,7 @@ get_header(); ?>
                 </div>
             </div>
             <div class="d-inline-flex align-items-center justify-content-center mt-96 section-value-item">
-                <div class="d-flex aligns-self-start align-items-center w-[40%] max-w-[40%] flex-col section-value-item-content">
+                <div class="d-flex aligns-self-start align-items-center w-[40%]  flex-col section-value-item-content">
                     <img class="svg-star" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/star.svg" alt="">
                     <h2 class="fw-bold text-center gray-80 font-raleway-bold">Bảo tồn giá trị</h2>
                     <p class="text-center text-style-base gray-70">
@@ -82,17 +82,17 @@ get_header(); ?>
                     </p>
                     </p>
                 </div>
-                <div class="position-relative w-[60%] max-w-[60%] mr-10 section-value-item-image right">
+                <div class="position-relative w-[60%]  mr-10 section-value-item-image right">
                     <img class="w-100 object-cover z-2" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/about-gia-tri-su-menh-2.png" style="position:inherit" />
                     <div class="position-absolute bg-primary-05 w-100 h-100 max-w-100 max-h-full section-value-item-image-overlay z-1"></div>
                 </div>
             </div>
             <div class="d-inline-flex align-items-center justify-content-center mt-96 section-value-item">
-                <div class="position-relative w-[60%] max-w-[60%] ml-10 section-value-item-image left">
+                <div class="position-relative w-[60%]  ml-10 section-value-item-image left">
                     <img class="w-100 object-cover z-2" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/about-gia-tri-su-menh-3.png" style="position:inherit" />
                     <div class="position-absolute bg-primary-05 w-100 h-full max-w-100 max-h-full section-value-item-image-overlay z-1"></div>
                 </div>
-                <div class="d-flex aligns-self-start align-items-center w-[40%] max-w-[40%] flex-col section-value-item-content">
+                <div class="d-flex aligns-self-start align-items-center w-[40%]  flex-col section-value-item-content">
                     <img class="svg-star" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/star.svg" alt="">
                     <h2 class="fw-bold text-center gray-80 font-raleway-bold">Không theo đuổi mục tiêu lợi nhuận</h2>
                     <p class="text-center text-style-base gray-70">Bánh cốm của Nguyên Ninh đặc biệt là thế bởi toàn bộ mọi công đoạn đều là thủ công, từng chiếc được nhào nặn ra bởi niềm đam mê của người làm bánh. Dù cho Nguyên Ninh có thể sản xuất công nghiệp nhưng liệu khách hàng còn muốn thưởng thức những chiếc bánh “vô hồn”?</p>
@@ -100,13 +100,13 @@ get_header(); ?>
                 </div>
             </div>
             <div class="d-inline-flex align-items-center justify-content-center mt-96 section-value-item">
-                <div class="d-flex aligns-self-start align-items-center w-[40%] max-w-[40%] flex-col section-value-item-content">
+                <div class="d-flex aligns-self-start align-items-center w-[40%]  flex-col section-value-item-content">
                     <img class="svg-star" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/star.svg" alt="">
                     <h2 class="fw-bold text-center gray-80 font-raleway-bold">Đóng góp giá trị văn hoá cho thủ đô</h2>
                     <p class="text-center text-style-base gray-70">Nguyên Ninh mong muốn thông qua chiếc bánh cốm nhỏ nhỏ có thể truyền tới mọi người chút hương sắc của thủ đô, chút thanh tao từ cốm để ai ai khi tới Hà Nội cũng sẽ nhớ thưởng thức chiếc bánh cốm.</p>
                     <p class="text-center text-style-base gray-70">Và cũng mong rằng công sức ít ỏi của Nguyên Ninh có thể đóng góp cho nền du lịch của nước Việt Nam ta.</p>
                 </div>
-                <div class="position-relative w-[60%] max-w-[60%] mr-10 section-value-item-image right">
+                <div class="position-relative w-[60%]  mr-10 section-value-item-image right">
                     <img class="w-100 object-cover z-2" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/about-gia-tri-su-menh-4.png" style="position:inherit" />
                     <div class="position-absolute bg-primary-05 w-100 h-100 max-w-100 max-h-full section-value-item-image-overlay z-1"></div>
                 </div>

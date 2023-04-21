@@ -662,6 +662,28 @@ footer .menu-footer .menu-footer-child li a::after {
   top: 40px;
 }
 
+@media (max-width: 768px) {}
+
+@media (max-width: 576px) {
+  .section-value-item {
+    flex-direction: column;
+  }
+
+  .section-value-block .section-value-item .section-value-item-content {
+    flex-basis: 100%;
+    width: 100%;
+  }
+
+  .section-value-block .section-value-item .section-value-item-image {
+    flex-basis: 100%;
+    width: 100%;
+  }
+
+  .section-diary .section-diary-line {
+    margin: 4rem auto;
+  }
+}
+
 .section-story {
   background-size: cover;
   background-repeat: no-repeat;
@@ -693,9 +715,9 @@ footer .menu-footer .menu-footer-child li a::after {
     font-size: 2.25rem;
   }
 
-    .section-diary .section-diary-line {
-      margin: 4rem auto;
-    }
+  .section-diary .section-diary-line {
+    margin: 4rem auto;
+  }
 }
 
 .line-common {
@@ -758,19 +780,16 @@ footer .menu-footer .menu-footer-child li a::after {
   font-weight: 500;
 }
 
-.section-product-footer {
-  flex-direction: column;
-}
-
-@media (max-width: 768px) {}
-
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .section-product-footer {
+    flex-direction: column;
     height: 100%;
     max-height: 100% !important;
     flex-direction: column;
   }
+}
 
+@media (max-width: 576px) {
   .section-product-footer .title-block-common {
     flex-basis: 100%;
     padding: 3rem;
@@ -945,6 +964,34 @@ footer .menu-footer .menu-footer-child li a::after {
 
 .post-body .post-thumbnail .post-social a:hover {
   cursor: pointer;
+}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 576px) {
+  .post-body .title-block-common {
+    margin-right: 0px !important;
+    width: 100% !important;
+  }
+
+  .post-body .title-block-common .post-title {
+    font-size: 3rem;
+    line-height: 4rem;
+    margin-bottom: 1rem;
+  }
+
+  .post-body .post-thumbnail {
+    width: 100% !important;
+  }
+
+  .post-body .section-post-content {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .post-body .section-post-content .text-style-base {
+    width: 90% !important;
+  }
 }
 
 .btn-story-all::before {

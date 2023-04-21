@@ -9,7 +9,7 @@ get_header(); ?>
     <?php if (have_posts()) : ?>
         <?php while (have_posts()) : ?>
             <?php the_post(); ?>
-            <div class="d-flex h-[37.5rem]">
+            <div class="d-flex h-[37.5rem] flex-column flex-md-row">
                 <div class="d-flex flex-col w-[45%] mr-20 align-self-center h-full title-block-common">
                     <p class="sub-title gray-80">Nhật ký</p>
                     <h1 class="post-title gray-80 mt-4"><?php the_title(); ?></h1>
@@ -42,7 +42,7 @@ get_header(); ?>
 <section class="section-common section-post-relate bg-secondary-07">
     <div class="container">
         <h2 class="mb-64 gray-80">Những bài viết khác</h2>
-        <div class="row">
+        <div class="row list-posts">
             <?php $related_args = array(
                 'post_type' => 'post',
                 'posts_per_page' => 3,
