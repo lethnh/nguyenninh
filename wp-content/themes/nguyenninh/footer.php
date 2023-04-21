@@ -125,14 +125,4 @@ $args = wp_parse_args($args, $array_defaults);
 
 <?php wp_footer(); ?>
 </body>
-<script>
-    var html = document.querySelector('html');
-    window.onload = function() {
-        html.style.fontSize = (window.innerWidth / 1440 * 16) + 'px'
-    };
-    window.onresize = function() {
-        html.style.fontSize = (window.innerWidth / 1440 * 16) + 'px'
-    };
-</script>
-
 </html>
