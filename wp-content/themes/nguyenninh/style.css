@@ -686,6 +686,18 @@ footer .menu-footer .menu-footer-child li a::after {
   background-color: #B8B9B6;
 }
 
+@media (max-width: 768px) {}
+
+@media (max-width: 576px) {
+  .section-diary h1.heading-topic {
+    font-size: 2.25rem;
+  }
+
+    .section-diary .section-diary-line {
+      margin: 4rem auto;
+    }
+}
+
 .line-common {
   height: 1px;
   background-color: #B8B9B6;
