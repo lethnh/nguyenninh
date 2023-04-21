@@ -51,3 +51,23 @@ $args = wp_parse_args($args, $array_defaults);
         </nav>
     </header>
     <!-- End Header -->
+
+    <!-- SideBar -->
+    <aside class="menu-aside-page">
+        <div class="backdrop"></div>
+        <div class="menu-aside">
+            <div class="menu-menu-1-container">
+                <?php
+                wp_nav_menu(array(
+                    'theme_location' => 'primary',
+                    'menu_class' => 'list-unstyled color-gray-400',
+                    'menu_id' => 'main-menu',
+                    'walker'         => new Walker_Nav_Menu_Dropdown(),
+                    'add_a_class'     => 'd-block color-gray-400 py-2',
+                    'container'       => false,
+                ));
+                ?>
+            </div>
+        </div>
+    </aside>
+    <!-- End SideBar -->

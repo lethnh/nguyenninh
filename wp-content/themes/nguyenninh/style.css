@@ -913,6 +913,7 @@ footer .menu-footer .menu-footer-child li a::after {
   background: #1F201E;
 }
 
+/*  */
 .btn-scroll {
   width: 64px;
   height: 64px;
@@ -932,8 +933,18 @@ footer .menu-footer .menu-footer-child li a::after {
 }
 
 .btn-scroll:hover i {
-  color: #383A36 !important;
+    color: #383A36 !important;
 }
+
+@media (max-width: 576px) {
+  .btn-scroll {
+    right: 1rem;
+    bottom: 1rem;
+    transform: none;
+  }
+}
+
+/*  */
 
 .page-product-list h1 {
   font-family: 'Prata';
@@ -1351,4 +1362,4 @@ color: #9EA09C;
 
 .list-posts {
   row-gap: 1.5rem;
-}
+}/* SideBar */aside .backdrop {  position: fixed;  top: 111px;  left: 0;  width: 100%;  height: 100%;  background-color: rgba(25, 43, 41, 0.85);  opacity: 0;  visibility: hidden;  z-index: 1035;  transition: all 0.3s ease;  -moz-transition: all 0.3s ease;  -webkit-transition: all 0.3s ease;  -o-transition: all 0.3s ease;}aside .menu-aside {  position: fixed;  top: 111px;  right: -150%;  width: 300px;  max-width: 100%;  height: calc(100vh);  background-color: #FFFFFF;  z-index: 1050;  transition: all 0.3s ease;  -moz-transition: all 0.3s ease;  -webkit-transition: all 0.3s ease;  -o-transition: all 0.3s ease;  padding: 20px;}aside.menu-aside-page.show .menu-aside {  right: 0;}.menu-item-has-children {  position: relative;}aside.menu-aside-page .has-child .dropdown-menu,aside.menu-aside-page .menu-item-has-children .dropdown-menu {  min-width: 100%;  display: none;  padding-left: 15px;  position: relative;  border: none;}aside.menu-aside-page .has-child .dropdown-menu li a,aside.menu-aside-page .menu-item-has-children .dropdown-menu li a {  padding: 8px 0px;}.transfer-menu {  width: 100%;  height: 40px;  background: transparent;  position: absolute;  right: 0;  top: 0;  z-index: 5;  cursor: pointer;}.transfer-menu.is-open:after {  transform: translate(50%, -50%) rotate(180deg);}.transfer-menu::after {  z-index: 5;  content: '';  width: 16px;  height: 16px;  background: url(../../images/icons/arrow-down.svg) no-repeat;  position: absolute;  top: 50%;  right: 10px;  transform: translate(50%, -50%);}/* End SideBar */
