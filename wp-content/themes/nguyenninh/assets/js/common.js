@@ -206,11 +206,4 @@ function copyToClipboard(element) {
   $temp.remove();
 }
 
-function reportWindowSize() {
-  if ($("body").hasClass('admin-bar')) {
-    $('#header-main').css('margin-top', $("#wpadminbar").height());
-    $('aside .menu-aside').css('top', $("#wpadminbar").height() + $("#header-main .navbar-custom").height());
-  }
-}
-
-window.onresize = reportWindowSize;
+// function reportWindowSize() {//   if ($("body").hasClass('admin-bar')) {//     $('#header-main').css('margin-top', $("#wpadminbar").height());//     $('aside .menu-aside').css('top', $("#wpadminbar").height() + $("#header-main .navbar-custom").height());//   }// }// window.onresize = reportWindowSize;

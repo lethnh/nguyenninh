@@ -81,7 +81,7 @@ $args = wp_parse_args($args, $array_defaults);
                 <?php
                 wp_nav_menu(array(
                     'theme_location' => 'footer',
-                    'menu_class' => 'd-flex justify-content-between menu-footer',
+                    'menu_class' => 'd-flex justify-content-between menu-footer flex-wrap',
                     'menu_id' => 'main-menu',
                     'walker'         => new Walker_Nav_Menu_Dropdown(),
                     'add_a_class'     => 'nav-link',

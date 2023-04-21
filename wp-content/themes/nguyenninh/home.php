@@ -23,7 +23,7 @@ get_header(null, ['is_body_main' => true]); ?>
             'class' => 'mb-64'
         ]); ?>
         <div class="chapter-content d-flex align-items-end">
-            <div class="h-100 w-50">
+            <div class="h-100 w-50 chapter-content-left">
                 <img class="h-100 object-cover" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/su-khac-biet-7.png" />
             </div>
             <div class="chapter-content-right w-50">
@@ -46,7 +46,9 @@ get_header(null, ['is_body_main' => true]); ?>
             'class' => 'mb-64'
         ]); ?>
         <div class="chapter-content d-flex align-items-center mt-64">
-            <img class="w-50" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/dac-biet-1.png" />
+            <div class="h-100 w-50 chapter-content-left">
+                <img class="h-100 object-cover" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/dac-biet-1.png" />
+            </div>
             <div class="w-50 chapter-content-right">
                 <p class="chapter-content-right-title-main gray-80">Hãy thử một lần ghé qua 11 Hàng Than mua chiếc bánh cốm Nguyên Ninh.</p>
                 <p class="chapter-content-right-title-sub gray-70 mt-3">Một chiếc bánh giản dị, dân dã với các nguyên liệu sạch hoàn toàn. Cốm xay xào có độ dẻo mịn, mát thơm nhẹ nhưng lại thiếu đậm đà thì đã được bổ sung bởi nhân đỗ xanh ngọt ngào. Nhưng chỉ ngọt, thơm thôi chưa đủ, vẫn cần thêm một chút bùi bùi, ngậy ngậy. Và dừa nạo được thêm vào để bổ sung hương vị ấy.</p>
@@ -104,7 +106,7 @@ get_header(null, ['is_body_main' => true]); ?>
 
         <div class="d-flex flex-col align-items-start justify-content-start">
             <!-- php loop here -->
-            <div class="grid grid-cols-3 justify-content-center gap-8 w-100">
+            <div class="row list-posts">
                 <?php
                 $args = array(
                     'post_type' => 'post',
@@ -118,13 +120,16 @@ get_header(null, ['is_body_main' => true]); ?>
                     while ($the_query->have_posts()) {
                         $the_query->the_post();
                 ?>
-                        <?php if ($the_query->current_post == 0) { ?>
-                            <?php get_template_part('partials/card', 'post-main'); ?>
-                        <?php } ?>
-
-                        <?php if ($the_query->current_post > 0) { ?>
-                            <?php get_template_part('partials/card', 'post-common'); ?>
-                        <?php } ?>
+                        <?php if ($the_query->current_post == 0) : ?>
+                            <div class="col-md-8">
+                                <?php get_template_part('partials/card', 'post-main'); ?>
+                            </div>
+                        <?php endif; ?>
+                        <?php if ($the_query->current_post > 0) : ?>
+                            <div class="col-md-4">
+                                <?php get_template_part('partials/card', 'post-common'); ?>
+                            </div>
+                        <?php endif; ?>
                 <?php
                     }
                 }
