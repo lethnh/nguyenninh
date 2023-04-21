@@ -87,7 +87,7 @@ get_header(); ?>
                 <img class="me-5" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/star.svg" alt="">
                 <h1 class="heading-topic">Khám phá nhật ký Nguyên Ninh</h1>
             </div>
-            <div class="grid grid-cols-3 justify-center gap-10 w-100 mt-64">
+            <div class="row list-posts mt-64">
                 <?php
                 $args_my_query = array(
                     'post_type' => 'post',
@@ -101,12 +101,16 @@ get_header(); ?>
                     while ($my_query->have_posts()) {
                         $my_query->the_post();
                 ?>
-                        <?php if ($my_query->current_post == 0  || $my_query->current_post == 6) { ?>
-                            <?php get_template_part('partials/card', 'post-main'); ?>
-                        <?php } ?>
-                        <?php if ($my_query->current_post > 0 && $my_query->current_post < 6) { ?>
-                            <?php get_template_part('partials/card', 'post-common'); ?>
-                        <?php } ?>
+                        <?php if ($my_query->current_post == 0  || $my_query->current_post == 6) : ?>
+                            <div class="col-md-8">
+                                <?php get_template_part('partials/card', 'post-main'); ?>
+                            </div>
+                        <?php endif; ?>
+                        <?php if ($my_query->current_post > 0 && $my_query->current_post < 6) : ?>
+                            <div class="col-md-4">
+                                <?php get_template_part('partials/card', 'post-common'); ?>
+                            </div>
+                        <?php endif; ?>
                 <?php }
                 } ?>
             </div>
