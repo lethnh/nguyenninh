@@ -28,7 +28,7 @@ $(document).ready(function () {
     }
   });
 
-  // reportWindowSize();
+  reportWindowSize();
 
   var index_class_active = $('.segmented-control .page_item').index($('.segmented-control .page_item.current_page_item'));
   $($('.segmented-control .page_item')[index_class_active - 1]).addClass('no_after');
@@ -206,11 +206,11 @@ function copyToClipboard(element) {
   $temp.remove();
 }
 
-// function reportWindowSize() {
-//   if ($("body").hasClass('admin-bar')) {
-//     $('#header-main').css('margin-top', $("#wpadminbar").height());
-//     $('aside .menu-aside').css('top', $("#wpadminbar").height() + $("#header-main .navbar-custom").height());
-//   }
-// }
+function reportWindowSize() {
+  if ($("body").hasClass('admin-bar')) {
+    $('#header-main').css('margin-top', $("#wpadminbar").height());
+    $('aside .menu-aside').css('top', $("#wpadminbar").height() + $("#header-main .navbar-custom").height());
+  }
+}
 
-// window.onresize = reportWindowSize;
+window.onresize = reportWindowSize;
