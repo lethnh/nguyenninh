@@ -122,7 +122,8 @@ $args = wp_parse_args($args, $array_defaults);
         </div>
     </div>
 </div>
-
+</main>
 <?php wp_footer(); ?>
 </body>
+
 </html>

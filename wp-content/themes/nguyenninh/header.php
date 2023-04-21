@@ -71,3 +71,4 @@ $args = wp_parse_args($args, $array_defaults);
         </div>
     </aside>
     <!-- End SideBar -->
+    <main>
