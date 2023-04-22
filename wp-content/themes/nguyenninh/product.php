@@ -14,7 +14,9 @@ get_header(); ?>
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/imgs/star.svg" alt="">
                 <h1 class="mb-64">Các sản phẩm<br> của nhà Nguyên Ninh</h1>
             </div>
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/imgs/IMG_1607.jpg" class="max-h-[43.75rem] h-[43.75rem] w-100 max-w-100 object-cover" alt="">
+            <div class="img-wrapper ratio-16x9">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/imgs/IMG_1607.jpg" class="max-h-[43.75rem] h-[43.75rem] w-100 max-w-100 object-cover" alt="">
+            </div>
         </div>
     </section>
     <!--  -->
@@ -30,7 +32,7 @@ get_header(); ?>
             </div>
             <div class="line-common mx-auto mt-64 mb-64"></div>
 
-            <div class="row mb-96">
+            <div class="row mb-96 list-posts">
                 <?php
                 $args_products = array(
                     'post_type' => 'san-pham',
@@ -47,17 +49,21 @@ get_header(); ?>
                         <?php if ($products->current_post / 2 == 0) : ?>
                             <div class="col-md-6">
                                 <a href="<?= get_permalink(); ?>">
-                                    <img src="<?= the_post_thumbnail_url(); ?>" class="even:h-[33rem] odd:h-[48.625rem] object-cover" alt="">
+                                    <div class="img-wrapper ratio-1x1">
+                                        <img src="<?= the_post_thumbnail_url(); ?>" class="even:h-[33rem] odd:h-[48.625rem] object-cover" alt="">
+                                    </div>
                                     <div class="d-flex justify-between mt-6">
                                         <p class="product-title gray-80"><?= the_title(); ?></p>
                                         <p class="text-style-base gray-80"><?= $productInfo['price']; ?> VND</p>
                                     </div>
                                 </a>
                             </div>
-                        <?php else: ?>
+                        <?php else : ?>
                             <div class="col-md-6">
                                 <a href="<?= get_permalink(); ?>">
-                                    <img src="<?= the_post_thumbnail_url(); ?>" class="odd:h-[33rem] even:h-[48.625rem] object-cover" alt="">
+                                    <div class="img-wrapper ratio-63">
+                                        <img src="<?= the_post_thumbnail_url(); ?>" class="odd:h-[33rem] even:h-[48.625rem] object-cover" alt="">
+                                    </div>
                                     <div class="d-flex justify-between mt-6">
                                         <p class="product-title gray-80"><?= the_title(); ?></p>
                                         <p class="text-style-base gray-80"><?= $productInfo['price']; ?> VND</p>
@@ -101,15 +107,21 @@ get_header(); ?>
         <div class="container">
             <div class="glide hero2">
                 <div class="glide__track" data-glide-el="track">
-                    <ul class="glide__slides h-[43.75rem] max-h-[43.75rem]">
+                    <ul class="glide__slides">
                         <li class="glide__slide h-full max-h-full">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/imgs/IMG_1607.jpg" alt="" class="w-100 h-full max-h-full object-cover">
+                            <div class="img-wrapper ratio-16x9">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/imgs/IMG_1607.jpg" alt="" class="w-100 h-full max-h-full object-cover">
+                            </div>
                         </li>
                         <li class="glide__slide h-full max-h-full">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/imgs/IMG_1607.jpg" alt="" class="w-100 h-full max-h-full object-cover">
+                            <div class="img-wrapper ratio-16x9">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/imgs/IMG_1607.jpg" alt="" class="w-100 h-full max-h-full object-cover">
+                            </div>
                         </li>
                         <li class="glide__slide h-full max-h-full">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/imgs/IMG_1607.jpg" alt="" class="w-100 h-full max-h-full object-cover">
+                            <div class="img-wrapper ratio-16x9">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/imgs/IMG_1607.jpg" alt="" class="w-100 h-full max-h-full object-cover">
+                            </div>
                         </li>
                     </ul>
                 </div>

@@ -792,7 +792,7 @@ footer .menu-footer .menu-footer-child li a::after {
 @media (max-width: 576px) {
   .section-product-footer .title-block-common {
     flex-basis: 100%;
-    padding: 3rem;
+    padding: 1.5rem;
   }
 
   .section-product-footer .title-block-common .mt-96 {
@@ -1031,6 +1031,18 @@ footer .menu-footer .menu-footer-child li a::after {
 
 /*  */
 
+.page-product-list .img-wrapper {
+  position: relative;
+  padding-bottom: var(--bs-aspect-ratio);
+}
+
+.page-product-list .img-wrapper img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .page-product-list h1 {
   font-family: 'Prata';
   font-style: normal;
@@ -1079,6 +1091,20 @@ footer .menu-footer .menu-footer-child li a::after {
 
 @media (max-width: 576px) {
 
+  .page-product-list .w-4\/5 {
+    width: 100%;
+  }
+
+  .page-product-list h1 {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+    margin-top: 1rem;
+  }
+
+  .page-product-list h2 {
+    font-size: 1.5rem;
+  }
+
   .section-product-contact {
     padding: 3rem 1rem;
   }
@@ -1092,7 +1118,7 @@ footer .menu-footer .menu-footer-child li a::after {
   }
 
   .section-product-contact .btn-common {
-    font-size: 0.75rem;
+    font-size: 0.625rem;
     padding: 1rem;
   }
 }
