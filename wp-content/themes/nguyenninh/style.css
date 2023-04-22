@@ -1075,6 +1075,28 @@ footer .menu-footer .menu-footer-child li a::after {
   margin-bottom: 48px;
 }
 
+@media (max-width: 768px) {}
+
+@media (max-width: 576px) {
+
+  .section-product-contact {
+    padding: 3rem 1rem;
+  }
+
+  .section-product-contact h2 {
+    font-size: 2.5rem;
+  }
+
+  .section-product-contact .text-style-base {
+    padding: 1rem;
+  }
+
+  .section-product-contact .btn-common {
+    font-size: 0.75rem;
+    padding: 1rem;
+  }
+}
+
 .btn-facebook::before {
   background: #1F201E;
 }
