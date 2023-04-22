@@ -790,12 +790,40 @@ footer .menu-footer .menu-footer-child li a::after {
   font-weight: 500;
 }
 
+.section-product-footer .img-wrapper {
+  position: relative;
+  padding-bottom: var(--bs-aspect-ratio);
+}
+
+.section-product-footer .img-wrapper img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.section-product-footer .section-product-footer-left {
+  width: 40%;
+}
+
+.section-product-footer .section-product-footer-right {
+  width: 60%;
+}
+
 @media (max-width: 768px) {
   .section-product-footer {
     flex-direction: column;
     height: 100%;
     max-height: 100% !important;
     flex-direction: column;
+  }
+
+  .section-product-footer .section-product-footer-left {
+    width: 100%;
+  }
+
+  .section-product-footer .section-product-footer-right {
+    width: 100%;
   }
 }
 

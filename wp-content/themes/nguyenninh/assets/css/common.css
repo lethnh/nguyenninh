@@ -533,7 +533,10 @@ body {
   outline: none;
 }
 
-
 .ratio-63 {
   --bs-aspect-ratio: 63%;
+}
+
+.ratio-71 {
+  --bs-aspect-ratio: 71%;
 }

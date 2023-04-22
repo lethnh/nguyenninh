@@ -8,8 +8,8 @@ $array_defaults = array(
 $args = wp_parse_args($args, $array_defaults);
 ?>
 <?php if ($args['show_product']) : ?>
-    <div class="w-100 d-flex section-product-footer">
-        <div class="d-flex flex-col bg-primary-10 flex-[6] justify-content-center title-block-common px-24 pt-96 pb-96">
+    <div class="d-flex section-product-footer">
+        <div class="d-flex flex-col bg-primary-10 section-product-footer-left justify-content-center title-block-common px-24 pt-96 pb-96">
             <p class="sub-title primary-80">Sản phẩm</p>
             <div class="title-main d-flex align-self-center">
                 <p class="primary-80">Những gì <br> Nguyên Ninh mang tới cho mọi người</p>
@@ -22,8 +22,8 @@ $args = wp_parse_args($args, $array_defaults);
                 ]); ?>
             </div>
         </div>
-        <div class="flex-[9]">
-            <img class="h-100 w-100 object-cover" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/IMG_1607.jpg">
+        <div class="section-product-footer-right img-wrapper ratio-16x9">
+            <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/IMG_1607.jpg">
         </div>
     </div>
 <?php endif; ?>
