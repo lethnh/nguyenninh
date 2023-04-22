@@ -55,7 +55,7 @@ $args = wp_parse_args($args, $array_defaults);
     <!-- SideBar -->
     <aside class="menu-aside-page">
         <div class="backdrop"></div>
-        <div class="menu-aside">
+        <div class="menu-aside bg-secondary-04">
             <div class="menu-menu-1-container">
                 <?php
                 wp_nav_menu(array(
@@ -67,6 +67,11 @@ $args = wp_parse_args($args, $array_defaults);
                     'container'       => false,
                 ));
                 ?>
+                <?php get_template_part('partials/btn', 'common', [
+                    'text' => $theme_options['phone_number'],
+                    'link' => 'tel:' . $theme_options['phone_number'],
+                    'class' => 'btn-call'
+                ]); ?>
             </div>
         </div>
     </aside>

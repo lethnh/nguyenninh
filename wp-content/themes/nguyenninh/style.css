@@ -974,7 +974,7 @@ footer .menu-footer .menu-footer-child li a::after {
     width: 100% !important;
   }
 
-  .post-body .title-block-common .post-title {
+  .post-body h1.post-title {
     font-size: 3rem;
     line-height: 4rem;
     margin-bottom: 1rem;
@@ -1474,7 +1474,6 @@ aside .menu-aside {
   width: 300px;
   max-width: 100%;
   height: calc(100vh);
-  background-color: #FFFFFF;
   z-index: 1050;
   transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
