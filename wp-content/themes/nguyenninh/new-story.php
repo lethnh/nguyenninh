@@ -29,7 +29,7 @@ get_header(); ?>
                 <img class="me-4" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/star.svg" alt="">
                 <h1 class="heading-topic">Câu chuyện của tuần</h1>
             </div>
-            <div class="mt-64 max-h-[34.375rem]">
+            <div class="mt-64">
                 <?php
                 global $wpdb;
                 $week = date("W", time());
