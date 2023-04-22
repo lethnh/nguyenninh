@@ -15,7 +15,7 @@ get_header(); ?>
                 <h1 class="mb-64">Các sản phẩm<br> của nhà Nguyên Ninh</h1>
             </div>
             <div class="img-wrapper ratio-16x9">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/imgs/IMG_1607.jpg" class="max-h-[43.75rem] h-[43.75rem] w-100 max-w-100 object-cover" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/imgs/IMG_1607.jpg" class="img-fluid" alt="">
             </div>
         </div>
     </section>
