@@ -88,7 +88,7 @@ get_header(); ?>
                         'is_icon' => true,
                         'link' => $theme_options['facebook'],
                         'text' => 'ĐI TỚI FACEBOOK',
-                        'class' => 'btn-facebook'
+                        'class' => 'btn-facebook d-flex align-items-center'
                     ]); ?>
                 </div>
             </div>
