@@ -8,7 +8,7 @@ $array_defaults = array(
 $args = wp_parse_args($args, $array_defaults);
 ?>
 <?php if ($args['show_product']) : ?>
-    <div class="w-100 d-flex max-h-[40.75rem] section-product-footer">
+    <div class="w-100 d-flex section-product-footer">
         <div class="d-flex flex-col bg-primary-10 flex-[6] justify-content-center title-block-common px-24 pt-96 pb-96">
             <p class="sub-title primary-80">Sản phẩm</p>
             <div class="title-main d-flex align-self-center">

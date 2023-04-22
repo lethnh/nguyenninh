@@ -63,27 +63,6 @@ $(document).ready(function () {
   //   remove: false,
   // });
 
-  $(".post_item .post_excerpt").matchHeight({
-    byRow: false,
-    property: "height",
-    target: null,
-    remove: false,
-  });
-
-  $(".post_item .post_title").matchHeight({
-    byRow: false,
-    property: "height",
-    target: null,
-    remove: false,
-  });
-
-  $(".equal-height").matchHeight({
-    byRow: false,
-    property: "height",
-    target: null,
-    remove: false,
-  });
-
   // $(".interest-cols .interest-head").matchHeight({
   //   byRow: true,
   //   property: "height",
@@ -139,20 +118,6 @@ $(document).ready(function () {
   //   target: null,
   //   remove: false,
   // });
-
-  $('.study-abroad-benefit .different-iee-block .card-info').on('click', function () {
-    $('.study-abroad-benefit .different-iee-block .card-info').removeClass('active');
-    $(this).addClass('active');
-    $('.study-abroad-benefit .iee-block-noti').addClass('d-none');
-    $($('.study-abroad-benefit .iee-block-noti')[$(this).attr('id') - 1]).removeClass('d-none');
-  })
-
-  $('.iee-layout-column .iee-layout-list .card-info').on('click', function () {
-    $('.iee-layout-column .iee-layout-list .card-info').removeClass('active');
-    $(this).addClass('active');
-    $('.course-overview .iee-block-noti').addClass('d-none');
-    $($('.course-overview .iee-block-noti')[$(this).attr('id') - 1]).removeClass('d-none');
-  })
 
   $('.card-started-now.card-between').css('min-height', parseInt($('.card-started-now.card-first').css('min-height')) +
     50);
@@ -210,6 +175,28 @@ function reportWindowSize() {
   if ($("body").hasClass('admin-bar')) {
     $('#header-main').css('margin-top', $("#wpadminbar").height());
     $('aside .menu-aside').css('top', $("#wpadminbar").height() + $("#header-main .navbar-custom").height());
+  };
+  if (window.innerWidth >= 578) {
+    $(".post_item .post_excerpt").matchHeight({
+      byRow: false,
+      property: "height",
+      target: null,
+      remove: false,
+    });
+
+    $(".post_item .post_title").matchHeight({
+      byRow: false,
+      property: "height",
+      target: null,
+      remove: false,
+    });
+
+    $(".equal-height").matchHeight({
+      byRow: false,
+      property: "height",
+      target: null,
+      remove: false,
+    });
   }
 }
 

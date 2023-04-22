@@ -387,6 +387,10 @@ footer .menu-footer .menu-footer-child li a::after {
     width: 50%;
   }
 
+  footer .title-logo {
+    text-align: center;
+  }
+
 }
 
 /* 404 */
@@ -602,6 +606,12 @@ footer .menu-footer .menu-footer-child li a::after {
 }
 
 @media (max-width: 576px) {
+
+  .post_item .post_body .post_title h2 {
+    font-size: 1.25rem;
+    line-height: 2rem;
+  }
+
   .post_item.post_item_main .post_body {
     position: relative !important;
     height: 100%;
@@ -712,7 +722,7 @@ footer .menu-footer .menu-footer-child li a::after {
 
 @media (max-width: 576px) {
   .section-diary h1.heading-topic {
-    font-size: 2.25rem;
+    font-size: 2rem;
   }
 
   .section-diary .section-diary-line {
@@ -799,7 +809,7 @@ footer .menu-footer .menu-footer-child li a::after {
     margin-top: 3rem;
   }
 
-  .section-product-footer .flex-\[\9\]\ {
+  .section-product-footer .flex-\[\9\]\  {
     flex-basis: 100%;
   }
 }
