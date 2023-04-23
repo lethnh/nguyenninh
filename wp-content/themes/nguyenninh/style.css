@@ -677,6 +677,10 @@ footer .menu-footer .menu-footer-child li a::after {
 
 @media (max-width: 576px) {
 
+  .chapter-second .btn-common {
+    padding: 17px;
+  }
+
   .post_item .post_body {
     padding: 1rem;
   }
@@ -692,6 +696,14 @@ footer .menu-footer .menu-footer-child li a::after {
     width: 100%;
     max-height: 100%;
     max-width: 100%;
+  }
+
+  .post_item.post_item_main .img-wrapper {
+    padding-bottom: 69% !important;
+  }
+
+  .post_item.post_item_main .post_story_of_week {
+    padding: 1rem;
   }
 }
 
@@ -796,11 +808,17 @@ footer .menu-footer .menu-footer-child li a::after {
 
 @media (max-width: 576px) {
   .section-diary h1.heading-topic {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 
   .section-diary .section-diary-line {
     margin: 4rem auto;
+  }
+
+  .section-diary .img-star {
+    width: 2rem;
+    margin-right: 1rem !important;
   }
 }
 

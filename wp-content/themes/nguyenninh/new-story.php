@@ -26,7 +26,7 @@ get_header(); ?>
     <div class="container">
         <div class="block-of-week">
             <div class="d-flex align-items-center">
-                <img class="me-4" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/star.svg" alt="">
+                <img class="me-4 img-star" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/star.svg" alt="">
                 <h1 class="heading-topic">Câu chuyện của tuần</h1>
             </div>
             <div class="mt-64">
@@ -84,7 +84,7 @@ get_header(); ?>
 
         <div class="block-of-discovery">
             <div class="d-flex align-items-center">
-                <img class="me-5" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/star.svg" alt="">
+                <img class="me-5 img-star" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/star.svg" alt="">
                 <h1 class="heading-topic">Khám phá nhật ký Nguyên Ninh</h1>
             </div>
             <div class="row list-posts mt-64">
