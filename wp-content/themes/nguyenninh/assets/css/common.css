@@ -312,14 +312,26 @@ body {
 
 @media (max-width: 576px) {
 
+  .title-block-common {
+    margin-bottom: 2.5rem !important;
+  }
+
+  .title-block-common .sub-title {
+    font-size: 0.75rem;
+  }
+
   .title-block-common .title-main {
     margin-top: 2rem;
-    width: 80% !important;
+    width: 100% !important;
   }
 
   .title-block-common .title-main p {
-    font-size: 2rem;
-    line-height: 3rem;
+    font-size: 1.75rem;
+    line-height: 2.5rem;
+  }
+
+  .title-block-common .sub-title-below {
+    width: 100% !important;
   }
 }
 
@@ -372,8 +384,8 @@ body {
 
 @media (max-width: 576px) {
   .section-common {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
 }
 

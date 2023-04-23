@@ -28,19 +28,17 @@ $args = wp_parse_args($args, $array_defaults);
     </div>
 <?php endif; ?>
 
-<section class="section-common bg-secondary-04">
+<section class="section-common bg-secondary-04 section-newsletter">
     <div class="container">
-        <div class="flex-col flex">
-            <?php get_template_part('partials/title', 'common', [
-                'sub-title' => 'Newsletter',
-                'title' => 'Theo dõi <span class="text-[#53802B]">Nguyên Ninh<span>',
-                'class' => 'mb-64'
-            ]); ?>
-            <div class="row w-75 align-self-center">
-                <div class="text-style-base gray-70 col-md-6">Điền email vào đây để không bỏ lỡ những câu chuyện ấm ám, những tin tức, hay khuyến mãi của Nguyên Ninh gửi tới hộp thư của bạn.</div>
-                <div class="col-md-6">
-                    <?= do_shortcode('[newsletter_form form="1"]'); ?>
-                </div>
+        <?php get_template_part('partials/title', 'common', [
+            'sub-title' => 'Newsletter',
+            'title' => 'Theo dõi <span class="text-[#53802B]">Nguyên Ninh<span>',
+            'class' => 'mb-64'
+        ]); ?>
+        <div class="row w-75 mx-auto section-newsletter-wrapper">
+            <div class="text-style-base gray-70 col-md-6">Điền email vào đây để không bỏ lỡ những câu chuyện ấm ám, những tin tức, hay khuyến mãi của Nguyên Ninh gửi tới hộp thư của bạn.</div>
+            <div class="col-md-6">
+                <?= do_shortcode('[newsletter_form form="1"]'); ?>
             </div>
         </div>
     </div>
@@ -66,7 +64,7 @@ $args = wp_parse_args($args, $array_defaults);
                         <div class="footer-info-desc text-white"><?= $theme_options['email'] ?></div>
                     </div>
                 </div>
-                <div class="d-flex justify-content-end footer-social equal-height">
+                <div class="d-flex justify-content-end footer-social align-items-center equal-height">
                     <a href="#" class="text-white  block">FACEBOOK
                         <i class="fa-regular fa-arrow-up rotate-45 text-white"></i>
                     </a>
@@ -94,7 +92,7 @@ $args = wp_parse_args($args, $array_defaults);
                     <div class="footer-language-line">|</div>
                     <a href="#" class="gray-30">ENG</a>
                 </div>
-                <div class="d-flex gap-16 w-100 footer-cookie equal-height">
+                <div class="d-flex w-100 footer-cookie equal-height">
                     <div class="d-flex">
                         <a href="/chinh-sach-cookie" class="text-white me-5">COOKIE</a>
                         <a href="#" class="text-white">QUYỀN RIÊNG TƯ</a>
