@@ -1110,6 +1110,11 @@ footer .menu-footer .menu-footer-child li a::after {
 @media (max-width: 768px) {}
 
 @media (max-width: 576px) {
+  .section-post-relate h2 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
   .post-body .title-block-common {
     margin-right: 0px !important;
     width: 100% !important;
