@@ -423,6 +423,23 @@ footer .menu-footer .menu-footer-child li a::after {
   margin-bottom: 38px;
 }
 
+@media (max-width: 768px) {}
+
+@media (max-width: 576px) {
+  .section-404 h1 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .section-404 .d-flex {
+    align-items: center !important;
+  }
+
+  .section-404 .btn-common {
+    margin-top: 1rem;
+  }
+}
+
 .mt-64 {
   margin-top: 64px;
 }
