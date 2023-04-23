@@ -1000,6 +1000,34 @@ footer .menu-footer .menu-footer-child li a::after {
   margin-bottom: 16px;
 }
 
+@media (max-width: 576px) {
+  .section-su-khac-biet .section-su-khac-biet-list .section-su-khac-biet-item:not(:first-child) {
+    margin-top: 2rem;
+  }
+
+  .section-su-khac-biet .section-su-khac-biet-list .section-su-khac-biet-item .section-su-khac-biet-item-left h3 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  .section-su-khac-biet .section-su-khac-biet-list .section-su-khac-biet-item .section-su-khac-biet-item-right .section-su-khac-biet-item-right-content {
+    flex-direction: column;
+  }
+
+  .section-su-khac-biet .section-su-khac-biet-list .section-su-khac-biet-item .section-su-khac-biet-item-right .section-su-khac-biet-item-right-content p {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+
+  .section-su-khac-biet .section-su-khac-biet-list .section-su-khac-biet-item .section-su-khac-biet-item-right .section-su-khac-biet-item-right-content p:first-child {
+    margin-bottom: 1rem;
+  }
+
+  .section-su-khac-biet .section-su-khac-biet-list .section-su-khac-biet-item .section-su-khac-biet-item-right .section-su-khac-biet-item-right-image {
+    justify-content: space-between;
+  }
+}
+
 .tnp-submit {}
 
 .tnp-field-button {
@@ -1137,6 +1165,14 @@ footer .menu-footer .menu-footer-child li a::after {
 
   .post-body .section-post-content .text-style-base {
     width: 90% !important;
+  }
+
+  .post-body .post-thumbnail .post-social a {
+    padding: 1rem;
+  }
+
+  .post-body .post-thumbnail .post-social a img {
+    width: 1rem;
   }
 }
 

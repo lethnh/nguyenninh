@@ -124,15 +124,15 @@ get_header(); ?>
             'title' => 'Hương vị tuyệt hảo,<br>nguyên vẹn và an toàn',
             'class' => 'mb-96'
         ]); ?>
-        <div class="w-100 d-inline-flex flex-col align-items-start justify-content-start section-su-khac-biet-list">
-            <div class="w-100 row section-su-khac-biet-item">
+        <div class="d-flex flex-col align-items-start justify-content-start section-su-khac-biet-list">
+            <div class="row section-su-khac-biet-item">
                 <div class="col-md-4 section-su-khac-biet-item-left">
                     <p class="number gray-80">01</p>
                     <div class="line"></div>
                     <h3 class="gray-80">Không pha bột,<br />không tạp chất,<br />chỉ nguyên liệu tự nhiên</h3>
                 </div>
                 <div class="col-md-8 section-su-khac-biet-item-right">
-                    <div class="d-flex">
+                    <div class="d-flex section-su-khac-biet-item-right-content">
                         <p class="flex-40 gray-70 text-style-base me-4">
                             Bánh cốm Nguyên Ninh chỉ dùng duy nhất 4 nguyên liệu: Cốm nếp quýt loại I, phần nhân có đậu xanh, dừa nạo và đường kính trắng.
                         </p>
@@ -140,7 +140,7 @@ get_header(); ?>
                             Vỏ bánh được làm từ cốm xào nhuyễn, không xay, không pha bột và đặc biệt luôn xào bằng tay chứ không xào máy nên bánh dẻo thơm, dậy mùi cốm và không bị bở, vỡ khi ăn.
                         </p>
                     </div>
-                    <div class="d-flex mt-8">
+                    <div class="d-flex mt-8 section-su-khac-biet-item-right-image">
                         <div class="flex-35">
                             <img class="h-100 w-100 object-cover" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/su-khac-biet-1.png">
                         </div>
@@ -156,18 +156,18 @@ get_header(); ?>
 
                 </div>
             </div>
-            <div class="w-100 row section-su-khac-biet-item mt-96">
+            <div class="row section-su-khac-biet-item mt-96">
                 <div class="col-md-4 section-su-khac-biet-item-left">
                     <p class="number gray-80">02</p>
                     <div class="line"></div>
                     <h3 class="gray-80">Chúng tôi luôn luôn nói không với chất bảo quản</h3>
                 </div>
                 <div class="col-md-8 section-su-khac-biet-item-right">
-                    <div class="d-flex">
+                    <div class="d-flex section-su-khac-biet-item-right-content">
                         <p class="flex-40 gray-70 text-style-base me-4">Bánh cốm Nguyên Ninh chính gốc số 11 Hàng Than từ lâu đã nổi tiếng với việc không sử dụng chất bảo quản.</p>
                         <p class="flex-40 text-style-base gray-70">Dù rằng nếu sử dụng chất bảo quản theo sự cho phép của bộ Y tế thì bánh sẽ để được lâu hơn nhưng Nguyên Ninh vẫn luôn trung thành với tôn chỉ này từ xưa đến nay để gìn giữ tính nguyên bản của sản phẩm.</p>
                     </div>
-                    <div class="d-flex mt-8">
+                    <div class="d-flex mt-8 section-su-khac-biet-item-right-image">
                         <div class="flex-35">
                             <img class="h-100 w-100 object-cover" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/su-khac-biet-4.png">
                         </div>
@@ -183,18 +183,18 @@ get_header(); ?>
 
                 </div>
             </div>
-            <div class="w-100 row section-su-khac-biet-item mt-96">
+            <div class="row section-su-khac-biet-item mt-96">
                 <div class="col-md-4 section-su-khac-biet-item-left">
                     <p class="number gray-80">03</p>
                     <div class="line"></div>
                     <h3 class="gray-80">Chỉ một địa chỉ <br> duy nhất: <br> Số 11 Hàng Than</h3>
                 </div>
                 <div class="col-md-8 section-su-khac-biet-item-right">
-                    <div class="d-flex">
+                    <div class="d-flex section-su-khac-biet-item-right-content">
                         <p class="flex-40 gray-70 text-style-base me-4">Bánh cốm Nguyên Ninh chỉ có duy nhất một địa chỉ tại số 11 phố Hàng Than, Hà Nội. Đây là cửa hiệu gia truyền của gia đình, vốn là 1 ngôi nhà cổ vẫn giữ nguyên lối kiến trúc từ thế kỷ XX.</p>
                         <p class="flex-40 text-style-base gray-70">Đặc điểm nhận diện của cửa hiệu là sự khiêm tốn, giản dị, không bày bánh ra vỉa hè và trưng biển bảng sáng rực như các cửa hiệu khác.</p>
                     </div>
-                    <div class="d-flex mt-8">
+                    <div class="d-flex mt-8 section-su-khac-biet-item-right-image">
                         <div class="flex-35">
                             <img class="h-100 w-100 object-cover" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/su-khac-biet-7.png">
                         </div>
