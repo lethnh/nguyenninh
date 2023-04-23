@@ -227,6 +227,10 @@ body {
   flex: 9
 }
 
+#wpadminbar {
+  position: fixed;
+}
+
 .title-common {
   font-style: normal;
   font-weight: 400;
@@ -309,13 +313,13 @@ body {
 @media (max-width: 576px) {
 
   .title-block-common .title-main {
-    margin-top: 2.5rem;
+    margin-top: 2rem;
     width: 80% !important;
   }
 
   .title-block-common .title-main p {
-    font-size: 2.5em;
-    line-height: 3.5rem;
+    font-size: 2rem;
+    line-height: 3rem;
   }
 }
 
