@@ -1697,6 +1697,11 @@ aside .backdrop {
   -o-transition: all 0.3s ease;
 }
 
+aside .backdrop.is-active {
+  opacity: 1;
+  visibility: visible;
+}
+
 aside .menu-aside {
   position: fixed;
   top: 111px;
@@ -1709,11 +1714,21 @@ aside .menu-aside {
   -moz-transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
+  border-top: 0.5px solid #383A36;
   padding: 20px;
 }
 
 aside.menu-aside-page.show .menu-aside {
   right: 0;
+}
+
+aside .menu-aside ul li {
+  border-bottom: 0.5px solid #383A36;
+  padding: 1rem 0;
+}
+
+aside .menu-aside .btn-call {
+  margin-top: 2rem;
 }
 
 .menu-item-has-children {

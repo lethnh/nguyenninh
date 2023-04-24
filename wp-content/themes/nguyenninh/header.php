@@ -55,7 +55,7 @@ $args = wp_parse_args($args, $array_defaults);
     <!-- SideBar -->
     <aside class="menu-aside-page">
         <div class="backdrop"></div>
-        <div class="menu-aside bg-secondary-04">
+        <div class="menu-aside bg-gray-02">
             <div class="menu-menu-1-container">
                 <?php
                 wp_nav_menu(array(

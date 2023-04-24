@@ -9,6 +9,7 @@ $(document).ready(function () {
   $("#btn-hamburger").on("click", function (e) {
     $(".menu-aside-page").toggleClass("show");
     $(this).toggleClass("is-active");
+    $(".backdrop").toggleClass("is-active");
     $("body").toggleClass("overflow-hidden");
   });
 
@@ -174,7 +175,8 @@ function copyToClipboard(element) {
 function reportWindowSize() {
   if ($("body").hasClass('admin-bar')) {
     $('#header-main').css('margin-top', $("#wpadminbar").height());
-    $('aside .menu-aside').css('top', $("#wpadminbar").height() + $("#header-main .navbar-custom").height());
+    $('aside .menu-aside').css('top', $("#wpadminbar").height() + $("#header-main").height());
+    $('aside .backdrop').css('top', $("#wpadminbar").height() + $("#header-main").height());
   };
   if (window.innerWidth >= 578) {
     $(".post_item .post_excerpt").matchHeight({
