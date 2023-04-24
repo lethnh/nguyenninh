@@ -11,7 +11,7 @@ get_header(); ?>
     <section class="section-common">
         <div class="container">
             <div class="d-flex flex-col align-items-center w-4/5 mx-auto">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/imgs/star.svg" alt="">
+                <img class="img-star" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/star.svg" alt="">
                 <h1 class="mb-64">Các sản phẩm<br> của nhà Nguyên Ninh</h1>
             </div>
             <div class="img-wrapper ratio-16x9">
@@ -26,7 +26,7 @@ get_header(); ?>
         <div class="container">
             <div class="d-flex flex-col align-items-center mx-auto">
                 <div class="mb-8 text-center">
-                    <img class="" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/star.svg" alt="">
+                    <img class="img-star" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/star.svg" alt="">
                 </div>
                 <h2 class="gray-70 text-center">Dưới đây là những sản phẩm mà hiện tại Nguyên Ninh đang bày bán.</h2>
             </div>

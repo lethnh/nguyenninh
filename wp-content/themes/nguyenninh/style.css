@@ -1278,9 +1278,13 @@ footer .menu-footer .menu-footer-child li a::after {
   }
 
   .page-product-list h1 {
-    font-size: 2.5rem;
-    line-height: 3.5rem;
+    font-size: 2rem;
+    line-height: 3rem;
     margin-top: 1rem;
+  }
+
+  .page-product-list .img-star {
+    width: 2rem;
   }
 
   .page-product-list h2 {
@@ -1292,7 +1296,9 @@ footer .menu-footer .menu-footer-child li a::after {
   }
 
   .section-product-contact h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
+    line-height: 3rem;
+    margin-bottom: 1rem;
   }
 
   .section-product-contact .text-style-base {
@@ -1471,6 +1477,15 @@ color: #9EA09C;
   border-bottom: 0.5px solid #B8B9B6;
 }
 
+@media (max-width: 768px) {}
+
+@media (max-width: 576px) {
+  .section-product-relate h2 {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+}
+
 .product-info-left .product-info-left-item p {
   font-family: 'Raleway';
   font-style: normal;
@@ -1544,6 +1559,47 @@ color: #9EA09C;
   font-size: 48px;
   line-height: 56px;
   letter-spacing: -0.02em;
+}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 576px) {
+  .product-title-main {
+    font-size: 2rem;
+  }
+
+  .single-san-pham .description-block {
+    padding-top: 2rem;
+  }
+
+  .single-san-pham .description-block .description-block-title {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .single-san-pham .description-block .mt-24 {
+    margin-top: 2rem;
+  }
+
+  .single-san-pham .description-block .product-info-left {
+    width: 100%;
+  }
+
+  .single-san-pham .description-block .product-info-right {
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  .product-block-input-number {
+    width: 50%;
+    margin-right: 0px;
+    text-align: right;
+  }
+
+  .btn-order-wrapper {
+    width: 100% !important;
+    margin-top: 1rem;
+  }
 }
 
 .section-history-slider .glide.hero .slider-wrapper {
