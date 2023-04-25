@@ -58,7 +58,7 @@ get_header(); ?>
                     <?php $milestone = get_field('milestone'); ?>
                     <?php foreach ($milestone as $key => $value) : ?>
                         <li class="glide__slide">
-                            <div class="d-flex align-items-start">
+                            <div class="d-flex align-items-start section-history-slider-wrapper">
                                 <div class="w-50 slider-wrapper">
                                     <img class="w-100 h-100 object-cover" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/IMG_2621.jpg" />
                                 </div>
@@ -160,7 +160,15 @@ get_header(); ?>
             startAt: 0,
             rewind: false,
             perView: 1.6,
-            gap: 48
+            gap: 48,
+            breakpoints: {
+                800: {
+                    perView: 2
+                },
+                500: {
+                    perView: 1
+                }
+            }
         })
         slider1.mount();
         const slider = new Glide('.slider-years', {
