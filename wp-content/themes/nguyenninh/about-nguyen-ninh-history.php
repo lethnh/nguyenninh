@@ -20,7 +20,7 @@ get_header(); ?>
         ]); ?>
         <div class="inline-flex flex-col space-y-16 items-content-start justify-content-start">
             <div class="inline-flex flex-col space-y-16 items-content-start justify-content-start mb-[24]">
-                <div class="d-flex flex-wrap space-x-10 items-start justify-center section-about-nguyen-ninh-history">
+                <div class="d-flex space-x-10 items-start justify-center section-about-nguyen-ninh-history">
                     <div class="h-full w-[54%] section-about-nguyen-ninh-history-left">
                         <img class="max-h-[30.625rem] h-[30.625rem] w-100" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/cau-chuyen-1.png" />
                         <div class="d-flex justify-content-between mt-3">
