@@ -336,6 +336,15 @@ body {
 
   .title-block-common .sub-title-below-2 {
     width: 100% !important;
+    flex-direction: column;
+  }
+
+  .title-block-common .sub-title-below-2 p.text-content {
+    margin-left: 0px !important;
+  }
+
+  .title-block-common .sub-title-below-2 p.text-content:last-child {
+    margin-top: 1rem;
   }
 }
 
