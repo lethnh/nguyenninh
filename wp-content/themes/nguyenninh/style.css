@@ -765,6 +765,10 @@ footer .menu-footer .menu-footer-child li a::after {
     flex-direction: column;
   }
 
+  .section-value-item:nth-child(even) {
+    flex-direction: column-reverse;
+  }
+
   .section-value-block .section-value-item .section-value-item-content {
     flex-basis: 100%;
     width: 100%;
@@ -773,6 +777,21 @@ footer .menu-footer .menu-footer-child li a::after {
   .section-value-block .section-value-item .section-value-item-image {
     flex-basis: 100%;
     width: 100%;
+    margin-right: 0px !important;
+  }
+
+  .section-value-block .section-value-item .section-value-item-image.right .section-value-item-image-overlay {
+    left: 12px;
+    top: 12px;
+  }
+
+  .section-value-block .section-value-item .section-value-item-image {
+    margin-left: 0px !important;
+  }
+
+  .section-value-block .section-value-item .section-value-item-image.left .section-value-item-image-overlay {
+    right: 12px;
+    top: 12px;
   }
 
   .section-diary .section-diary-line {
