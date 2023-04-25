@@ -20,8 +20,8 @@ get_header(); ?>
         ]); ?>
         <div class="inline-flex flex-col space-y-16 items-content-start justify-content-start">
             <div class="inline-flex flex-col space-y-16 items-content-start justify-content-start mb-[24]">
-                <div class="inline-flex space-x-10 items-start justify-center mobile:h-[300px]">
-                    <div class="h-full w-[54%]">
+                <div class="d-flex flex-wrap space-x-10 items-start justify-center section-about-nguyen-ninh-history">
+                    <div class="h-full w-[54%] section-about-nguyen-ninh-history-left">
                         <img class="max-h-[30.625rem] h-[30.625rem] w-100" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/cau-chuyen-1.png" />
                         <div class="d-flex justify-content-between mt-3">
                             <p class="gray-80 text-uppercase fs-14 fw-bold">NƠI CHIẾC BÁNH CỐM
@@ -30,7 +30,7 @@ get_header(); ?>
                                 11 HÀNG THAN</p>
                         </div>
                     </div>
-                    <div class="inline-flex flex-col self-start space-y-8 items-start justify-between max-w-[45%] h-full">
+                    <div class="inline-flex flex-col self-start space-y-8 items-start justify-between max-w-[45%] h-full section-about-nguyen-ninh-history-right">
                         <div class="d-flex flex-col space-y-4 items-content-start justify-content-start h-100">
                             <img class="max-h-[66%] max-w-[100%] w-100" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/cau-chuyen-2.png" />
                             <p class="text-style-base w-[78%] mt-3">Ngôi nhà gia tộc
@@ -99,14 +99,14 @@ get_header(); ?>
 <!--  -->
 
 <!--  -->
-<section class="bg-secondary-10 section-common">
+<section class="bg-secondary-10 section-common section-thanh-tuu">
     <div class="container">
         <?php get_template_part('partials/title', 'common', [
             'sub-title' => 'THÀNH TỰU VÀ GIÁ TRỊ THƯƠNG HIỆU',
             'title' => 'Những điều Nguyên Ninh luôn tự hào'
         ]); ?>
         <div class="w-100 inline-flex flex-col items-start justify-content-start">
-            <div class="flex-col mx-auto flex w-1/3 mt-16">
+            <div class="flex-col mx-auto flex w-1/3 mt-16 section-thanh-tuu-content">
                 <div class="w-100">
                     <p class="text-style-base gray-80">Nguyên Ninh sở hữu bản quyền thương hiệu quốc gia số 14-308 cho chiếc bánh cốm đặc trưng của mình cũng đã hơn 100 năm rồi.</p>
                 </div>
@@ -114,24 +114,24 @@ get_header(); ?>
                     <p class="text-style-base gray-80">Xuyên suốt quá trình phục vụ khách hàng, Nguyên Ninh đã đạt được nhiều giải thưởng và thành tựu đáng tự hào.</p>
                 </div>
             </div>
-            <div class="flex max-h-[39.375rem] h-[39.375rem] mt-24 w-100">
-                <div class="h-1/2 max-h-1/2 w-[24%] mr-4">
+            <div class="flex max-h-[39.375rem] h-[39.375rem] mt-24 w-100 section-thanh-tuu-image-wrapper">
+                <div class="h-1/2 max-h-1/2 w-[24%] mr-4 section-thanh-tuu-image">
                     <img class="h-100 object-cover w-100" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/danh-hieu-1.png" alt="">
                 </div>
-                <div class="h-4/5 max-h-4/5 w-1/2 self-center mr-4">
+                <div class="h-4/5 max-h-4/5 w-1/2 self-center mr-4 section-thanh-tuu-image">
                     <img class="h-100 object-cover w-100" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/danh-hieu-2.png" alt="">
                 </div>
-                <div class="h-1/2 max-h-1/2 w-[24%] self-end">
+                <div class="h-1/2 max-h-1/2 w-[24%] self-end section-thanh-tuu-image">
                     <img class="h-100 object-cover w-100" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/danh-hieu-3.png" alt="">
                 </div>
             </div>
-            <div class="flex-col mx-auto flex w-1/3 mt-16">
+            <div class="flex-col mx-auto flex w-1/3 mt-16 section-thanh-tuu-content">
                 <p class="text-style-base gray-80">Có lẽ câu chuyện đặc biệt nhất về thành tựu của Nguyên Ninh là giải thưởng thương hiệu Việt hội nhập WTO. Đây không chỉ là một thành tựu đáng nhớ và có ý nghĩa to lớn với Nguyên Ninh mà còn với cả nền văn hoá và du lịch của Việt Nam ta.</p>
             </div>
-            <div class="flex-col mx-auto flex w-4/5 mt-16 my-24">
+            <div class="flex-col mx-auto flex w-4/5 mt-16 my-24 section-thanh-tuu-image">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/imgs/danh-hieu-4.png" class="w-100 max-h-[36.125rem] max-w-100" alt="">
             </div>
-            <div class="flex-col mx-auto flex w-1/3">
+            <div class="flex-col mx-auto flex w-1/3 section-thanh-tuu-content">
                 <div class="w-100">
                     <p class="text-style-base gray-80">Nhưng điều tuyệt vời nhất mà Nguyên Ninh luôn tự hào đó là sự yêu mến của các quý khách hàng với những chiếc bánh cốm thơm ngon và với Nguyên Ninh.</p>
                 </div>

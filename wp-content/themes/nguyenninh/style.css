@@ -1833,3 +1833,48 @@ aside.menu-aside-page .menu-item-has-children .dropdown-menu li a {
 }
 
 /* End SideBar */
+
+
+@media (max-width: 768px) {}
+
+@media (max-width: 576px) {
+  .section-thanh-tuu .section-thanh-tuu-content {
+    width: 100% !important;
+    margin-top: 1rem !important;
+  }
+
+  .section-thanh-tuu .section-thanh-tuu-image-wrapper {
+    flex-wrap: wrap;
+    height: auto;
+    max-height: 100%;
+    margin-top: 1rem !important;
+  }
+
+  .section-thanh-tuu .section-thanh-tuu-image {
+    margin: 0 !important;
+    width: 100%;
+    margin-top: 1rem !important;
+  }
+}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 576px) {
+
+  .section-about-nguyen-ninh-history .section-about-nguyen-ninh-history-left,
+  .section-about-nguyen-ninh-history .section-about-nguyen-ninh-history-right {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .section-about-nguyen-ninh-history .section-about-nguyen-ninh-history-left img,
+  .section-about-nguyen-ninh-history .section-about-nguyen-ninh-history-right img {
+    object-fit: cover;
+  }
+
+  .section-about-nguyen-ninh-history .section-about-nguyen-ninh-history-right {
+    margin-top: 2rem;
+  }
+}

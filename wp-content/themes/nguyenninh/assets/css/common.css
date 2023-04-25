@@ -333,6 +333,10 @@ body {
   .title-block-common .sub-title-below {
     width: 100% !important;
   }
+
+  .title-block-common .sub-title-below-2 {
+    width: 100% !important;
+  }
 }
 
 /*  */
