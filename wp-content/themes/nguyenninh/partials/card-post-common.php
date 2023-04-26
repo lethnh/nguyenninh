@@ -7,9 +7,7 @@ $array_defaults = array(
 $args = wp_parse_args($args, $array_defaults);
 ?>
 <div class="post_item other <?= $args['class']; ?>">
-    <div class="img-wrapper">
-        <img src="<?php the_post_thumbnail_url() ?>">
-    </div>
+    <div class="img-wrapper"><?= get_the_post_thumbnail(get_the_ID(), 'post-thumbnail') ?></div>
     <div class="post_body d-flex flex-col justify-content-between">
         <div class="d-flex flex-col">
             <div class="post_title gray-80 mb-3">

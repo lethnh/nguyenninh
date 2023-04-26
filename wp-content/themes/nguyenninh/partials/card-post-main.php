@@ -13,7 +13,7 @@ $args = wp_parse_args($args, $array_defaults);
 
 <div class="position-relative col-span-2 post_item post_item_main <?= $args['class']; ?>">
     <div class="img-wrapper" style="<?= $args['style_image']; ?>">
-        <?= get_the_post_thumbnail($args['post_id']) ?>
+        <?= get_the_post_thumbnail($args['post_id'], 'post-thumbnail') ?>
     </div>
     <?php if ($args['is_flag_story_of_week']) : ?>
         <div class="position-absolute post_story_of_week bg-red-60 px-8 py-4 left-0 top-0 mt-0 text-white">Nổi bật tuần này</div>
