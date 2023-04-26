@@ -140,7 +140,15 @@ get_header(); ?>
             autoplay: 1,
             animationDuration: 5000,
             animationTimingFunc: 'linear',
-            perView: 3
+            perView: 3,
+            breakpoints: {
+                800: {
+                    perView: 2
+                },
+                500: {
+                    perView: 1
+                }
+            }
         }).mount()
     });
 </script>
