@@ -24,12 +24,12 @@ get_header(null, ['is_body_main' => true]); ?>
         ]); ?>
         <div class="chapter-content d-flex align-items-end">
             <div class="h-100 w-50 chapter-content-left">
-                <img class="h-100 object-cover" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/su-khac-biet-7.png" />
+                <img class="h-100 object-cover" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/su-khac-biet-7.webp" />
             </div>
             <div class="chapter-content-right w-50">
                 <p class="chapter-content-title gray-70">Bánh cốm được sáng tạo vào năm 1865 bởi cụ trưởng ái gia tộc Nguyên Ninh – cụ Trần Thị Luân. </p>
                 <p class="chapter-content-sub-content gray-70 mt-3">Trải qua hơn 150 năm, công thức sản xuất bánh không hề có thay đổi lớn, chỉ điều chỉnh tỷ lệ sao cho hương vị ngày càng hài hòa, hợp khẩu vị thực khách thời hiện đại. Bánh cốm Nguyên Ninh cam kết không sử dụng chất bảo quản, không thêm phụ gia, tạp chất, giữ nguyên cách làm và nguyên liệu như những ngày đầu.</p>
-                <img class="img-fluid object-cover" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/home-1.png" />
+                <img class="img-fluid object-cover" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/home-1.webp" />
             </div>
         </div>
     </div>
@@ -47,7 +47,7 @@ get_header(null, ['is_body_main' => true]); ?>
         ]); ?>
         <div class="chapter-content d-flex align-items-center mt-64">
             <div class="h-100 w-50 chapter-content-left">
-                <img class="h-100 object-cover" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/dac-biet-1.png" />
+                <img class="h-100 object-cover" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/dac-biet-1.webp" />
             </div>
             <div class="w-50 chapter-content-right">
                 <p class="chapter-content-right-title-main gray-80">Hãy thử một lần ghé qua 11 Hàng Than mua chiếc bánh cốm Nguyên Ninh.</p>
@@ -55,7 +55,7 @@ get_header(null, ['is_body_main' => true]); ?>
             </div>
         </div>
         <div class="mt-64 img-chapter-second">
-            <img class="w-100" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/dac-biet-2.png">
+            <img class="w-100" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/dac-biet-2.webp">
         </div>
         <div class="d-flex flex-col align-self-center w-75 mx-auto mt-32">
             <p class="text-style-base">Dù trong các lễ cưới hỏi truyền thống hay hiện đại, bánh cốm Nguyên Ninh vẫn luôn may mắn được làm "người bạn đồng hành" của nhiều cặp đôi, gửi tặng nhà trai những chiếc bánh để kết tráp, gửi tặng nhà gái món quà cho quan khách thâm thương.</p>

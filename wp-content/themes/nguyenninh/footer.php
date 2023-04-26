@@ -23,7 +23,7 @@ $args = wp_parse_args($args, $array_defaults);
             </div>
         </div>
         <div class="section-product-footer-right img-wrapper ratio-16x9">
-            <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/IMG_1607.jpg">
+            <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/IMG_1607.webp">
         </div>
     </div>
 <?php endif; ?>

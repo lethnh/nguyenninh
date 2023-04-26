@@ -17,7 +17,7 @@ get_header(); ?>
         <div class="w-100 flex">
             <div class="w-[30%]"></div>
             <div class="w-[70%] h-full">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/imgs/su-khac-biet-7.png" class="w-100 object-cover max-h-full" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/imgs/su-khac-biet-7.webp" class="w-100 object-cover max-h-full" alt="">
                 <?php echo do_shortcode('[gravityform id="1" title="false" ajax="true"]') ?>
             </div>
         </div>

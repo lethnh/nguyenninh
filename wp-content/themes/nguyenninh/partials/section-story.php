@@ -5,7 +5,7 @@ $array_defaults = array(
     'title' => get_the_title(),
     'sub-title-below' => null,
     'sub-title-below-2' => null,
-    'background_image' => get_template_directory_uri() . '/assets/imgs/cau-chuyen-1.png',
+    'background_image' => get_template_directory_uri() . '/assets/imgs/cau-chuyen-1.webp',
     'is_black_and_white' => false,
     'class' => null
 );

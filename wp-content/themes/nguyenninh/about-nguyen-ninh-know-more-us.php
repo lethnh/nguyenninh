@@ -22,13 +22,13 @@ get_header(); ?>
             <div class="glide__track" data-glide-el="track">
                 <ul class="glide__slides">
                     <li class="glide__slide">
-                        <img src="<?php echo get_template_directory_uri(); ?>//assets/imgs/about-slide-1.png" alt="" class="w-100 h-full max-h-full object-cover">
+                        <img src="<?php echo get_template_directory_uri(); ?>//assets/imgs/about-slide-1.webp" alt="" class="w-100 h-full max-h-full object-cover">
                     </li>
                     <li class="glide__slide">
-                        <img src="<?php echo get_template_directory_uri(); ?>//assets/imgs/about-slide-2.png" alt="" class="w-100 h-full max-h-full object-cover">
+                        <img src="<?php echo get_template_directory_uri(); ?>//assets/imgs/about-slide-2.webp" alt="" class="w-100 h-full max-h-full object-cover">
                     </li>
                     <li class="glide__slide">
-                        <img src="<?php echo get_template_directory_uri(); ?>//assets/imgs/about-slide-3.png" alt="" class="w-100 h-full max-h-full object-cover">
+                        <img src="<?php echo get_template_directory_uri(); ?>//assets/imgs/about-slide-3.webp" alt="" class="w-100 h-full max-h-full object-cover">
                     </li>
                 </ul>
             </div>
@@ -55,7 +55,7 @@ get_header(); ?>
         <div class="d-flex flex-col items-content-start justify-content-start section-value-block">
             <div class="d-inline-flex align-items-center justify-content-center section-value-item">
                 <div class="position-relative w-[60%]  ml-10 section-value-item-image left">
-                    <img class="w-100 object-cover z-2" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/about-gia-tri-su-menh-1.png" style="position:inherit" />
+                    <img class="w-100 object-cover z-2" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/about-gia-tri-su-menh-1.webp" style="position:inherit" />
                     <div class="position-absolute bg-primary-05 w-100 h-full max-w-100 max-h-full section-value-item-image-overlay z-1"></div>
                 </div>
                 <div class="d-flex aligns-self-start align-items-center w-[40%]  flex-col section-value-item-content">
@@ -83,13 +83,13 @@ get_header(); ?>
                     </p>
                 </div>
                 <div class="position-relative w-[60%]  mr-10 section-value-item-image right">
-                    <img class="w-100 object-cover z-2" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/about-gia-tri-su-menh-2.png" style="position:inherit" />
+                    <img class="w-100 object-cover z-2" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/about-gia-tri-su-menh-2.webp" style="position:inherit" />
                     <div class="position-absolute bg-primary-05 w-100 h-100 max-w-100 max-h-full section-value-item-image-overlay z-1"></div>
                 </div>
             </div>
             <div class="d-inline-flex align-items-center justify-content-center mt-96 section-value-item">
                 <div class="position-relative w-[60%]  ml-10 section-value-item-image left">
-                    <img class="w-100 object-cover z-2" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/about-gia-tri-su-menh-3.png" style="position:inherit" />
+                    <img class="w-100 object-cover z-2" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/about-gia-tri-su-menh-3.webp" style="position:inherit" />
                     <div class="position-absolute bg-primary-05 w-100 h-full max-w-100 max-h-full section-value-item-image-overlay z-1"></div>
                 </div>
                 <div class="d-flex aligns-self-start align-items-center w-[40%]  flex-col section-value-item-content">
@@ -107,7 +107,7 @@ get_header(); ?>
                     <p class="text-center text-style-base gray-70">Và cũng mong rằng công sức ít ỏi của Nguyên Ninh có thể đóng góp cho nền du lịch của nước Việt Nam ta.</p>
                 </div>
                 <div class="position-relative w-[60%]  mr-10 section-value-item-image right">
-                    <img class="w-100 object-cover z-2" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/about-gia-tri-su-menh-4.png" style="position:inherit" />
+                    <img class="w-100 object-cover z-2" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/about-gia-tri-su-menh-4.webp" style="position:inherit" />
                     <div class="position-absolute bg-primary-05 w-100 h-100 max-w-100 max-h-full section-value-item-image-overlay z-1"></div>
                 </div>
             </div>
@@ -142,13 +142,13 @@ get_header(); ?>
                     </div>
                     <div class="d-flex mt-8 section-su-khac-biet-item-right-image">
                         <div class="flex-35">
-                            <img class="h-100 w-100 object-cover" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/su-khac-biet-1.png">
+                            <img class="h-100 w-100 object-cover" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/su-khac-biet-1.webp">
                         </div>
                         <div class="flex-25 px-3">
-                            <img class="h-100 w-100 object-cover" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/su-khac-biet-2.png">
+                            <img class="h-100 w-100 object-cover" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/su-khac-biet-2.webp">
                         </div>
                         <div class="flex-35">
-                            <img class="h-100 w-100 object-cover" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/su-khac-biet-3.png">
+                            <img class="h-100 w-100 object-cover" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/su-khac-biet-3.webp">
                         </div>
                     </div>
                 </div>
@@ -169,13 +169,13 @@ get_header(); ?>
                     </div>
                     <div class="d-flex mt-8 section-su-khac-biet-item-right-image">
                         <div class="flex-35">
-                            <img class="h-100 w-100 object-cover" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/su-khac-biet-4.png">
+                            <img class="h-100 w-100 object-cover" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/su-khac-biet-4.webp">
                         </div>
                         <div class="flex-25 px-3">
-                            <img class="h-100 w-100 object-cover" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/su-khac-biet-5.png">
+                            <img class="h-100 w-100 object-cover" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/su-khac-biet-5.webp">
                         </div>
                         <div class="flex-35">
-                            <img class="h-100 w-100 object-cover" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/su-khac-biet-6.png">
+                            <img class="h-100 w-100 object-cover" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/su-khac-biet-6.webp">
                         </div>
                     </div>
                 </div>
@@ -196,13 +196,13 @@ get_header(); ?>
                     </div>
                     <div class="d-flex mt-8 section-su-khac-biet-item-right-image">
                         <div class="flex-35">
-                            <img class="h-100 w-100 object-cover" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/su-khac-biet-7.png">
+                            <img class="h-100 w-100 object-cover" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/su-khac-biet-7.webp">
                         </div>
                         <div class="flex-25 px-3">
-                            <img class="h-100 w-100 object-cover" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/su-khac-biet-8.png">
+                            <img class="h-100 w-100 object-cover" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/su-khac-biet-8.webp">
                         </div>
                         <div class="flex-35">
-                            <img class="h-100 w-100 object-cover" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/su-khac-biet-9.png">
+                            <img class="h-100 w-100 object-cover" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/su-khac-biet-9.webp">
                         </div>
                     </div>
                 </div>

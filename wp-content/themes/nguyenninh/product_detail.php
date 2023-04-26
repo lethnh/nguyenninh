@@ -8,10 +8,10 @@ get_header(); ?>
 <div class="relative z-[-1] mobile:px-4 w-100 mobile:mt-4 max-h-[600px] h-[600px] bg-[#F9F8F1] -mt-[88px]">
     <div class="flex gap-4 items-end justify-between h-full">
         <div class="w-1/2 h-full">
-            <img class="h-full" src="<?php echo get_template_directory_uri(); ?>//assets/imgs/HO-GUOM.jpg)" alt="">
+            <img class="h-full" src="<?php echo get_template_directory_uri(); ?>//assets/imgs/HO-GUOM.webp)" alt="">
         </div>
         <div class="w-1/2 h-full">
-            <img class="h-full" src="<?php echo get_template_directory_uri(); ?>//assets/imgs/IMG_9840.jpg)" alt="">
+            <img class="h-full" src="<?php echo get_template_directory_uri(); ?>//assets/imgs/IMG_9840.webp)" alt="">
         </div>
     </div>
 </div>
@@ -107,14 +107,14 @@ get_header(); ?>
     </div>
     <div class="flex mt-16 gap-16">
         <div class="h-[450px] max-h-[450px] w-1/2">
-            <img src="<?php echo get_template_directory_uri(); ?>//assets/imgs/HO-GUOM.jpg" class="h-[88%] max-h-[88%] w-100" alt="">
+            <img src="<?php echo get_template_directory_uri(); ?>//assets/imgs/HO-GUOM.webp" class="h-[88%] max-h-[88%] w-100" alt="">
             <div class="flex justify-between mt-[25px]">
                 <div class="font-bold text-base text-[#383A36] uppercase">Bánh xu xê</div>
                 <div class="font-medium text-sm text-[#383A36] uppercase">10.000 VND</div>
             </div>
         </div>
         <div class="h-[450px] max-h-[450px] w-1/2">
-            <img src="<?php echo get_template_directory_uri(); ?>//assets/imgs/HO-GUOM.jpg" class="h-[88%] max-h-[88%] w-100" alt="">
+            <img src="<?php echo get_template_directory_uri(); ?>//assets/imgs/HO-GUOM.webp" class="h-[88%] max-h-[88%] w-100" alt="">
             <div class="flex justify-between mt-[25px]">
                 <div class="font-bold text-base text-[#383A36] uppercase">Bánh xu xê</div>
                 <div class="font-medium text-sm text-[#383A36] uppercase">10.000 VND</div>

@@ -1,16 +1,6 @@
 <?php
 $productInfo = get_field('product_info');
 get_header(); ?>
-<!-- <div class="relative z-[-1] mobile:px-4 w-100 mobile:mt-4 max-h-[600px] h-[600px] bg-[#F9F8F1] -mt-[88px]">
-    <div class="flex gap-4 items-end justify-between h-full">
-        <div class="w-1/2 h-full">
-            <img class="h-full" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/HO-GUOM.jpg)" alt="">
-        </div>
-        <div class="w-1/2 h-full">
-            <img class="h-full" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/IMG_9840.jpg)" alt="">
-        </div>
-    </div>
-</div> -->
 
 <!--  -->
 <section>
@@ -18,13 +8,13 @@ get_header(); ?>
         <div class="glide__track" data-glide-el="track">
             <ul class="glide__slides">
                 <li class="glide__slide">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/imgs/IMG_1607.jpg" alt="" class="w-100 object-cover">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/imgs/IMG_1607.webp" alt="" class="w-100 object-cover">
                 </li>
                 <li class="glide__slide">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/imgs/IMG_1607.jpg" alt="" class="w-100 object-cover">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/imgs/IMG_1607.webp" alt="" class="w-100 object-cover">
                 </li>
                 <li class="glide__slide">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/imgs/IMG_1607.jpg" alt="" class="w-100 object-cover">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/imgs/IMG_1607.webp" alt="" class="w-100 object-cover">
                 </li>
             </ul>
         </div>

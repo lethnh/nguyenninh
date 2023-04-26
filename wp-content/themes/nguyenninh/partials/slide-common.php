@@ -28,7 +28,7 @@ $args = wp_parse_args($args, $array_defaults);
                         </div>
                     </div>
                     <div class="d-flex align-items-center justify-content-start glide__slide_right w-60">
-                        <img class="w-100 img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/su-khac-biet-3.png" />
+                        <img class="w-100 img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/su-khac-biet-3.webp" />
                     </div>
                 </div>
             </li>
@@ -49,7 +49,7 @@ $args = wp_parse_args($args, $array_defaults);
                         </div>
                     </div>
                     <div class="d-flex align-items-center justify-content-start glide__slide_right w-60">
-                        <img class="w-100 img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/slide-2.png" />
+                        <img class="w-100 img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/slide-2.webp" />
                     </div>
                 </div>
             </li>
@@ -69,7 +69,7 @@ $args = wp_parse_args($args, $array_defaults);
                         </div>
                     </div>
                     <div class="d-flex align-items-center justify-content-start glide__slide_right w-60">
-                        <img class="w-100 img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/su-khac-biet-7.png" />
+                        <img class="w-100 img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/su-khac-biet-7.webp" />
                     </div>
                 </div>
             </li>

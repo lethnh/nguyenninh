@@ -15,7 +15,7 @@ get_header(); ?>
                 <h1 class="mb-64">Các sản phẩm<br> của nhà Nguyên Ninh</h1>
             </div>
             <div class="img-wrapper ratio-16x9">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/imgs/IMG_1607.jpg" class="img-fluid" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/imgs/IMG_1607.webp" class="img-fluid" alt="">
             </div>
         </div>
     </section>
@@ -110,17 +110,17 @@ get_header(); ?>
                     <ul class="glide__slides">
                         <li class="glide__slide h-full max-h-full">
                             <div class="img-wrapper ratio-16x9">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/imgs/IMG_1607.jpg" alt="" class="w-100 h-full max-h-full object-cover">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/imgs/IMG_1607.webp" alt="" class="w-100 h-full max-h-full object-cover">
                             </div>
                         </li>
                         <li class="glide__slide h-full max-h-full">
                             <div class="img-wrapper ratio-16x9">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/imgs/IMG_1607.jpg" alt="" class="w-100 h-full max-h-full object-cover">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/imgs/IMG_1607.webp" alt="" class="w-100 h-full max-h-full object-cover">
                             </div>
                         </li>
                         <li class="glide__slide h-full max-h-full">
                             <div class="img-wrapper ratio-16x9">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/imgs/IMG_1607.jpg" alt="" class="w-100 h-full max-h-full object-cover">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/imgs/IMG_1607.webp" alt="" class="w-100 h-full max-h-full object-cover">
                             </div>
                         </li>
                     </ul>

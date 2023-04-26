@@ -22,7 +22,7 @@ get_header(); ?>
             <div class="inline-flex flex-col space-y-16 items-content-start justify-content-start mb-[24]">
                 <div class="d-flex space-x-10 items-start justify-center section-about-nguyen-ninh-history">
                     <div class="h-full w-[54%] section-about-nguyen-ninh-history-left">
-                        <img class="max-h-[30.625rem] h-[30.625rem] w-100" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/cau-chuyen-1.png" />
+                        <img class="max-h-[30.625rem] h-[30.625rem] w-100" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/cau-chuyen-1.webp" />
                         <div class="d-flex justify-content-between mt-3">
                             <p class="gray-80 text-uppercase fs-14 fw-bold">NƠI CHIẾC BÁNH CỐM
                                 ĐẦU TIÊN RA ĐỜI</p>
@@ -32,7 +32,7 @@ get_header(); ?>
                     </div>
                     <div class="inline-flex flex-col self-start space-y-8 items-start justify-between max-w-[45%] h-full section-about-nguyen-ninh-history-right">
                         <div class="d-flex flex-col space-y-4 items-content-start justify-content-start h-100">
-                            <img class="max-h-[66%] max-w-[100%] w-100" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/cau-chuyen-2.png" />
+                            <img class="max-h-[66%] max-w-[100%] w-100" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/cau-chuyen-2.webp" />
                             <p class="text-style-base w-[78%] mt-3">Ngôi nhà gia tộc
                                 Nguyên Ninh số 11 Hàng Than vẫn vậy, vẫn giữ nguyên kiến túc, cách bài trí và nội thất
                                 từ xưa, mang đậm giá trị văn hoá và truyền thống. </p>
@@ -60,7 +60,7 @@ get_header(); ?>
                         <li class="glide__slide">
                             <div class="d-flex align-items-start section-history-slider-wrapper">
                                 <div class="w-50 slider-wrapper">
-                                    <img class="w-100 h-100 object-cover" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/IMG_2621.jpg" />
+                                    <img class="w-100 h-100 object-cover" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/IMG_2621.webp" />
                                 </div>
                                 <div class="d-flex flex-col bg-primary-10 w-50 slide-history-right">
                                     <p class="slide-history-right-number"><?= $value['years'] ?></p>
@@ -116,20 +116,20 @@ get_header(); ?>
             </div>
             <div class="flex max-h-[39.375rem] h-[39.375rem] mt-24 w-100 section-thanh-tuu-image-wrapper">
                 <div class="h-1/2 max-h-1/2 w-[24%] mr-4 section-thanh-tuu-image">
-                    <img class="h-100 object-cover w-100" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/danh-hieu-1.png" alt="">
+                    <img class="h-100 object-cover w-100" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/danh-hieu-1.webp" alt="">
                 </div>
                 <div class="h-4/5 max-h-4/5 w-1/2 self-center mr-4 section-thanh-tuu-image">
-                    <img class="h-100 object-cover w-100" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/danh-hieu-2.png" alt="">
+                    <img class="h-100 object-cover w-100" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/danh-hieu-2.webp" alt="">
                 </div>
                 <div class="h-1/2 max-h-1/2 w-[24%] self-end section-thanh-tuu-image">
-                    <img class="h-100 object-cover w-100" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/danh-hieu-3.png" alt="">
+                    <img class="h-100 object-cover w-100" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/danh-hieu-3.webp" alt="">
                 </div>
             </div>
             <div class="flex-col mx-auto flex w-1/3 mt-16 section-thanh-tuu-content">
                 <p class="text-style-base gray-80">Có lẽ câu chuyện đặc biệt nhất về thành tựu của Nguyên Ninh là giải thưởng thương hiệu Việt hội nhập WTO. Đây không chỉ là một thành tựu đáng nhớ và có ý nghĩa to lớn với Nguyên Ninh mà còn với cả nền văn hoá và du lịch của Việt Nam ta.</p>
             </div>
             <div class="flex-col mx-auto flex w-4/5 mt-16 my-24 section-thanh-tuu-image">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/imgs/danh-hieu-4.png" class="w-100 max-h-[36.125rem] max-w-100" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/imgs/danh-hieu-4.webp" class="w-100 max-h-[36.125rem] max-w-100" alt="">
             </div>
             <div class="flex-col mx-auto flex w-1/3 section-thanh-tuu-content">
                 <div class="w-100">
@@ -149,7 +149,7 @@ get_header(); ?>
     'sub-title' => 'HIỂU THÊM VỀ NGUYÊN NINH',
     'title' => 'Những giá trị về ẩm thực và văn hoá của Nguyên Ninh',
     'class' => 'mb-96',
-    'background_image' => get_template_directory_uri() . '/assets/imgs/section-story-1.png',
+    'background_image' => get_template_directory_uri() . '/assets/imgs/section-story-1.webp',
 ]); ?>
 <!--  -->
 
