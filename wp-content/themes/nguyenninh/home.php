@@ -41,7 +41,7 @@ get_header(null, ['is_body_main' => true]); ?>
     <div class="container">
         <?php get_template_part('partials/title', 'common', [
             'sub-title' => 'CHƯƠNG 2 - BÁNH CỐM CÓ GÌ ĐẶC BIỆT?',
-            'title' => '“Một món quà ghi dấu đất kinh kì”',
+            'title' => '“Một món quà ghi dấu đất kinh kỳ”',
             'sub-title-below' => 'Ở Hà Nội có nhiều đồ ăn quá, ẩm thực đa dạng quá nhiều khi nghĩ lại chẳng biết ăn món gì. Ngày cuối tuần muốn mua một món quà vặt cho cả nhà thưởng thức, món gì vừa vui miệng lại vừa lành mạnh đây ?',
             'class' => 'mb-64'
         ]); ?>
