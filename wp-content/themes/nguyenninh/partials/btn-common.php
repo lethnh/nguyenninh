@@ -5,7 +5,8 @@ $array_defaults = array(
     'link' => 'javascript:void(0)',
     'text' => null,
     'class' => null,
-    'is_outline' => false
+    'is_outline' => false,
+    'open_new_tab' => false
 );
 
 $args = wp_parse_args($args, $array_defaults);
@@ -18,7 +19,7 @@ $args = wp_parse_args($args, $array_defaults);
         <?php endif; ?>
     </a>
 <?php else : ?>
-    <a href="<?= $args['link']; ?>" class="btn btn-common <?= $args['class']; ?>">
+    <a href="<?= $args['link']; ?>" class="btn btn-common <?= $args['class']; ?>" <?= $args['open_new_tab'] ? 'target="_blank"' : '' ?>>
         <span><?= $args['text']; ?></span>
         <?php if ($args['is_icon']) : ?>
             <i class="fa-regular fa-arrow-up rotate-45"></i>

@@ -86,7 +86,8 @@ get_header(); ?>
                     'is_icon' => true,
                     'link' => $theme_options['facebook'],
                     'text' => 'ĐI TỚI FACEBOOK',
-                    'class' => 'btn-facebook'
+                    'class' => 'btn-facebook',
+                    'open_new_tab' => true
                 ]); ?>
             </div>
         </div>
