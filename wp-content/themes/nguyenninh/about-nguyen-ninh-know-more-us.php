@@ -21,15 +21,12 @@ get_header(); ?>
         <div class="glide hero glide_know_me">
             <div class="glide__track" data-glide-el="track">
                 <ul class="glide__slides">
-                    <li class="glide__slide">
-                        <img src="<?php echo get_template_directory_uri(); ?>//assets/imgs/about-slide-1.webp" alt="" class="w-100 h-full max-h-full object-cover">
-                    </li>
-                    <li class="glide__slide">
-                        <img src="<?php echo get_template_directory_uri(); ?>//assets/imgs/about-slide-2.webp" alt="" class="w-100 h-full max-h-full object-cover">
-                    </li>
-                    <li class="glide__slide">
-                        <img src="<?php echo get_template_directory_uri(); ?>//assets/imgs/about-slide-3.webp" alt="" class="w-100 h-full max-h-full object-cover">
-                    </li>
+                    <?php $slide_images = get_field('slide_images'); ?>
+                    <?php foreach ($slide_images as $key => $image) : ?>
+                        <li class="glide__slide">
+                            <?= wp_get_attachment_image($image['image'], 'full'); ?>
+                        </li>
+                    <?php endforeach ?>
                 </ul>
             </div>
         </div>
