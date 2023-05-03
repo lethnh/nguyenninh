@@ -1962,3 +1962,23 @@ aside.menu-aside-page .menu-item-has-children .dropdown-menu li a {
   height: 100%;
   object-fit: cover;
 }
+
+.glide__bullet {
+  background-color: hsla(0, 0%, 100%, .5);
+  width: 9px;
+  height: 9px;
+  padding: 0;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+  line-height: 0;
+  -webkit-box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, .1);
+  box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, .1);
+  margin: 0 0.25em;
+}
+
+.glide__bullet[class*=active] {
+  background-color: #fff;
+}

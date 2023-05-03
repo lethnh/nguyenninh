@@ -15,6 +15,7 @@ get_header(null, ['is_body_main' => true]); ?>
     </div>
 </section>
 <!-- Chương 1 -->
+<?php $chapter_one = get_field('chapter_1'); ?>
 <section class="chapter-begin section-common">
     <div class="container">
         <?php get_template_part('partials/title', 'common', [
@@ -24,12 +25,12 @@ get_header(null, ['is_body_main' => true]); ?>
         ]); ?>
         <div class="chapter-content d-flex align-items-end">
             <div class="h-100 w-50 chapter-content-left">
-                <img class="h-100 object-cover" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/su-khac-biet-7.webp" />
+                <?= wp_get_attachment_image($chapter_one['image_left'], 'full', '', ['class' => 'h-100 object-cover', "alt" => "chương 1"]); ?>
             </div>
             <div class="chapter-content-right w-50">
-                <p class="chapter-content-title gray-70">Bánh cốm được sáng tạo vào năm 1865 bởi cụ trưởng ái gia tộc Nguyên Ninh – cụ Trần Thị Luân. </p>
-                <p class="chapter-content-sub-content gray-70 mt-3">Trải qua hơn 150 năm, công thức sản xuất bánh không hề có thay đổi lớn, chỉ điều chỉnh tỷ lệ sao cho hương vị ngày càng hài hòa, hợp khẩu vị thực khách thời hiện đại. Bánh cốm Nguyên Ninh cam kết không sử dụng chất bảo quản, không thêm phụ gia, tạp chất, giữ nguyên cách làm và nguyên liệu như những ngày đầu.</p>
-                <img class="img-fluid object-cover" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/home-1.webp" />
+                <p class="chapter-content-title gray-70"><?= $chapter_one['text_bold']; ?></p>
+                <p class="chapter-content-sub-content gray-70 mt-3"><?= $chapter_one['text_normal']; ?></p>
+                <?= wp_get_attachment_image($chapter_one['image_right'], 'full', '', ['class' => 'img-fluid object-cover', "alt" => "chương 1"]); ?>
             </div>
         </div>
     </div>
@@ -37,29 +38,29 @@ get_header(null, ['is_body_main' => true]); ?>
 <!-- Chương 1 -->
 
 <!-- Chương 2 -->
+<?php $chapter_two = get_field('chapter_2'); ?>
 <section class="chapter-second section-common">
     <div class="container">
         <?php get_template_part('partials/title', 'common', [
             'sub-title' => 'CHƯƠNG 2 - BÁNH CỐM CÓ GÌ ĐẶC BIỆT?',
             'title' => '“Một món quà ghi dấu đất Kinh Kỳ”',
-            'sub-title-below' => 'Ở Hà Nội có nhiều đồ ăn quá, ẩm thực đa dạng quá nhiều khi nghĩ lại chẳng biết ăn món gì. Ngày cuối tuần muốn mua một món quà vặt cho cả nhà thưởng thức, món gì vừa vui miệng lại vừa lành mạnh đây ?',
+            'sub-title-below' => $chapter_two['text_one'],
             'class' => 'mb-64'
         ]); ?>
         <div class="chapter-content d-flex align-items-center mt-64">
             <div class="h-100 w-50 chapter-content-left">
-                <img class="h-100 object-cover" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/dac-biet-1.webp" />
+                <?= wp_get_attachment_image($chapter_two['image_left'], 'full', '', ['class' => 'w-100 h-100 object-cover', "alt" => "chương 2"]); ?>
             </div>
             <div class="w-50 chapter-content-right">
-                <p class="chapter-content-right-title-main gray-80">Hãy thử một lần ghé qua 11 Hàng Than mua chiếc bánh cốm Nguyên Ninh.</p>
-                <p class="chapter-content-right-title-sub gray-70 mt-3">Một chiếc bánh giản dị, dân dã với các nguyên liệu sạch hoàn toàn. Cốm xay xào có độ dẻo mịn, mát thơm nhẹ nhưng lại thiếu đậm đà thì đã được bổ sung bởi nhân đỗ xanh ngọt ngào. Nhưng chỉ ngọt, thơm thôi chưa đủ, vẫn cần thêm một chút bùi bùi, ngậy ngậy. Và dừa nạo được thêm vào để bổ sung hương vị ấy.</p>
+                <p class="chapter-content-right-title-main gray-80"><?= $chapter_two['text_bold']; ?></p>
+                <p class="chapter-content-right-title-sub gray-70 mt-3"><?= $chapter_two['text_normal']; ?></p>
             </div>
         </div>
         <div class="mt-64 img-chapter-second">
-            <img class="w-100" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/dac-biet-2.webp">
+            <?= wp_get_attachment_image($chapter_two['image_big'], 'full', '', ['class' => 'w-100', "alt" => "chương 2"]); ?>
         </div>
         <div class="d-flex flex-col align-self-center w-75 mx-auto mt-32">
-            <p class="text-style-base">Dù trong các lễ cưới hỏi truyền thống hay hiện đại, bánh cốm Nguyên Ninh vẫn luôn may mắn được làm "người bạn đồng hành" của nhiều cặp đôi, gửi tặng nhà trai những chiếc bánh để kết tráp, gửi tặng nhà gái món quà cho quan khách thâm thương.</p>
-            <p class="text-style-base mt-3">Đây là điều may mắn và vinh dự của Nguyên Ninh.</p>
+            <p class="text-style-base"><?= $chapter_two['text_below_image_big']; ?></p>
         </div>
         <div class="text-center mt-64">
             <?php get_template_part('partials/btn', 'common', [
@@ -76,12 +77,13 @@ get_header(null, ['is_body_main' => true]); ?>
 </div> -->
 
 <!-- Chương 3 -->
+<?php $chapter_three = get_field('chapter_3'); ?>
 <section class="chapter-third section-common">
     <div class="container">
         <?php get_template_part('partials/title', 'common', [
             'sub-title' => 'CHƯƠNG 3 - NGUYÊN NINH CÓ GÌ ĐẶC BIỆT?',
             'title' => '“Món quà ngọt ngào mang tên Nguyên Ninh”',
-            'sub-title-below' => 'Bánh cốm của Nguyên Ninh không phải là một món ăn, mà là một trải nghiệm. Cuộc hành trình của hương vị bắt đầu khi cắn lớp vỏ cốm xay nhuyễn bên ngoài mát thơm dịu dàng. Rồi sau đó là một sự bùng nổ của vị ngọt và hương vị quen thuộc của đậu xanh và đường, được tô điểm thêm nét thanh tao của dừa nạo. Sự hoà quyện hoàn hảo của vị giác chỉ có được ở bánh cốm Nguyên Ninh.',
+            'sub-title-below' => $chapter_three['text_one'],
             'class' => 'mb-64'
         ]); ?>
         <?php get_template_part('partials/slide', 'common'); ?>
