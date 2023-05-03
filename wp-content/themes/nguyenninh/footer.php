@@ -12,7 +12,7 @@ $args = wp_parse_args($args, $array_defaults);
         <div class="d-flex flex-col bg-primary-10 section-product-footer-left justify-content-center title-block-common px-24 pt-96 pb-96">
             <p class="sub-title primary-80">Sản phẩm</p>
             <div class="title-main d-flex align-self-center">
-                <p class="primary-80">Những gì <br> Nguyên Ninh mang tới cho mọi người</p>
+                <p class="primary-80"><?= $theme_options['section_san_pham']['title']; ?></p>
             </div>
             <div class="mt-96 mx-auto">
                 <?php get_template_part('partials/btn', 'common', [
@@ -23,7 +23,7 @@ $args = wp_parse_args($args, $array_defaults);
             </div>
         </div>
         <div class="section-product-footer-right img-wrapper ratio-16x9">
-            <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/IMG_1607.webp">
+            <?= wp_get_attachment_image($theme_options['section_san_pham']['image'], 'full', '', ['class' => 'img-fluid', 'alt' => $theme_options['section_san_pham']['title']]); ?>
         </div>
     </div>
 <?php endif; ?>
