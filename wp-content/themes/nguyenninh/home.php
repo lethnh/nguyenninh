@@ -123,12 +123,12 @@ get_header(null, ['is_body_main' => true]); ?>
                         $the_query->the_post();
                 ?>
                         <?php if ($the_query->current_post == 0) : ?>
-                            <div class="col-md-8">
+                            <div class="col-xl-8">
                                 <?php get_template_part('partials/card', 'post-main'); ?>
                             </div>
                         <?php endif; ?>
                         <?php if ($the_query->current_post > 0) : ?>
-                            <div class="col-md-4">
+                            <div class="col-md-6 col-xl-4">
                                 <?php get_template_part('partials/card', 'post-common'); ?>
                             </div>
                         <?php endif; ?>

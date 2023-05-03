@@ -537,9 +537,7 @@ footer .menu-footer .menu-footer-child li a::after {
   opacity: 0.32;
 }
 
-@media (max-width: 768px) {}
-
-@media (max-width: 576px) {
+@media (max-width: 992px) {
   .glide.hero .glide__slides .glide__slide .glide__slide_height {
     flex-wrap: wrap;
     height: auto;
@@ -554,6 +552,20 @@ footer .menu-footer .menu-footer-child li a::after {
   .glide.hero .glide__slides .glide__slide .glide__slide_right {
     width: 100%;
   }
+}
+
+@media (max-width: 576px) {
+  .glide.hero .glide__slides .glide__slide .glide__slide_height {
+    flex-wrap: wrap;
+    height: auto;
+    max-height: 100%;
+  }
+
+  .glide.hero .glide__slides .glide__slide .glide__slide_left {
+    width: 100%;
+    padding: 2rem;
+  }
+
 
   .glide.hero .glide__slides .glide__slide .glide__slide_left .glide__slide_title {
     font-size: 2rem;
