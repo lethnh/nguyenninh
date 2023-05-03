@@ -15,7 +15,7 @@ get_header(); ?>
                 <h1 class="mb-64">Các sản phẩm<br> của nhà Nguyên Ninh</h1>
             </div>
             <div class="img-wrapper ratio-16x9">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/imgs/IMG_1607.webp" class="img-fluid" alt="">
+                <?= wp_get_attachment_image(get_field('banner'), 'full', '', ['class' => 'img-fluid']); ?>
             </div>
         </div>
     </section>
@@ -73,6 +73,7 @@ get_header(); ?>
                         <?php endif; ?>
                 <?php }
                 } ?>
+                <?php wp_reset_postdata(); ?>
             </div>
 
             <div class="bg-primary-05 flex-col d-flex section-product-contact">
@@ -109,21 +110,14 @@ get_header(); ?>
             <div class="glide hero2">
                 <div class="glide__track" data-glide-el="track">
                     <ul class="glide__slides">
-                        <li class="glide__slide h-full max-h-full">
-                            <div class="img-wrapper ratio-16x9">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/imgs/IMG_1607.webp" alt="" class="w-100 h-full max-h-full object-cover">
-                            </div>
-                        </li>
-                        <li class="glide__slide h-full max-h-full">
-                            <div class="img-wrapper ratio-16x9">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/imgs/IMG_1607.webp" alt="" class="w-100 h-full max-h-full object-cover">
-                            </div>
-                        </li>
-                        <li class="glide__slide h-full max-h-full">
-                            <div class="img-wrapper ratio-16x9">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/imgs/IMG_1607.webp" alt="" class="w-100 h-full max-h-full object-cover">
-                            </div>
-                        </li>
+                        <?php $slider = get_field('slider'); ?>
+                        <?php foreach ($slider as $key => $slide) : ?>
+                            <li class="glide__slide h-full max-h-full">
+                                <div class="img-wrapper ratio-16x9">
+                                    <img src="<?= $slide['image']; ?>" alt="" class="w-100 h-full max-h-full object-cover">
+                                </div>
+                            </li>
+                        <?php endforeach; ?>
                     </ul>
                 </div>
             </div>
