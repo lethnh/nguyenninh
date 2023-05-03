@@ -54,11 +54,11 @@ get_header(); ?>
             <?php foreach ($gia_tri_truyen_thong as $key => $item) : ?>
                 <?php if ($key % 2 == 0) : ?>
                     <div class="d-inline-flex align-items-center justify-content-center section-value-item <?= $key != 0 ? 'mt-96' : ''; ?>">
-                        <div class="position-relative w-[60%]  ml-10 section-value-item-image left">
+                        <div class="position-relative ml-10 section-value-item-image left">
                             <?= wp_get_attachment_image($item['image'], 'full', '', ['class' => 'w-100 object-cover z-2', 'alt' => $item['title'], 'style' => 'position:inherit']); ?>
                             <div class="position-absolute bg-primary-05 w-100 h-full max-w-100 max-h-full section-value-item-image-overlay z-1"></div>
                         </div>
-                        <div class="d-flex aligns-self-start align-items-center w-[40%]  flex-col section-value-item-content">
+                        <div class="d-flex aligns-self-start align-items-center flex-col section-value-item-content">
                             <img class="svg-star" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/star.svg" alt="">
                             <h2 class="fw-bold text-center gray-80 font-raleway-bold"><?= $item['title']; ?></h2>
                             <p class="text-center text-style-base gray-70"><?= $item['description']; ?></p>
@@ -66,12 +66,12 @@ get_header(); ?>
                     </div>
                 <?php else : ?>
                     <div class="d-inline-flex align-items-center justify-content-center mt-96 section-value-item">
-                        <div class="d-flex aligns-self-start align-items-center w-[40%]  flex-col section-value-item-content">
+                        <div class="d-flex aligns-self-start align-items-center flex-col section-value-item-content">
                             <img class="svg-star" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/star.svg" alt="">
                             <h2 class="fw-bold text-center gray-80 font-raleway-bold"><?= $item['title']; ?></h2>
                             <p class="text-center text-style-base gray-70"><?= $item['description']; ?></p>
                         </div>
-                        <div class="position-relative w-[60%]  mr-10 section-value-item-image right">
+                        <div class="position-relative mr-10 section-value-item-image right">
                             <?= wp_get_attachment_image($item['image'], 'full', '', ['class' => 'w-100 object-cover z-2', 'alt' => $item['title'], 'style' => 'position:inherit']); ?>
                             <div class="position-absolute bg-primary-05 w-100 h-100 max-w-100 max-h-full section-value-item-image-overlay z-1"></div>
                         </div>

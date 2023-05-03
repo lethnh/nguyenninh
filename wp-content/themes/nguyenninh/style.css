@@ -709,6 +709,7 @@ footer .menu-footer .menu-footer-child li a::after {
 
 .section-value-block .section-value-item .section-value-item-content {
   padding: 32px;
+  width: 40%;
 }
 
 .section-value-block .section-value-item .section-value-item-content .svg-star {
@@ -742,6 +743,7 @@ footer .menu-footer .menu-footer-child li a::after {
 
 .section-value-block .section-value-item .section-value-item-image {
   height: 504px;
+  width: 60%;
 }
 
 .section-value-block .section-value-item .section-value-item-image img {
@@ -758,9 +760,7 @@ footer .menu-footer .menu-footer-child li a::after {
   top: 40px;
 }
 
-@media (max-width: 768px) {}
-
-@media (max-width: 576px) {
+@media (max-width: 992px) {
   .section-value-item {
     flex-direction: column;
   }
@@ -793,6 +793,9 @@ footer .menu-footer .menu-footer-child li a::after {
     right: 12px;
     top: 12px;
   }
+}
+
+@media (max-width: 576px) {
 
   .section-diary .section-diary-line {
     margin: 4rem auto;

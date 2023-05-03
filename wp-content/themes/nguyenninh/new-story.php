@@ -11,7 +11,7 @@ get_header(); ?>
         <div class="d-flex flex-col w-100 title-block-common pt-96 pb-96">
             <p class="sub-title text-white">NHẬT KÝ CỦA NGUYÊN NINH</p>
             <div class="d-flex align-items-end flex-col flex-md-row">
-                <div class="title-main d-flex align-self-center w-75">
+                <div class="title-main d-flex align-self-center">
                     <p class="text-white">Những mảnh <br> chuyện nho nhỏ</p>
                 </div>
                 <div class="sub-title-below d-flex align-self-center ms-auto w-30 mt-auto">

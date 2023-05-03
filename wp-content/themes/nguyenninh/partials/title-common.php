@@ -13,7 +13,7 @@ $args = wp_parse_args($args, $array_defaults);
 <div class="d-flex flex-col w-100 title-block-common <?= $args['class'] ?>">
     <p class="sub-title gray-80"><?= $args['sub-title'] ?></p>
     <?php if ($args['title']) : ?>
-        <div class="title-main d-flex align-self-center w-75">
+        <div class="title-main d-flex align-self-center">
             <p class="gray-80"><?= $args['title'] ?></p>
         </div>
     <?php endif; ?>

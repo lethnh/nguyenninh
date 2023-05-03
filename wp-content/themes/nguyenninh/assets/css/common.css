@@ -95,7 +95,7 @@ body {
   .container-md,
   .container-sm,
   .container {
-    max-width: 1480px;
+    max-width: 1320px;
   }
 }
 
@@ -270,6 +270,7 @@ body {
 
 .title-block-common .title-main {
   margin-top: 48px;
+  width: 78%;
 }
 
 .title-block-common .title-main p {
@@ -303,7 +304,7 @@ body {
   letter-spacing: 0.06em;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .title-block-common .title-main p {
     font-size: 3rem;
     line-height: 3.5rem;
