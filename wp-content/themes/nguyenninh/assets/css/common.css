@@ -323,6 +323,10 @@ body {
     font-size: 2rem;
     line-height: 3rem;
   }
+
+  .title-block-common .sub-title-below {
+    width: 100% !important;
+  }
 }
 
 @media (max-width: 576px) {
@@ -343,10 +347,6 @@ body {
   .title-block-common .title-main p {
     font-size: 1.75rem;
     line-height: 2.5rem;
-  }
-
-  .title-block-common .sub-title-below {
-    width: 100% !important;
   }
 
   .title-block-common .sub-title-below-2 {
