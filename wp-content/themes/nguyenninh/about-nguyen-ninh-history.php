@@ -7,14 +7,15 @@
 get_header(); ?>
 
 <!--  -->
+<?php $theo_dong_lich_su = get_field('theo_dong_lich_su'); ?>
 <section class="section-common">
     <div class="container">
         <?php get_template_part('partials/title', 'common', [
             'sub-title' => 'NGUYÊN NINH THEO DÒNG LỊCH SỬ',
-            'title' => 'Câu chuyện của Nguyên Ninh bắt đầu vào năm 1865',
+            'title' => $theo_dong_lich_su['title'],
             'sub-title-below-2' => [
-                'first' => 'Vẫn trong cùng ngôi nhà cổ kính số 11 Hàng Than ấy, vào năm 1865, chiếc bánh cốm đầu tiên ra đời với tinh thần mong muốn ai ai cũng được thưởng thức hương vị cốm thơm ngon quanh năm.',
-                'second' => 'Và chính vì vậy, ngoài công thức bí truyền được truyền lại cho con cháu gia tộc Nguyên Ninh, cụ còn để lại một giá trị đáng tự hào nữa là cấm không được theo đuổi danh vọng, lợi lộc từ chiếc bánh cốm.',
+                'first' => $theo_dong_lich_su['description_1'],
+                'second' => $theo_dong_lich_su['description_2'],
             ],
             'class' => 'mb-96'
         ]); ?>
@@ -22,7 +23,7 @@ get_header(); ?>
             <div class="inline-flex flex-col space-y-16 items-content-start justify-content-start mb-[24]">
                 <div class="d-flex space-x-10 items-start justify-center section-about-nguyen-ninh-history">
                     <div class="h-full w-[54%] section-about-nguyen-ninh-history-left">
-                        <img class="max-h-[30.625rem] h-[30.625rem] w-100" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/cau-chuyen-1.webp" />
+                        <?= wp_get_attachment_image($theo_dong_lich_su['image_left'], 'full', '', ['class' => 'max-h-[30.625rem] h-[30.625rem] w-100', 'alt' => 'cau-chuyen-1']); ?>
                         <div class="d-flex justify-content-between mt-3">
                             <p class="gray-80 text-uppercase fs-14 fw-bold">NƠI CHIẾC BÁNH CỐM
                                 ĐẦU TIÊN RA ĐỜI</p>
@@ -32,10 +33,8 @@ get_header(); ?>
                     </div>
                     <div class="inline-flex flex-col self-start space-y-8 items-start justify-between max-w-[45%] h-full section-about-nguyen-ninh-history-right">
                         <div class="d-flex flex-col space-y-4 items-content-start justify-content-start h-100">
-                            <img class="max-h-[66%] max-w-[100%] w-100" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/cau-chuyen-2.webp" />
-                            <p class="text-style-base w-[78%] mt-3">Ngôi nhà gia tộc
-                                Nguyên Ninh số 11 Hàng Than vẫn vậy, vẫn giữ nguyên kiến túc, cách bài trí và nội thất
-                                từ xưa, mang đậm giá trị văn hoá và truyền thống. </p>
+                            <?= wp_get_attachment_image($theo_dong_lich_su['image_right'], 'full', '', ['class' => 'max-h-[66%] max-w-[100%] w-100', 'alt' => 'cau-chuyen-2']); ?>
+                            <p class="text-style-base w-[78%] mt-3"><?= $theo_dong_lich_su['description_3'] ?></p>
                         </div>
                     </div>
                 </div>
