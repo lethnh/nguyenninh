@@ -139,11 +139,12 @@ get_header(); ?>
 <!--  -->
 
 <!--  -->
+<?php $hieu_them_ve_nguyen_ninh = get_field('hieu_them_ve_nguyen_ninh'); ?>
 <?php get_template_part('partials/section', 'story', [
     'sub-title' => 'HIỂU THÊM VỀ NGUYÊN NINH',
-    'title' => 'Những giá trị về ẩm thực và văn hoá của Nguyên Ninh',
+    'title' => $hieu_them_ve_nguyen_ninh['title'],
     'class' => 'mb-96',
-    'background_image' => get_template_directory_uri() . '/assets/imgs/section-story-1.webp',
+    'background_image' => $hieu_them_ve_nguyen_ninh['bg_image'],
 ]); ?>
 <!--  -->
 

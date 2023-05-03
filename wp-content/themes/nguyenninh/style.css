@@ -824,6 +824,18 @@ footer .menu-footer .menu-footer-child li a::after {
   max-height: 728px;
 }
 
+.section-story.title-block-common .title-main p {
+  font-size: 4.5rem;
+  line-height: 5.25rem;
+}
+
+@media (max-width: 1200px) {
+  .section-story.title-block-common .title-main p {
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+}
+
 @media (max-width: 768px) {
   .section-story {
     height: 500px;
@@ -946,6 +958,22 @@ footer .menu-footer .menu-footer-child li a::after {
 
 .section-product-footer .section-product-footer-right {
   width: 60%;
+}
+
+.section-product-footer .title-block-common .title-main p {
+  font-size: 4rem;
+  line-height: 5rem;
+}
+
+@media (max-width: 1200px) {
+  .section-product-footer .section-product-footer-left {
+    padding: 2rem !important;
+  }
+
+  .section-product-footer .title-block-common .title-main p {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+  }
 }
 
 @media (max-width: 992px) {

@@ -17,7 +17,7 @@ $args = wp_parse_args($args, $array_defaults);
     <div class="container z-3 position-relative">
         <div class="d-flex flex-col align-items-center pt-96 pb-96">
             <p class="sub-title text-white"><?= $args['sub-title'] ?></p>
-            <div class="title-main d-flex align-items-center text-center w-75">
+            <div class="title-main d-flex align-items-center justify-content-center text-center w-100">
                 <p class="text-white"><?= $args['title'] ?></p>
             </div>
             <?php get_template_part('partials/btn', 'common', [
