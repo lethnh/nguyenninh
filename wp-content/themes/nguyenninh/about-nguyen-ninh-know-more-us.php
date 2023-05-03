@@ -135,7 +135,7 @@ get_header(); ?>
 <!--  -->
 <?php $hieu_them_ve_nguyen_ninh = get_field('hieu_them_ve_nguyen_ninh'); ?>
 <?php get_template_part('partials/section', 'story', [
-    'sub-title' => 'HIỂU THÊM VỀ NGUYÊN NINH',
+    'sub-title' => $hieu_them_ve_nguyen_ninh['title_small'],
     'title' => $hieu_them_ve_nguyen_ninh['title'],
     'class' => 'mb-96',
     'background_image' => $hieu_them_ve_nguyen_ninh['bg_image'],
