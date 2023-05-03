@@ -99,44 +99,39 @@ get_header(); ?>
 <!--  -->
 
 <!--  -->
+<?php $thanh_tuu_va_gia_tri_thuong_hieu = get_field('thanh_tuu_va_gia_tri_thuong_hieu'); ?>
 <section class="bg-secondary-10 section-common section-thanh-tuu">
     <div class="container">
         <?php get_template_part('partials/title', 'common', [
             'sub-title' => 'THÀNH TỰU VÀ GIÁ TRỊ THƯƠNG HIỆU',
-            'title' => 'Những điều Nguyên Ninh luôn tự hào'
+            'title' => $thanh_tuu_va_gia_tri_thuong_hieu['title']
         ]); ?>
         <div class="w-100 inline-flex flex-col items-start justify-content-start">
             <div class="flex-col mx-auto flex w-1/3 mt-16 section-thanh-tuu-content">
                 <div class="w-100">
-                    <p class="text-style-base gray-80">Nguyên Ninh sở hữu bản quyền thương hiệu quốc gia số 14-308 cho chiếc bánh cốm đặc trưng của mình cũng đã hơn 100 năm rồi.</p>
-                </div>
-                <div class="w-100 mt-4">
-                    <p class="text-style-base gray-80">Xuyên suốt quá trình phục vụ khách hàng, Nguyên Ninh đã đạt được nhiều giải thưởng và thành tựu đáng tự hào.</p>
+                    <p class="text-style-base gray-80"><?= $thanh_tuu_va_gia_tri_thuong_hieu['description_1'] ?></p>
                 </div>
             </div>
             <div class="flex max-h-[39.375rem] h-[39.375rem] mt-24 w-100 section-thanh-tuu-image-wrapper">
                 <div class="h-1/2 max-h-1/2 w-[24%] mr-4 section-thanh-tuu-image">
-                    <img class="h-100 object-cover w-100" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/danh-hieu-1.webp" alt="">
+                    <?= wp_get_attachment_image($thanh_tuu_va_gia_tri_thuong_hieu['image_1'], 'full', '', ['class' => 'h-100 object-cover w-100', 'alt' => 'danh-hieu-1']); ?>
                 </div>
                 <div class="h-4/5 max-h-4/5 w-1/2 self-center mr-4 section-thanh-tuu-image">
-                    <img class="h-100 object-cover w-100" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/danh-hieu-2.webp" alt="">
+                    <?= wp_get_attachment_image($thanh_tuu_va_gia_tri_thuong_hieu['image_2'], 'full', '', ['class' => 'h-100 object-cover w-100', 'alt' => 'danh-hieu-2']); ?>
                 </div>
                 <div class="h-1/2 max-h-1/2 w-[24%] self-end section-thanh-tuu-image">
-                    <img class="h-100 object-cover w-100" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/danh-hieu-3.webp" alt="">
+                    <?= wp_get_attachment_image($thanh_tuu_va_gia_tri_thuong_hieu['image_3'], 'full', '', ['class' => 'h-100 object-cover w-100', 'alt' => 'danh-hieu-3']); ?>
                 </div>
             </div>
             <div class="flex-col mx-auto flex w-1/3 mt-16 section-thanh-tuu-content">
-                <p class="text-style-base gray-80">Có lẽ câu chuyện đặc biệt nhất về thành tựu của Nguyên Ninh là giải thưởng thương hiệu Việt hội nhập WTO. Đây không chỉ là một thành tựu đáng nhớ và có ý nghĩa to lớn với Nguyên Ninh mà còn với cả nền văn hoá và du lịch của Việt Nam ta.</p>
+                <p class="text-style-base gray-80"><?= $thanh_tuu_va_gia_tri_thuong_hieu['description_2'] ?></p>
             </div>
             <div class="flex-col mx-auto flex w-4/5 mt-16 my-24 section-thanh-tuu-image">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/imgs/danh-hieu-4.webp" class="w-100 max-h-[36.125rem] max-w-100" alt="">
+                <?= wp_get_attachment_image($thanh_tuu_va_gia_tri_thuong_hieu['image_4'], 'full', '', ['class' => 'w-100 max-h-[36.125rem] max-w-100', 'alt' => 'danh-hieu-4']); ?>
             </div>
             <div class="flex-col mx-auto flex w-1/3 section-thanh-tuu-content">
                 <div class="w-100">
-                    <p class="text-style-base gray-80">Nhưng điều tuyệt vời nhất mà Nguyên Ninh luôn tự hào đó là sự yêu mến của các quý khách hàng với những chiếc bánh cốm thơm ngon và với Nguyên Ninh.</p>
-                </div>
-                <div class="w-100 mt-4">
-                    <p class="text-style-base gray-80">Đó là điều Nguyên Ninh luôn luôn mong muốn. Và chúng tôi sẽ luôn cố gắng mang hương vị chiếc bánh cốm Nguyên Ninh tới trái tim tất cả mọi người.</p>
+                    <p class="text-style-base gray-80"><?= $thanh_tuu_va_gia_tri_thuong_hieu['description_3'] ?></p>
                 </div>
             </div>
         </div>
