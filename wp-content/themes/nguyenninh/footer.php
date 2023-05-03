@@ -32,11 +32,11 @@ $args = wp_parse_args($args, $array_defaults);
     <div class="container">
         <?php get_template_part('partials/title', 'common', [
             'sub-title' => 'Newsletter',
-            'title' => 'Theo dõi <span class="text-[#53802B]">Nguyên Ninh<span>',
+            'title' => $theme_options['newsletter']['title'],
             'class' => 'mb-64'
         ]); ?>
         <div class="row w-75 mx-auto section-newsletter-wrapper">
-            <div class="text-style-base gray-70 col-md-6">Điền email vào đây để không bỏ lỡ những câu chuyện ấm ám, những tin tức, hay khuyến mãi của Nguyên Ninh gửi tới hộp thư của bạn.</div>
+            <div class="text-style-base gray-70 col-md-6"><?= $theme_options['newsletter']['description'] ?></div>
             <div class="col-md-6">
                 <?= do_shortcode('[newsletter_form form="1"]'); ?>
             </div>

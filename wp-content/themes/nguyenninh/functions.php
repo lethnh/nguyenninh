@@ -227,6 +227,7 @@ function set_theme_option_global()
         'address' => get_field('address', 'option'),
         'slider_sweet' => get_field('slider_sweet', 'option'),
         'section_san_pham' => get_field('section_san_pham', 'option'),
+        'newsletter' => get_field('newsletter', 'option'),
     );
 }
 add_action('init', 'set_theme_option_global');
