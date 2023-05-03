@@ -1182,12 +1182,18 @@ footer .menu-footer .menu-footer-child li a::after {
   cursor: pointer;
 }
 
-@media (max-width: 768px) {}
+@media (max-width: 1200px) {
+  .post-body h1.post-title {
+    font-size: 3rem;
+    line-height: 4rem;
+    margin-bottom: 1rem;
+  }
+}
 
-@media (max-width: 576px) {
+@media (max-width: 992px) {
   .section-post-relate h2 {
-    font-size: 1.5rem;
-    line-height: 2rem;
+    font-size: 2rem;
+    line-height: 2.5rem;
   }
 
   .post-body .title-block-common {
@@ -1195,14 +1201,21 @@ footer .menu-footer .menu-footer-child li a::after {
     width: 100% !important;
   }
 
+  .post-body .post-thumbnail {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-post-relate h2 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
   .post-body h1.post-title {
     font-size: 3rem;
     line-height: 4rem;
     margin-bottom: 1rem;
-  }
-
-  .post-body .post-thumbnail {
-    width: 100% !important;
   }
 
   .post-body .section-post-content {

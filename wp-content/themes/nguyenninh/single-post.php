@@ -56,7 +56,7 @@ get_header(); ?>
                 while ($related_post->have_posts()) {
                     $related_post->the_post();
             ?>
-                    <div class="col-md-4">
+                    <div class="col-md-6 col-xl-4">
                         <?php get_template_part('partials/card', 'post-common'); ?>
                     </div>
             <?php
