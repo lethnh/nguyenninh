@@ -28,6 +28,11 @@ get_header(); ?>
                         </li>
                     <?php endforeach ?>
                 </ul>
+                <div class="glide__bullets text-center" data-glide-el="controls[nav]">
+                    <?php foreach ($slide_images as $key => $image) : ?>
+                        <button class="glide__bullet" data-glide-dir="=<?= $key ?>"></button>
+                    <?php endforeach ?>
+                </div>
             </div>
         </div>
         <div class="text-center mt-96">

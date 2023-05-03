@@ -30,7 +30,7 @@ $args = wp_parse_args($args, $array_defaults);
                             </div>
                         </div>
                         <div class="d-flex align-items-center justify-content-start glide__slide_right w-60">
-                            <?= wp_get_attachment_image($slide['image_slider'], 'full', '', ['class' => 'w-100 img-fluid', "alt" => "slide common"]); ?>
+                            <?= wp_get_attachment_image($slide['image_slider'], 'full', '', ['class' => 'h-100 w-100 img-fluid', "alt" => "slide common"]); ?>
                         </div>
                     </div>
                 </li>
@@ -44,10 +44,10 @@ $args = wp_parse_args($args, $array_defaults);
 </div>
 <script>
     $(document).ready(function() {
-        new Glide('.hero', {
-            type: 'slider',
+        new Glide('.hero.slide-common', {
+            type: 'carousel',
             startAt: 0,
-            rewind: true,
+            autoplay: 2000,
             perView: 1,
             gap: 0
         }).mount()

@@ -2005,7 +2005,7 @@ aside.menu-aside-page .menu-item-has-children .dropdown-menu li a {
 }
 
 .glide__bullet {
-  background-color: hsla(0, 0%, 100%, .5);
+  background-color: #B8B9B6;
   width: 9px;
   height: 9px;
   padding: 0;
@@ -2021,5 +2021,5 @@ aside.menu-aside-page .menu-item-has-children .dropdown-menu li a {
 }
 
 .glide__bullet[class*=active] {
-  background-color: #fff;
+  background-color: #383A36;
 }
