@@ -139,7 +139,8 @@ get_header(); ?>
     'title' => $hieu_them_ve_nguyen_ninh['title'],
     'class' => 'mb-96',
     'background_image' => $hieu_them_ve_nguyen_ninh['bg_image'],
-    'is_black_and_white' => true
+    'is_black_and_white' => true,
+    'link_button' => $hieu_them_ve_nguyen_ninh['link_button']
 ]); ?>
 <!--  -->
 
