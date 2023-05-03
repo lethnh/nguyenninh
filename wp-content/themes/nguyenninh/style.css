@@ -810,6 +810,16 @@ footer .menu-footer .menu-footer-child li a::after {
   max-height: 728px;
 }
 
+@media (max-width: 768px) {
+  .section-story {
+    height: 500px;
+    max-height: 500px;
+    margin-bottom: 0px !important;
+  }
+}
+
+@media (max-width: 576px) {}
+
 /*  */
 .section-diary h1.heading-topic {
   font-family: 'Prata';
@@ -924,6 +934,16 @@ footer .menu-footer .menu-footer-child li a::after {
   width: 60%;
 }
 
+@media (max-width: 992px) {
+  .section-product-footer .title-block-common {
+    padding: 1.5rem;
+  }
+
+  .section-product-footer .title-block-common .title-main p {
+    font-size: 2.5rem;
+  }
+}
+
 @media (max-width: 768px) {
   .section-product-footer {
     flex-direction: column;
@@ -934,6 +954,7 @@ footer .menu-footer .menu-footer-child li a::after {
 
   .section-product-footer .section-product-footer-left {
     width: 100%;
+    margin-bottom: 0px !important;
   }
 
   .section-product-footer .section-product-footer-right {
@@ -1022,14 +1043,16 @@ footer .menu-footer .menu-footer-child li a::after {
   margin-bottom: 16px;
 }
 
+@media (max-width: 992px) {
+  .section-su-khac-biet .section-su-khac-biet-list .section-su-khac-biet-item .section-su-khac-biet-item-left h3 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
 @media (max-width: 576px) {
   .section-su-khac-biet .section-su-khac-biet-list .section-su-khac-biet-item:not(:first-child) {
     margin-top: 2rem;
-  }
-
-  .section-su-khac-biet .section-su-khac-biet-list .section-su-khac-biet-item .section-su-khac-biet-item-left h3 {
-    font-size: 2rem;
-    line-height: 2.5rem;
   }
 
   .section-su-khac-biet .section-su-khac-biet-list .section-su-khac-biet-item .section-su-khac-biet-item-right .section-su-khac-biet-item-right-content {
