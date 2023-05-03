@@ -225,6 +225,7 @@ function set_theme_option_global()
         'email' => get_field('email', 'option'),
         'hotline' => get_field('hotline', 'option'),
         'address' => get_field('address', 'option'),
+        'slider_sweet' => get_field('slider_sweet', 'option')
     );
 }
 add_action('init', 'set_theme_option_global');

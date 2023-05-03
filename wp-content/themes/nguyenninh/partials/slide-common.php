@@ -1,4 +1,5 @@
 <?php
+global $theme_options;
 // Setup defaults
 $array_defaults = array(
     'style_image' => null,
@@ -11,68 +12,29 @@ $args = wp_parse_args($args, $array_defaults);
 <div class="glide hero slide-common">
     <div class="glide__track" data-glide-el="track">
         <ul class="glide__slides">
-            <li class="glide__slide">
-                <div class="d-flex flex-row glide__slide_height">
-                    <div class="d-flex flex-col w-40 align-items-start glide__slide_left justify-content-between bg-secondary-20">
-                        <div class="d-flex flex-col align-items-start justify-content-start w-100">
-                            <div class="d-inline-flex align-items-center justify-content-center glide__slide_step">
-                                <span class="gray-80">01</span>
-                                <div class="d-inline-flex flex-col align-items-center justify-content-center w-9 h-100 py-1">/</div>
-                                <span class="text-center gray-80">03</span>
+            <?php foreach ($theme_options['slider_sweet'] as $key => $slide) : ?>
+                <li class="glide__slide">
+                    <div class="d-flex flex-row glide__slide_height">
+                        <div class="d-flex flex-col w-40 align-items-start glide__slide_left justify-content-between" style="background-color: <?= $slide['bg_color_slide']; ?>;color: <?= $slide['text_color_slide']; ?>">
+                            <div class="d-flex flex-col align-items-start justify-content-start w-100">
+                                <div class="d-inline-flex align-items-center justify-content-center glide__slide_step">
+                                    <span><?= $key < 10 ? '0' . $key + 1 : $key + 1; ?></span>
+                                    <div class="d-inline-flex flex-col align-items-center justify-content-center w-9 h-100 py-1">/</div>
+                                    <span class="text-center"><?= count($theme_options['slider_sweet']) < 10 ? '0' . count($theme_options['slider_sweet']) : count($theme_options['slider_sweet']); ?></span>
+                                </div>
+                                <p class="w-100 glide__slide_title"><?= $slide['title_slide']; ?></p>
                             </div>
-                            <p class="w-100 gray-80 glide__slide_title">Không pha bột, không tạp chất</p>
-                        </div>
-                        <div class="glide__slide_content">
-                            <p class="text-justify font-bold gray-80">Bánh cốm Nguyên Ninh chỉ dùng duy nhất 4 nguyên liệu: Cốm nếp quýt loại I, phần nhân có đậu xanh, dừa nạo và đường kính trắng.</p>
-                            <p class="text-justify gray-80 mt-3">Vỏ bánh được làm từ cốm xào nhuyễn, không xay, không pha bột và đặc biệt luôn xào bằng tay chứ không xào máy nên bánh dẻo thơm, dậy mùi cốm và không bị bở, vỡ khi ăn. </p>
-                        </div>
-                    </div>
-                    <div class="d-flex align-items-center justify-content-start glide__slide_right w-60">
-                        <img class="w-100 img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/su-khac-biet-3.webp" />
-                    </div>
-                </div>
-            </li>
-            <li class="glide__slide">
-                <div class="d-flex flex-row glide__slide_height">
-                    <div class="d-flex flex-col w-40 align-items-start glide__slide_left justify-content-between bg-primary-10">
-                        <div class="d-flex flex-col align-items-start justify-content-start w-100">
-                            <div class="d-inline-flex align-items-center justify-content-center glide__slide_step">
-                                <span class="gray-80">02</span>
-                                <div class="d-inline-flex flex-col align-items-center justify-content-center w-9 h-100 py-1">/</div>
-                                <span class="text-center gray-80">03</span>
+                            <div class="glide__slide_content">
+                                <p class="text-justify font-bold"><?= $slide['description_bold']; ?></p>
+                                <p class="text-justify mt-3"><?= $slide['description_normal']; ?></p>
                             </div>
-                            <p class="w-100 gray-80 glide__slide_title">Luôn nói không với chất bảo quản</p>
                         </div>
-                        <div class="glide__slide_content">
-                            <p class="text-justify font-bold gray-80">Bánh cốm Nguyên Ninh chính gốc số 11 Hàng Than từ lâu đã nổi tiếng với việc không sử dụng chất bảo quản.</p>
-                            <p class="text-justify gray-80 mt-3">Dù rằng nếu sử dụng chất bảo quản theo sự cho phép của bộ Y tế thì bánh sẽ để được lâu hơn nhưng Nguyên Ninh vẫn luôn trung thành với tôn chỉ này từ xưa đến nay để gìn giữ tính nguyên bản của sản phẩm.</p>
+                        <div class="d-flex align-items-center justify-content-start glide__slide_right w-60">
+                            <?= wp_get_attachment_image($slide['image_slider'], 'full', '', ['class' => 'w-100 img-fluid', "alt" => "slide common"]); ?>
                         </div>
                     </div>
-                    <div class="d-flex align-items-center justify-content-start glide__slide_right w-60">
-                        <img class="w-100 img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/slide-2.webp" />
-                    </div>
-                </div>
-            </li>
-            <li class="glide__slide">
-                <div class="d-flex flex-row glide__slide_height">
-                    <div class="d-flex flex-col w-40 align-items-start glide__slide_left justify-content-between bg-gray-80">
-                        <div class="d-flex flex-col align-items-start justify-content-start w-100">
-                            <div class="d-inline-flex align-items-center justify-content-center glide__slide_step">
-                                <span class="text-white">03</span>
-                                <div class="d-inline-flex flex-col align-items-center justify-content-center w-9 h-100 py-1 text-white">/</div>
-                                <span class="text-center text-white">03</span>
-                            </div>
-                            <p class="w-100 text-white glide__slide_title">Không có địa chỉ thứ hai</p>
-                        </div>
-                        <div class="glide__slide_content">
-                            <p class="text-justify text-white mt-3">Bánh cốm Nguyên Ninh chỉ có duy nhất một địa chỉ tại số 11 phố Hàng Than, Hà Nội. Đây là cửa hiệu gia truyền của gia đình, vốn là 1 ngôi nhà cổ vẫn giữ nguyên lối kiến trúc từ thế kỷ XX. Đặc điểm nhận diện của cửa hiệu là sự khiêm tốn, giản dị, không bày bánh ra vỉa hè và trưng biển bảng sáng rực như các cửa hiệu khác.</p>
-                        </div>
-                    </div>
-                    <div class="d-flex align-items-center justify-content-start glide__slide_right w-60">
-                        <img class="w-100 img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/su-khac-biet-7.webp" />
-                    </div>
-                </div>
-            </li>
+                </li>
+            <?php endforeach; ?>
         </ul>
     </div>
     <div class="glide__arrows" data-glide-el="controls">
@@ -85,7 +47,7 @@ $args = wp_parse_args($args, $array_defaults);
         new Glide('.hero', {
             type: 'slider',
             startAt: 0,
-            rewind: false,
+            rewind: true,
             perView: 1,
             gap: 0
         }).mount()
