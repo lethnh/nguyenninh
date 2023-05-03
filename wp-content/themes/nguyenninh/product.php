@@ -46,7 +46,7 @@ get_header(); ?>
                         $products->the_post();
                 ?>
                         <?php $productInfo = get_field('product_info', get_the_ID()); ?>
-                        <?php if ($products->current_post / 2 == 0) : ?>
+                        <?php //if ($products->current_post / 2 == 0) : ?>
                             <div class="col-md-6">
                                 <a href="<?= get_permalink(); ?>">
                                     <div class="img-wrapper ratio-1x1">
@@ -58,8 +58,8 @@ get_header(); ?>
                                     </div>
                                 </a>
                             </div>
-                        <?php else : ?>
-                            <div class="col-md-6">
+                        <?php //else : ?>
+                            <!-- <div class="col-md-6">
                                 <a href="<?= get_permalink(); ?>">
                                     <div class="img-wrapper ratio-63">
                                         <img src="<?= the_post_thumbnail_url(); ?>" class="odd:h-[33rem] even:h-[48.625rem] object-cover" alt="">
@@ -69,8 +69,8 @@ get_header(); ?>
                                         <p class="text-style-base gray-80"><?= $productInfo['price']; ?> VND</p>
                                     </div>
                                 </a>
-                            </div>
-                        <?php endif; ?>
+                            </div> -->
+                        <?php //endif; ?>
                 <?php }
                 } ?>
                 <?php wp_reset_postdata(); ?>
