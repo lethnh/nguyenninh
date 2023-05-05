@@ -93,7 +93,7 @@ $args = wp_parse_args($args, $array_defaults);
                     <a href="#" class="gray-30">ENG</a>
                 </div>
                 <div class="d-flex w-100 footer-cookie equal-height">
-                    <div class="d-flex">
+                    <div class="d-flex align-items-center">
                         <a href="/chinh-sach-cookie" class="text-white me-5">COOKIE</a>
                         <a href="#" class="text-white">QUYỀN RIÊNG TƯ</a>
                     </div>
