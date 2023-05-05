@@ -2081,3 +2081,23 @@ aside.menu-aside-page .menu-item-has-children .dropdown-menu li a {
 .glide__bullet[class*=active] {
   background-color: #383A36;
 }
+
+.product-single-slide .glide__slide img {
+  height: 610px;
+}
+
+@media (max-width: 992px) {
+  .product-single-slide .glide__slide img {
+    height: 500px;
+  }
+}
+@media (max-width: 768px) {
+  .product-single-slide .glide__slide img {
+    height: 400px;
+  }
+}
+@media (max-width: 576px) {
+  .product-single-slide .glide__slide img {
+    height: 200px;
+  }
+}
