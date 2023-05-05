@@ -7,15 +7,12 @@ get_header(); ?>
     <div class="glide product-single-slide">
         <div class="glide__track" data-glide-el="track">
             <ul class="glide__slides">
-                <li class="glide__slide">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/imgs/IMG_1607.webp" alt="" class="w-100 object-cover">
-                </li>
-                <li class="glide__slide">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/imgs/IMG_1607.webp" alt="" class="w-100 object-cover">
-                </li>
-                <li class="glide__slide">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/imgs/IMG_1607.webp" alt="" class="w-100 object-cover">
-                </li>
+                <?php $slides = get_field('slide'); ?>
+                <?php foreach ($slides as $key => $slide) : ?>
+                    <li class="glide__slide">
+                        <?= wp_get_attachment_image($slide['image'], 'full', '', ['class' => 'w-100 object-cover']); ?>
+                    </li>
+                <?php endforeach; ?>
             </ul>
         </div>
     </div>
