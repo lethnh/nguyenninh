@@ -1519,6 +1519,19 @@ color: #9EA09C;
   margin-top: 96px;
 }
 
+.btn-submit-order {
+  background: #D1D2D0 !important;
+  border: 0.5px solid #D1D2D0 !important;
+  border-radius: 0px !important;
+  margin-top: 3rem;
+}
+
+.btn-submit-order::before {
+  background: #D1D2D0 !important;
+  border: 0.5px solid #D1D2D0 !important;
+  border-radius: 0px !important;
+}
+
 .gform_confirmation_wrapper {
   margin-top: 96px;
 }
@@ -2023,7 +2036,7 @@ aside.menu-aside-page .menu-item-has-children .dropdown-menu li a {
 }
 
 #modal-send-info-order .modal-body {
-  padding: 4rem;
+  padding: 3rem;
 }
 
 #modal-send-info-order .title-block-common .title-main {

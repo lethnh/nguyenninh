@@ -107,15 +107,14 @@ $args = wp_parse_args($args, $array_defaults);
 
 <div class="modal fade" id="modal-send-info-order" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <div class="journey-header-indicator"></div>
-                <h2 class="modal-title" id="exampleModalLabel">Bắt đầu hành trình du học</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
+        <div class="modal-content bg-secondary-07">
             <div class="modal-body" style="z-index: 9999;">
-                <h3 class="personal-info">Thông tin cá nhân</h3>
-                <?= do_shortcode('[gravityform id="1" title="false" ajax="true"]'); ?>
+                <?php get_template_part('partials/title', 'common', [
+                    'sub-title' => 'BẠN ĐANG ĐẶT HÀNG',
+                    'title' => 'Bánh cốm Nguyên Ninh',
+                    'class' => 'mb-64'
+                ]); ?>
+                <?= do_shortcode('[gravityform id="3" title="false" ajax="true" field_values="test=demo"]'); ?>
             </div>
         </div>
     </div>
