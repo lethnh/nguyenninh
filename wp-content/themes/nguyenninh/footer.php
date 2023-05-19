@@ -114,7 +114,7 @@ $args = wp_parse_args($args, $array_defaults);
                     'title' => 'Bánh cốm Nguyên Ninh',
                     'class' => 'mb-64'
                 ]); ?>
-                <?= do_shortcode('[gravityform id="3" title="false" ajax="true" field_values="test=demo"]'); ?>
+                <?= do_shortcode('[gravityform id="2" title="false" ajax="true" field_values="test=demo"]'); ?>
             </div>
         </div>
     </div>
