@@ -15,7 +15,7 @@ get_header(); ?>
                     <p class="text-white"><?= get_field('section_banner')["big_title"]; ?></p>
                 </div>
                 <div class="sub-title-below d-flex align-self-center ms-auto w-30 mt-auto">
-                    <p class="text-white">Chào mừng bạn tới với nhật ký của Nguyên Ninh, nơi chúng mình sẻ chia những mẩu chuyện của mình và của thủ đô thân thương</p>
+                    <p class="text-white"><?= get_field('section_banner')["sub_title"]; ?></p>
                 </div>
             </div>
         </div>
