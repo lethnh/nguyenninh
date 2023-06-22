@@ -1,4 +1,5 @@
 <?php
+global $theme_options;
 $productInfo = get_field('product_info');
 get_header(); ?>
 
@@ -57,11 +58,7 @@ get_header(); ?>
             </div>
             <div class="w-[25%] d-flex bg-secondary-10 h-fit align-items-start product-info-right">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/imgs/dot.svg)" alt="">
-                <div class="text-style-base ml-4 gray-80">
-                    Chúng tôi nhận đơn hàng online với số lượng 5 chiếc là tối thiểu. Nếu quý khách hàng muốn mua lẻ, vui
-                    lòng
-                    đến <b>cửa hiệu Bánh cốm Nguyên Ninh số 11 Hàng Than, Ba Đình, Hà Nội.</b>
-                </div>
+                <div class="text-style-base ml-4 gray-80"><?= $theme_options['policy_order']; ?></div>
             </div>
         </div>
         <div class="bg-primary-05 flex-col d-flex section-product-contact mt-96">
