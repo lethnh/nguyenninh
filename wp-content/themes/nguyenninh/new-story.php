@@ -6,13 +6,13 @@
 <?php
 get_header(); ?>
 
-<section class="px-14 mobile:px-4 w-100 mobile:mt-4 max-h-[27.75rem] h-[27.75rem] position-relative" style="background:linear-gradient(0deg, rgba(56, 58, 54, 0.72), rgba(56, 58, 54, 0.72)),url(<?= get_field('banner'); ?>);background-size:cover;background-repeat: no-repeat; ">>
+<section class="px-14 mobile:px-4 w-100 mobile:mt-4 max-h-[27.75rem] h-[27.75rem] position-relative" style="background:linear-gradient(0deg, rgba(56, 58, 54, 0.72), rgba(56, 58, 54, 0.72)),url(<?= get_field('section_banner')["banner"]; ?>);background-size:cover;background-repeat: no-repeat; ">>
     <div class=" container absolute-center">
         <div class="d-flex flex-col w-100 title-block-common pt-96 pb-96">
-            <p class="sub-title text-white">NHẬT KÝ CỦA NGUYÊN NINH</p>
+            <p class="sub-title text-white"><?= get_field('section_banner')["small_title"]; ?></p>
             <div class="d-flex align-items-end flex-col flex-md-row">
                 <div class="title-main d-flex align-self-center">
-                    <p class="text-white">Những mảnh <br> chuyện nho nhỏ</p>
+                    <p class="text-white"><?= get_field('section_banner')["big_title"]; ?></p>
                 </div>
                 <div class="sub-title-below d-flex align-self-center ms-auto w-30 mt-auto">
                     <p class="text-white">Chào mừng bạn tới với nhật ký của Nguyên Ninh, nơi chúng mình sẻ chia những mẩu chuyện của mình và của thủ đô thân thương</p>
