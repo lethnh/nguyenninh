@@ -12,7 +12,7 @@ get_header(); ?>
         <div class="container">
             <div class="d-flex flex-col align-items-center w-4/5 mx-auto">
                 <img class="img-star" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/star.svg" alt="">
-                <h1 class="mb-64">Các sản phẩm<br> của nhà Nguyên Ninh</h1>
+                <h1 class="mb-64"><?= get_field('big_title'); ?></h1>
             </div>
             <div class="img-wrapper ratio-16x9">
                 <?= wp_get_attachment_image(get_field('banner'), 'full', '', ['class' => 'img-fluid']); ?>
