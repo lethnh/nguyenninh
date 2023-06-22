@@ -46,20 +46,22 @@ get_header(); ?>
                         $products->the_post();
                 ?>
                         <?php $productInfo = get_field('product_info', get_the_ID()); ?>
-                        <?php //if ($products->current_post / 2 == 0) : ?>
-                            <div class="col-md-6">
-                                <a href="<?= get_permalink(); ?>">
-                                    <div class="img-wrapper ratio-1x1">
-                                        <img src="<?= the_post_thumbnail_url(); ?>" class="even:h-[33rem] odd:h-[48.625rem] object-cover" alt="">
-                                    </div>
-                                    <div class="d-flex justify-between mt-6">
-                                        <p class="product-title gray-80"><?= the_title(); ?></p>
-                                        <p class="text-style-base gray-80"><?= $productInfo['price']; ?> VND</p>
-                                    </div>
-                                </a>
-                            </div>
-                        <?php //else : ?>
-                            <!-- <div class="col-md-6">
+                        <?php //if ($products->current_post / 2 == 0) : 
+                        ?>
+                        <div class="col-md-6">
+                            <a href="<?= get_permalink(); ?>">
+                                <div class="img-wrapper ratio-1x1">
+                                    <img src="<?= the_post_thumbnail_url(); ?>" class="even:h-[33rem] odd:h-[48.625rem] object-cover" alt="">
+                                </div>
+                                <div class="d-flex justify-between mt-6">
+                                    <p class="product-title gray-80"><?= the_title(); ?></p>
+                                    <p class="text-style-base gray-80"><?= $productInfo['price']; ?> VND</p>
+                                </div>
+                            </a>
+                        </div>
+                        <?php //else : 
+                        ?>
+                        <!-- <div class="col-md-6">
                                 <a href="<?= get_permalink(); ?>">
                                     <div class="img-wrapper ratio-63">
                                         <img src="<?= the_post_thumbnail_url(); ?>" class="odd:h-[33rem] even:h-[48.625rem] object-cover" alt="">
@@ -70,7 +72,8 @@ get_header(); ?>
                                     </div>
                                 </a>
                             </div> -->
-                        <?php //endif; ?>
+                        <?php //endif; 
+                        ?>
                 <?php }
                 } ?>
                 <?php wp_reset_postdata(); ?>
@@ -132,16 +135,11 @@ get_header(); ?>
     <!-- Slide -->
     <section class="section-common">
         <div class="container">
+            <?php $section_product = get_field('section_product'); ?>
             <?php get_template_part('partials/title', 'common', [
-                'sub-title' => 'SẢN PHẨM CỦA NGUYÊN NINH CÓ GÌ ĐẶC BIỆT?',
-                'title' => '“Món quà ngọt ngào mang tên Nguyên Ninh”',
-                'sub-title-below' => 'Bánh cốm của Nguyên Ninh
-                        không phải là một món ăn, mà là một trải nghiệm. Cuộc hành trình của hương vị bắt đầu khi cắn
-                        lớp vỏ cốm
-                        xay nhuyễn bên ngoài mát thơm dịu dàng. Rồi sau đó là một sự bùng nổ của vị ngọt và hương vị
-                        quen thuộc của
-                        đậu xanh và đường, được tô điểm thêm nét thanh tao của dừa nạo. Sự hoà quyện hoàn hảo của vị
-                        giác chỉ có được ở bánh cốm Nguyên Ninh.',
+                'sub-title' => $section_product['small_title'],
+                'title' => $section_product['big_title'],
+                'sub-title-below' => $section_product['desc'],
                 'class' => 'mb-64'
             ]); ?>
             <?php get_template_part('partials/slide', 'common'); ?>
