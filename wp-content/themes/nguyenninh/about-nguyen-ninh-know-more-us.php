@@ -9,12 +9,13 @@ get_header(); ?>
 <!--  -->
 <section class="section-common">
     <div class="container">
+        <?php $section_first = get_field('section_first'); ?>
         <?php get_template_part('partials/title', 'common', [
-            'sub-title' => 'HIỂU THÊM VỀ CHÚNG TÔI',
-            'title' => 'Nguyên Ninh mong muốn mang đến cho mọi người thứ quà tuyệt vời nhất',
+            'sub-title' => $section_first['small_title'],
+            'title' => $section_first['big_title'],
             'sub-title-below-2' => [
-                'first' => 'Từ thuở ban đầu, cụ Trần Thị Luân đã sáng tạo ra chiếc bánh cốm đầu tiên với phương châm mang những điều tuyệt vời của hương vị cốm nhất đến với thực khách bốn phương,',
-                'second' => 'Và chính vì vậy, ngoài công thức bí truyền được truyền lại cho con cháu gia tộc Nguyên Ninh, cụ còn để lại một giá trị đáng tự hào nữa là cấm không được theo đuổi danh vọng, lợi lộc từ chiếc bánh cốm.'
+                'first' => $section_first['desc_1'],
+                'second' => $section_first['desc_2']
             ],
             'class' => 'mb-96'
         ]); ?>
