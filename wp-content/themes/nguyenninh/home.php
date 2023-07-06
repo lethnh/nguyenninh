@@ -151,17 +151,21 @@ get_header(null, ['is_body_main' => true]); ?>
 <!-- Chương 4 -->
 
 <script>
-    // $(document).ready(function() {
-    //     var glideMulti = new Glide('.hero', {
-    //         type: 'slider',
-    //         startAt: 0,
-    //         rewind: false,
-    //         perView: 1,
-    //         gap: 0
-    //     })
+    $(document).ready(function() {
+        $(".list-posts .post_item").matchHeight({
+            byRow: false,
+            property: "min-height",
+            target: null,
+            remove: false,
+        });
 
-    //     glideMulti.mount();
-    // });
+        $(".list-posts .post_body").matchHeight({
+            byRow: false,
+            property: "min-height",
+            target: null,
+            remove: false,
+        });
+    });
 </script>
 
 <?php get_footer(null, ['show_product' => false]) ?>
