@@ -122,14 +122,14 @@ get_header(); ?>
 
 <script>
     $(document).ready(function() {
-        $(".post_item").matchHeight({
+        $(".block-of-discovery .post_item").matchHeight({
             byRow: false,
             property: "min-height",
             target: null,
             remove: false,
         });
 
-        $(".post_body").matchHeight({
+        $(".block-of-discovery .post_body").matchHeight({
             byRow: false,
             property: "min-height",
             target: null,
