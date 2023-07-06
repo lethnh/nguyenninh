@@ -2104,13 +2104,27 @@ aside.menu-aside-page .menu-item-has-children .dropdown-menu li a {
     height: 500px;
   }
 }
+
 @media (max-width: 768px) {
   .product-single-slide .glide__slide img {
     height: 400px;
   }
 }
+
 @media (max-width: 576px) {
   .product-single-slide .glide__slide img {
     height: 200px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container-custom {
+    padding-right: 1.75rem;
+    padding-left: 1.75rem;
+  }
+
+  .container-custom-2 {
+    padding-right: 3rem;
+    padding-left: 3rem;
   }
 }

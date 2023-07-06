@@ -7,7 +7,7 @@
 get_header(null, ['is_body_main' => true]); ?>
 
 <section class="banner-home">
-    <div class="container">
+    <div class="container container-custom">
         <div class="position-relative">
             <img src="<?= get_field('image_main') ?>" class="object-cover h-100 w-100">
             <button class="position-absolute btn-scroll"><i class="fa-light fa-arrow-down text-white"></i></button>
@@ -17,7 +17,7 @@ get_header(null, ['is_body_main' => true]); ?>
 <!-- Chương 1 -->
 <?php $chapter_one = get_field('chapter_1'); ?>
 <section class="chapter-begin section-common">
-    <div class="container">
+    <div class="container container-custom-2">
         <?php get_template_part('partials/title', 'common', [
             'sub-title' => 'CHƯƠNG 1 - MỞ ĐẦU',
             'title' => '“Vẹn nguyên từ thuở ban đầu”',
