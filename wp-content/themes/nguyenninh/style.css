@@ -722,8 +722,8 @@ footer .menu-footer .menu-footer-child li a::after {
 }
 
 .section-value-block .section-value-item .section-value-item-content {
-  padding: 32px;
-  width: 40%;
+  padding: 48px;
+  width: 45%;
 }
 
 .section-value-block .section-value-item .section-value-item-content .svg-star {
@@ -757,7 +757,7 @@ footer .menu-footer .menu-footer-child li a::after {
 
 .section-value-block .section-value-item .section-value-item-image {
   height: 504px;
-  width: 60%;
+  width: 55%;
 }
 
 .section-value-block .section-value-item .section-value-item-image img {
