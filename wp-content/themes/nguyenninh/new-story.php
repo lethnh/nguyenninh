@@ -103,7 +103,7 @@ get_header(); ?>
                 ?>
                         <?php if ($my_query->current_post == 0  || $my_query->current_post == 6) : ?>
                             <div class="col-xl-8 card-post-main-custom">
-                                <?php get_template_part('partials/card', 'post-main'); ?>
+                                <?php get_template_part('partials/card', 'post-main', ['style' => 'custom']); ?>
                             </div>
                         <?php endif; ?>
                         <?php if ($my_query->current_post > 0 && $my_query->current_post < 6) : ?>
@@ -119,3 +119,21 @@ get_header(); ?>
 </section>
 
 <?php get_footer(); ?>
+
+<script>
+    $(document).ready(function() {
+        $(".post_item").matchHeight({
+            byRow: false,
+            property: "min-height",
+            target: null,
+            remove: false,
+        });
+
+        $(".post_body").matchHeight({
+            byRow: false,
+            property: "min-height",
+            target: null,
+            remove: false,
+        });
+    });
+</script>
