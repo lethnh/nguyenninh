@@ -156,7 +156,7 @@ get_header(); ?>
             gap: 112,
             peek: {
                 before: 0,
-                after: 130
+                after: 300
             },
             breakpoints: {
                 767: {
