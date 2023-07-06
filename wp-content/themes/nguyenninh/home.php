@@ -124,7 +124,7 @@ get_header(null, ['is_body_main' => true]); ?>
                 ?>
                         <?php if ($the_query->current_post == 0) : ?>
                             <div class="col-xl-8">
-                                <?php get_template_part('partials/card', 'post-main'); ?>
+                                <?php get_template_part('partials/card', 'post-main', ['style' => 'custom']); ?>
                             </div>
                         <?php endif; ?>
                         <?php if ($the_query->current_post > 0) : ?>
