@@ -11,10 +11,10 @@ $args = wp_parse_args($args, $array_defaults);
     <div class="d-flex section-product-footer">
         <div class="d-flex flex-col bg-primary-10 section-product-footer-left justify-content-center title-block-common px-24 pt-96 pb-96">
             <p class="sub-title primary-80">Sản phẩm</p>
-            <div class="title-main d-flex align-self-center">
+            <div class="title-main d-flex">
                 <p class="primary-80"><?= $theme_options['section_san_pham']['title']; ?></p>
             </div>
-            <div class="mt-96 mx-auto">
+            <div class="mt-96">
                 <?php get_template_part('partials/btn', 'common', [
                     'is_icon' => true,
                     'link' => '/san-pham',
