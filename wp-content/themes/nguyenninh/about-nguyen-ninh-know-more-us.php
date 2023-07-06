@@ -153,7 +153,7 @@ get_header(); ?>
             focusAt: 'center',
             startAt: 0,
             perView: 1,
-            // 130px
+            gap: 112,
             peek: {
                 before: 0,
                 after: 130
