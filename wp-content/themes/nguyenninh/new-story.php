@@ -102,7 +102,7 @@ get_header(); ?>
                         $my_query->the_post();
                 ?>
                         <?php if ($my_query->current_post == 0  || $my_query->current_post == 6) : ?>
-                            <div class="col-xl-8">
+                            <div class="col-xl-8 card-post-main-custom">
                                 <?php get_template_part('partials/card', 'post-main'); ?>
                             </div>
                         <?php endif; ?>
