@@ -8,7 +8,7 @@ get_header(); ?>
 <main class="main-policy">
     <div class="border-[0.5px] border-[#e6e6e6] w-[calc(100%_-_8rem)] mx-auto mt-24"></div>
     <section class="section-common">
-        <div class="container">
+        <div class="container container-custom-2">
             <h1 class="gray-80">Chính sách Cookies</h1>
             <h2>Sử dụng cookies</h2>
             <div class="text-style-base">Một số nội dung của website của Nguyên Ninh sử dụng cookies để cung cấp dịch vụ tốt hơn cho các quý khách hàng.</div>

@@ -9,7 +9,7 @@ get_header(); ?>
 <!--  -->
 <?php $theo_dong_lich_su = get_field('theo_dong_lich_su'); ?>
 <section class="section-common">
-    <div class="container">
+    <div class="container container-custom-2">
         <?php get_template_part('partials/title', 'common', [
             'sub-title' => 'NGUYÊN NINH THEO DÒNG LỊCH SỬ',
             'title' => $theo_dong_lich_su['title'],
@@ -46,7 +46,7 @@ get_header(); ?>
 
 <!--  -->
 <section class="section-common bg-primary-05 section-history-slider">
-    <div class="container">
+    <div class="container container-custom-2">
         <?php get_template_part('partials/title', 'common', [
             'title' => null,
             'sub-title' => 'NHỮNG CỘT MỐC QUAN TRỌNG',
@@ -100,7 +100,7 @@ get_header(); ?>
 <!--  -->
 <?php $thanh_tuu_va_gia_tri_thuong_hieu = get_field('thanh_tuu_va_gia_tri_thuong_hieu'); ?>
 <section class="bg-secondary-10 section-common section-thanh-tuu">
-    <div class="container">
+    <div class="container container-custom-2">
         <?php get_template_part('partials/title', 'common', [
             'sub-title' => 'THÀNH TỰU VÀ GIÁ TRỊ THƯƠNG HIỆU',
             'title' => $thanh_tuu_va_gia_tri_thuong_hieu['title']

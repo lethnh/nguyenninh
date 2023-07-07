@@ -23,7 +23,7 @@ get_header(); ?>
 </section>
 
 <section class="section-common section-diary">
-    <div class="container">
+    <div class="container container-custom-2">
         <div class="block-of-week">
             <div class="d-flex align-items-center">
                 <img class="me-4 img-star" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/star.svg" alt="">

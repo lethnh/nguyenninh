@@ -8,7 +8,7 @@ get_header(); ?>
 
 <div class="border-[0.5px] border-[#e6e6e6] w-[calc(100%_-_8rem)] mx-auto mt-24"></div>
 <section class="section-common">
-    <div class="container">
+    <div class="container container-custom-2">
         <?php get_template_part('partials/title', 'common', [
             'sub-title' => 'LIÊN HỆ VỚI NGUYÊN NINH',
             'title' => '“Bạn có điều gì muốn nói với Nguyên Ninh?”',

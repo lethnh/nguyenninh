@@ -8,7 +8,7 @@ get_header(); ?>
 
 <!--  -->
 <section class="section-common">
-    <div class="container">
+    <div class="container-fluid container-custom-2">
         <?php $section_first = get_field('section_first'); ?>
         <?php get_template_part('partials/title', 'common', [
             'sub-title' => $section_first['small_title'],
@@ -49,7 +49,7 @@ get_header(); ?>
 
 <!--  -->
 <section class="section-gia-tri-su-menh section-common bg-secondary-07">
-    <div class="container">
+    <div class="container container-custom-2">
         <?php get_template_part('partials/title', 'common', [
             'sub-title' => 'GIÁ TRỊ VÀ SỨ MỆNH',
             'title' => 'Nguyên Ninh và những giá trị truyền thống',
@@ -91,7 +91,7 @@ get_header(); ?>
 
 <!--  -->
 <section class="section-common bg-secondary-20 section-su-khac-biet">
-    <div class="container">
+    <div class="container container-custom-2">
         <?php get_template_part('partials/title', 'common', [
             'sub-title' => 'SỰ KHÁC BIỆT CỦA NGUYÊN NINH',
             'title' => 'Hương vị tuyệt hảo,<br>nguyên vẹn và an toàn',

@@ -21,7 +21,7 @@ get_header(); ?>
 <!--  -->
 
 <section class="section-common">
-    <div class="container">
+    <div class="container container-custom-2">
         <h1 class="product-title-main gray-80"><?= the_title(); ?></h1>
         <div class="pt-4 d-flex align-items-center flex-wrap">
             <div class="font-medium text-base gray-80"><?= $productInfo['price'] ?> VND / 1 chiếc</div>

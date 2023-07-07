@@ -5,7 +5,7 @@
 ?>
 <?php
 get_header(); ?>
-<div class="container post-body">
+<div class="container container-custom-2 post-body">
     <?php if (have_posts()) : ?>
         <?php while (have_posts()) : ?>
             <?php the_post(); ?>
