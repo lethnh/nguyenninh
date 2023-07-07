@@ -8,7 +8,7 @@ get_header(); ?>
 
 <!--  -->
 <section class="section-common">
-    <div class="container-fluid container-custom-2">
+    <div class="container container-custom-2">
         <?php $section_first = get_field('section_first'); ?>
         <?php get_template_part('partials/title', 'common', [
             'sub-title' => $section_first['small_title'],
@@ -19,6 +19,8 @@ get_header(); ?>
             ],
             'class' => 'mb-96'
         ]); ?>
+    </div>
+    <div class="container-fluid container-custom-2">
         <div class="glide hero glide_know_me">
             <div class="glide__track" data-glide-el="track">
                 <ul class="glide__slides">
@@ -36,6 +38,8 @@ get_header(); ?>
                 </div>
             </div>
         </div>
+    </div>
+    <div class="container container-custom-2">
         <div class="text-center mt-96">
             <?php get_template_part('partials/btn', 'common', [
                 'is_icon' => true,
