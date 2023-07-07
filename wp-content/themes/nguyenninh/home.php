@@ -40,7 +40,7 @@ get_header(null, ['is_body_main' => true]); ?>
 <!-- Chương 2 -->
 <?php $chapter_two = get_field('chapter_2'); ?>
 <section class="chapter-second section-common">
-    <div class="container container-custom">
+    <div class="container container-custom-2">
         <?php get_template_part('partials/title', 'common', [
             'sub-title' => 'CHƯƠNG 2 - BÁNH CỐM CÓ GÌ ĐẶC BIỆT?',
             'title' => '“Một món quà ghi dấu đất Kinh Kỳ”',
@@ -79,7 +79,7 @@ get_header(null, ['is_body_main' => true]); ?>
 <!-- Chương 3 -->
 <?php $chapter_three = get_field('chapter_3'); ?>
 <section class="chapter-third section-common">
-    <div class="container container-custom">
+    <div class="container container-custom-2">
         <?php get_template_part('partials/title', 'common', [
             'sub-title' => 'CHƯƠNG 3 - NGUYÊN NINH CÓ GÌ ĐẶC BIỆT?',
             'title' => '“Món quà ngọt ngào mang tên Nguyên Ninh”',
@@ -99,7 +99,7 @@ get_header(null, ['is_body_main' => true]); ?>
 
 <!-- Chương 4 -->
 <section class="section-common">
-    <div class="container container-custom">
+    <div class="container container-custom-2">
         <?php get_template_part('partials/title', 'common', [
             'sub-title' => 'NGOẠI TRUYỆN: NHẬT KÝ CỦA NGUYÊN NINH',
             'title' => '“Những mảnh truyện đời nho nhỏ”',
