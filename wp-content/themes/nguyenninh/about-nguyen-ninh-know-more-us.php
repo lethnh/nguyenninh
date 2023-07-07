@@ -20,7 +20,7 @@ get_header(); ?>
             'class' => 'mb-96'
         ]); ?>
     </div>
-    <div class="container-fluid container-custom-2">
+    <div class="container-fluid">
         <div class="glide hero glide_know_me">
             <div class="glide__track" data-glide-el="track">
                 <ul class="glide__slides">
