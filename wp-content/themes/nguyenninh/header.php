@@ -22,8 +22,7 @@ $args = wp_parse_args($args, $array_defaults);
     <!-- Header -->
     <header id="header-main" class="fixed-top <?= $args['is_body_main'] ? 'bg-gray-02' : 'bg-secondary-04'; ?>">
         <nav class="navbar navbar-expand-lg navbar-custom">
-            <div class="container">
-
+            <div class="container container-custom-2">
                 <a class="navbar-brand" href="<?= get_home_url(); ?>">Nguyên Ninh</a>
                 <button class="navbar-toggler hamburger hamburger--collapse" type="button" id="btn-hamburger">
                     <span class="hamburger-box">
