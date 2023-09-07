@@ -7,7 +7,7 @@ $array_defaults = array(
 $args = wp_parse_args($args, $array_defaults);
 ?>
 <div class="post_item other <?= $args['class']; ?>">
-    <a href="<?php the_permalink() ?>" class="post_seemore gray-80">
+    <a href="<?php the_permalink() ?>">
         <div class="img-wrapper"><?= get_the_post_thumbnail(get_the_ID(), 'post-thumbnail') ?></div>
         <div class="post_body d-flex flex-col justify-content-between">
             <div class="d-flex flex-col">
