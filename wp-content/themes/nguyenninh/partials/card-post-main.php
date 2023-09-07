@@ -14,14 +14,20 @@ $args = wp_parse_args($args, $array_defaults);
 
 <?php if ($args['style'] == 'custom') : ?>
     <div class="position-relative col-span-2 post_item post_item_main <?= $args['class']; ?>">
-        <?= get_the_post_thumbnail($args['post_id'], 'post-thumbnail', ['style' => 'position: absolute; object-fit: cover; height: 100%;']) ?>
+        <a href="<?php the_permalink($args['post_id']) ?>">
+            <?= get_the_post_thumbnail($args['post_id'], 'post-thumbnail', ['style' => 'position: absolute; object-fit: cover; height: 100%;']) ?>
+        </a>
         <div class="position-absolute <?= $args['position_body']; ?> post_body d-flex flex-col justify-content-between">
             <div class="d-flex flex-col">
                 <div class="post_title gray-80 mb-3">
-                    <h2><?= wp_trim_words(get_the_title($args['post_id']), 18, '...'); ?></h2>
+                    <a href="<?php the_permalink($args['post_id']) ?>">
+                        <h2><?= wp_trim_words(get_the_title($args['post_id']), 18, '...'); ?></h2>
+                    </a>
                 </div>
                 <div class="post_excerpt gray-60">
-                    <p><?= wp_trim_words(get_the_content(null, false, $args['post_id']), 40, '...'); ?></p>
+                    <a href="<?php the_permalink($args['post_id']) ?>">
+                        <p><?= wp_trim_words(get_the_content(null, false, $args['post_id']), 40, '...'); ?></p>
+                    </a>
                 </div>
             </div>
             <div class="flex justify-content-between post_body_footer">
