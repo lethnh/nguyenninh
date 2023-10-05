@@ -36,7 +36,7 @@ get_header(); ?>
                 <?php
                 $args_products = array(
                     'post_type' => 'san-pham',
-                    'order' => 'asc',
+                    'order' => 'desc',
                 );
                 $products = new WP_Query($args_products);
                 ?>

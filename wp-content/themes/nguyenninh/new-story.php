@@ -91,7 +91,7 @@ get_header(); ?>
                 <?php
                 $args_my_query = array(
                     'post_type' => 'post',
-                    'order' => 'asc',
+                    'order' => 'desc',
                     'posts_per_page' => 7
                 );
                 $my_query = new WP_Query($args_my_query);
