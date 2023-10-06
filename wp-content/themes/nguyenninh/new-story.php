@@ -76,6 +76,7 @@ get_header(); ?>
                     'position_body' => 'right-0 bottom-0',
                     'post_id' => $story_of_week_id,
                     'is_flag_story_of_week' => true,
+                    'style' => 'custom'
                 ]); ?>
             </div>
         </div>
