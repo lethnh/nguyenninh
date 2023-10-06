@@ -70,7 +70,7 @@ get_header(); ?>
                 //             post_views > 0
                 //         ORDER BY post_views desc";
                 // $results = $wpdb->get_results($sql);
-                $story_of_week_id = get_field('story_of_week'); ?>
+                $story_of_week_id = get_field('story_of_week', 'option'); ?>
                 <?php get_template_part('partials/card', 'post-main', [
                     'style_image' => 'padding-bottom: 41%;',
                     'position_body' => 'right-0 bottom-0',
