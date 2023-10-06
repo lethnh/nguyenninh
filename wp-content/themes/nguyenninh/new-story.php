@@ -31,45 +31,45 @@ get_header(); ?>
             </div>
             <div class="mt-64">
                 <?php
-                global $wpdb;
-                $week = date("W", time());
-                $year = date("Y", time());
-                $date = new DateTime($year . 'W' . $week);
+                // global $wpdb;
+                // $week = date("W", time());
+                // $year = date("Y", time());
+                // $date = new DateTime($year . 'W' . $week);
 
-                // get monday
-                $monday = $date->format('d');
+                // // get monday
+                // $monday = $date->format('d');
 
-                // get month of monday
-                $monday_month = $date->format('m');
+                // // get month of monday
+                // $monday_month = $date->format('m');
 
-                // prepare range
-                for ($i = 1; $i <= 6; $i++) {
-                    $range[(string) ($date->format('Y') . $date->format('m') . $date->format('d'))] = 0;
+                // // prepare range
+                // for ($i = 1; $i <= 6; $i++) {
+                //     $range[(string) ($date->format('Y') . $date->format('m') . $date->format('d'))] = 0;
 
-                    $date->modify('+1days');
-                }
+                //     $date->modify('+1days');
+                // }
 
-                $range[(string) ($date->format('Y') . $date->format('m') . $date->format('d'))] = 0;
+                // $range[(string) ($date->format('Y') . $date->format('m') . $date->format('d'))] = 0;
 
-                // get month of sunday
-                $sunday_month = $date->format('m');
-                $sql = "SELECT
-                            pvc.id,
-                            SUM(COALESCE(pvc.count, 0)) AS post_views
-                        FROM
-                            Cwo0ro_posts wpp
-                            LEFT JOIN Cwo0ro_post_views pvc ON pvc.id = wpp.ID
-                                AND pvc.type = 0
-                                AND pvc.period >= " . $year . $monday_month . $monday .
-                    " AND pvc.period <= " . $date->format('Y') . $sunday_month . $date->format('d') .
-                    " WHERE
-                            wpp.post_type IN('post')
-                        GROUP BY
-                            pvc.id
-                        HAVING
-                            post_views > 0
-                        ORDER BY post_views desc";
-                $results = $wpdb->get_results($sql);
+                // // get month of sunday
+                // $sunday_month = $date->format('m');
+                // $sql = "SELECT
+                //             pvc.id,
+                //             SUM(COALESCE(pvc.count, 0)) AS post_views
+                //         FROM
+                //             Cwo0ro_posts wpp
+                //             LEFT JOIN Cwo0ro_post_views pvc ON pvc.id = wpp.ID
+                //                 AND pvc.type = 0
+                //                 AND pvc.period >= " . $year . $monday_month . $monday .
+                //     " AND pvc.period <= " . $date->format('Y') . $sunday_month . $date->format('d') .
+                //     " WHERE
+                //             wpp.post_type IN('post')
+                //         GROUP BY
+                //             pvc.id
+                //         HAVING
+                //             post_views > 0
+                //         ORDER BY post_views desc";
+                // $results = $wpdb->get_results($sql);
                 $story_of_week_id = get_field('story_of_week'); ?>
                 <?php get_template_part('partials/card', 'post-main', [
                     'style_image' => 'padding-bottom: 41%;',
