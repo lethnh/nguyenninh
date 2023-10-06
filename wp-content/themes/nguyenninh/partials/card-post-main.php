@@ -6,7 +6,8 @@ $array_defaults = array(
     'position_body' => 'left-0 bottom-0',
     'post_id' => 0,
     'is_flag_story_of_week' => false,
-    'style' => 'normal'
+    'style' => 'normal',
+    'style_post_body' => null,
 );
 
 $args = wp_parse_args($args, $array_defaults);
@@ -47,7 +48,7 @@ $args = wp_parse_args($args, $array_defaults);
         <?php if ($args['is_flag_story_of_week']) : ?>
             <div class="position-absolute post_story_of_week bg-red-60 px-8 py-4 left-0 top-0 mt-0 text-white"><a href="<?php the_permalink($args['post_id']) ?>">Nổi bật tuần này</a></div>
         <?php endif; ?>
-        <div class="position-absolute <?= $args['position_body']; ?> post_body d-flex flex-col justify-content-between">
+        <div class="position-absolute <?= $args['position_body']; ?> post_body d-flex flex-col justify-content-between" style="<?= $args['style_post_body']; ?>">
             <div class="d-flex flex-col">
                 <div class="post_title gray-80 mb-3">
                     <a href="<?php the_permalink($args['post_id']) ?>">

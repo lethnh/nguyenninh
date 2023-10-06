@@ -72,10 +72,11 @@ get_header(); ?>
                 // $results = $wpdb->get_results($sql);
                 $story_of_week_id = get_field('story_of_week', 'option'); ?>
                 <?php get_template_part('partials/card', 'post-main', [
-                    'style_image' => 'padding-bottom: 41%;',
+                    'style_image' => 'padding-bottom: 51%;',
                     'position_body' => 'right-0 bottom-0',
                     'post_id' => $story_of_week_id,
                     'is_flag_story_of_week' => true,
+                    'style_post_body' => 'height: 380px; max-height: 380px;'
                 ]); ?>
             </div>
         </div>
