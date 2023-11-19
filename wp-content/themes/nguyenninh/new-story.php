@@ -165,7 +165,7 @@ get_header(); ?>
                         $(".load-more").hide();
                     }
                     $('.list-posts').append(res.html);
-                    offset = offset + 5; // tăng bài viết đã hiển thị
+                    offset = offset + 3; // tăng bài viết đã hiển thị
                 },
                 error: function(jqXHR, textStatus, errorThrown) {
                     //Làm gì đó khi có lỗi xảy ra

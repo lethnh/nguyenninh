@@ -263,20 +263,23 @@ function get_post_loadmore()
         'posts_per_page' => 7
     );
     $getposts = new WP_query($args_my_query);
-    $getposts->query('post_status=publish&showposts=5&offset=' . $offset);
+    $getposts->query('post_status=publish&showposts=3&offset=' . $offset);
     $response  = '';
     $max_pages = $getposts->max_num_pages;
     if ($getposts->have_posts()) {
+        ob_start();
         while ($getposts->have_posts()) : $getposts->the_post();
             $response .= get_template_part('partials/card', 'post-common-2');
         endwhile;
+        $output = ob_get_contents();
+        ob_end_clean();
     } else {
         $response = '';
     }
 
     $result = [
         'max'  => $max_pages,
-        'html' => $response,
+        'html' => $output,
     ];
 
     echo json_encode($result);
