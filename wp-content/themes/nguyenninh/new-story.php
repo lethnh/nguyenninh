@@ -115,8 +115,10 @@ get_header(); ?>
                 <?php }
                 } ?>
             </div>
-            <?php if ($my_query->found_posts > 6) : ?>
-                <button class="load-more">Xem thêm</button>
+			<?php if ($my_query->found_posts > 6) : ?>
+				<div class="d-flex justify-content-center mt-4">
+					<button class="load-more btn btn-common"><span>Xem thêm</span></button>
+				</div>
             <?php endif; ?>
         </div>
     </div>
