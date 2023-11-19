@@ -142,7 +142,7 @@ get_header(); ?>
             remove: false,
         });
 
-        let currentPage = 1; // Do currentPage + 1, because we want to load the next page
+        let currentPage = 2; // Do currentPage + 1, because we want to load the next page
         var offset = 7; // khái báo số lượng bài viết đã hiển thị
         $('.load-more').click(function(e) {
             e.preventDefault();
