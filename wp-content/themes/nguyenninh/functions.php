@@ -251,3 +251,34 @@ add_action('init', 'set_theme_option_global');
 
 //     return $message;
 // }, 10, 2);
+
+add_action('wp_ajax_loadmore', 'get_post_loadmore');
+add_action('wp_ajax_nopriv_loadmore', 'get_post_loadmore');
+function get_post_loadmore()
+{
+    $offset = isset($_POST['offset']) ? (int)$_POST['offset'] : 0; // lấy dữ liệu phái client gởi
+    $args_my_query = array(
+        'post_type' => 'post',
+        'order' => 'desc',
+        'posts_per_page' => 7
+    );
+    $getposts = new WP_query($args_my_query);
+    $getposts->query('post_status=publish&showposts=5&offset=' . $offset);
+    $response  = '';
+    $max_pages = $getposts->max_num_pages;
+    if ($getposts->have_posts()) {
+        while ($getposts->have_posts()) : $getposts->the_post();
+            $response .= get_template_part('partials/card', 'post-common-2');
+        endwhile;
+    } else {
+        $response = '';
+    }
+
+    $result = [
+        'max'  => $max_pages,
+        'html' => $response,
+    ];
+
+    echo json_encode($result);
+    exit;
+}

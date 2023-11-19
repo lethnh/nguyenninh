@@ -115,6 +115,9 @@ get_header(); ?>
                 <?php }
                 } ?>
             </div>
+            <?php if ($my_query->found_posts > 6) : ?>
+                <button class="load-more">Xem thêm</button>
+            <?php endif; ?>
         </div>
     </div>
 </section>
@@ -135,6 +138,38 @@ get_header(); ?>
             property: "min-height",
             target: null,
             remove: false,
+        });
+
+        let currentPage = 1; // Do currentPage + 1, because we want to load the next page
+        var offset = 7; // khái báo số lượng bài viết đã hiển thị
+        $('.load-more').click(function(e) {
+            e.preventDefault();
+            currentPage++; // Do currentPage + 1, because we want to load the next page
+            $.ajax({ // Hàm ajax
+                type: "post", //Phương thức truyền post hoặc get
+                dataType: "json", //Dạng dữ liệu trả về xml, json, script, or html
+                async: false,
+                url: '<?php echo admin_url('admin-ajax.php'); ?>', // Nơi xử lý dữ liệu
+                data: {
+                    action: "loadmore", //Tên action, dữ liệu gởi lên cho server
+                    offset: offset, // gởi số lượng bài viết đã hiển thị cho server
+                    paged: currentPage,
+                },
+                beforeSend: function() {
+                    // Có thể thực hiện công việc load hình ảnh quay quay trước khi đổ dữ liệu ra
+                },
+                success: function(res) {
+                    if (currentPage >= res.max) {
+                        $(".load-more").hide();
+                    }
+                    $('.list-posts').append(res.html);
+                    offset = offset + 5; // tăng bài viết đã hiển thị
+                },
+                error: function(jqXHR, textStatus, errorThrown) {
+                    //Làm gì đó khi có lỗi xảy ra
+                    console.log('The following error occured: ' + textStatus, errorThrown);
+                }
+            });
         });
     });
 </script>
